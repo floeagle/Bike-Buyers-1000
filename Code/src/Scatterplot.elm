@@ -89,8 +89,31 @@ main =
 
 
 
-typed alias Bike_Buyers =
-{ id :  Int
+decoder : Decoder BikeBuyers
+decoder =
+    Decode.into BikeBuyers
+        |> Decode.pipeline (Decode.field "ID" Decode.int)
+        |> Decode.pipeline (Decode.field "MaritalStatus" Decode.string)
+        |> Decode.pipeline (Decode.field "Gender" Decode.string)
+        |> Decode.pipeline (Decode.field "Income" (Decode.blank Decode.int))
+        |> Decode.pipeline (Decode.field "Children" (Decode.blank Decode.int))
+        |> Decode.pipeline (Decode.field "Education" Decode.string)
+        |> Decode.pipeline (Decode.field "Occupation" Decode.string)
+        |> Decode.pipeline (Decode.field "HomeOwner" Decode.string)
+        |> Decode.pipeline (Decode.field "Cars" (Decode.blank Decode.int))
+        |> Decode.pipeline (Decode.field "CommuteDistance" Decode.string)
+        |> Decode.pipeline (Decode.field "Region" Decode.string)
+        |> Decode.pipeline (Decode.field "Age" (Decode.blank Decode.int))
+        |> Decode.pipeline (Decode.field "PurchasedBike" Decode.string)
+
+
+
+
+
+
+
+type alias BikeBuyers =
+    { id :  Int
     , maritalStatus: String
     , gender: String
     , income : Maybe Int
