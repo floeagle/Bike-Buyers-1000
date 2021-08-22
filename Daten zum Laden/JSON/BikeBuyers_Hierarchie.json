@@ -1,0 +1,140 @@
+{
+  "data": {
+    "id": "BuyedBike"
+  },
+  "children": [
+    {
+      "data": {
+        "id": "Yes"
+      },
+      "children": [
+        {
+          "data": {
+            "id": "Europe"
+          },
+          "children": [
+            {
+              "data": {
+                "id": "0-1 Miles"
+              }
+            },
+            {
+              "data": {
+                "id": "1-2 Miles"
+              }
+            },
+            {
+              "data": {
+                "id": "2-5 Miles"
+              }
+            },
+            {
+              "data": {
+                "id": "5-10 Miles"
+              }
+            },
+            {
+              "data": {
+                "id": "10+ Miles"
+              }
+            
+        },
+        {
+          "data": {
+            "id": "North America"
+          },
+          "children": [
+            {
+                "data": {
+                    "id": "0-1 Miles"
+                  }
+                },
+                {
+                  "data": {
+                    "id": "1-2 Miles"
+                  }
+                },
+                {
+                  "data": {
+                    "id": "2-5 Miles"
+                  }
+                },
+                {
+                  "data": {
+                    "id": "5-10 Miles"
+                  }
+                },
+                {
+                  "data": {
+                    "id": "10+ Miles"
+                  }
+            }
+          ]
+        },
+        {
+          "data": {
+            "id": "Pacific"
+          },
+          "children": [
+            {
+                "data": {
+                    "id": "0-1 Miles"
+                  }
+                },
+                {
+                  "data": {
+                    "id": "1-2 Miles"
+                  }
+                },
+                {
+                  "data": {
+                    "id": "2-5 Miles"
+                  }
+                },
+                {
+                  "data": {
+                    "id": "5-10 Miles"
+                  }
+                },
+                {
+                  "data": {
+                    "id": "10+ Miles"
+                  }
+                
+            },
+            {
+              "data": {
+                "id": "North America"
+              },
+              "children": [
+                {
+                    "data": {
+                        "id": "0-1 Miles"
+                      }
+                    },
+                    {
+                      "data": {
+                        "id": "1-2 Miles"
+                      }
+                    },
+                    {
+                      "data": {
+                        "id": "2-5 Miles"
+                      }
+                    },
+                    {
+                      "data": {
+                        "id": "5-10 Miles"
+                      }
+                    },
+                    {
+                      "data": {
+                        "id": "10+ Miles"
+                      }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+} 
