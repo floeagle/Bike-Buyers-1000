@@ -10,7 +10,7 @@
         "children": [
           {
             "data": {
-              "id": "Southern Asia"
+              "id": "Europe"
             },
             "children": [
               {
@@ -62,7 +62,7 @@
           },
           {
             "data": {
-              "id": "Western Asia"
+              "id": "North America"
             },
             "children": [
               {
@@ -159,7 +159,7 @@
           },
           {
             "data": {
-              "id": "South-Eastern Asia"
+              "id": "Pacific"
             },
             "children": [
               {
@@ -218,80 +218,8 @@
                 }
               }
             ]
-          },
-          {
-            "data": {
-              "id": "Eastern Asia"
-            },
-            "children": [
-              {
-                "data": {
-                  "id": "China"
-                }
-              },
-              {
-                "data": {
-                  "id": "China, Hong Kong Special Administrative Region"
-                }
-              },
-              {
-                "data": {
-                  "id": "China, Macao Special Administrative Region"
-                }
-              },
-              {
-                "data": {
-                  "id": "Democratic People's Republic of Korea"
-                }
-              },
-              {
-                "data": {
-                  "id": "Japan"
-                }
-              },
-              {
-                "data": {
-                  "id": "Mongolia"
-                }
-              },
-              {
-                "data": {
-                  "id": "Republic of Korea"
-                }
-              }
-            ]
-          },
-          {
-            "data": {
-              "id": "Central Asia"
-            },
-            "children": [
-              {
-                "data": {
-                  "id": "Kazakhstan"
-                }
-              },
-              {
-                "data": {
-                  "id": "Kyrgyzstan"
-                }
-              },
-              {
-                "data": {
-                  "id": "Tajikistan"
-                }
-              },
-              {
-                "data": {
-                  "id": "Turkmenistan"
-                }
-              },
-              {
-                "data": {
-                  "id": "Uzbekistan"
-                }
-              }
-            ]
+          
+            
           }
         ]
       },
@@ -302,7 +230,7 @@
         "children": [
           {
             "data": {
-              "id": "Southern Europe"
+              "id": "Europe"
             },
             "children": [
               {
@@ -389,7 +317,7 @@
           },
           {
             "data": {
-              "id": "Western Europe"
+              "id": "North America"
             },
             "children": [
               {
@@ -441,7 +369,7 @@
           },
           {
             "data": {
-              "id": "Eastern Europe"
+              "id": "Pacific"
             },
             "children": [
               {
@@ -495,78 +423,8 @@
                 }
               }
             ]
-          },
-          {
-            "data": {
-              "id": "Northern Europe"
-            },
-            "children": [
-              {
-                "data": {
-                  "id": "Channel Islands"
-                }
-              },
-              {
-                "data": {
-                  "id": "Denmark"
-                }
-              },
-              {
-                "data": {
-                  "id": "Estonia"
-                }
-              },
-              {
-                "data": {
-                  "id": "Faeroe Islands"
-                }
-              },
-              {
-                "data": {
-                  "id": "Finland"
-                }
-              },
-              {
-                "data": {
-                  "id": "Iceland"
-                }
-              },
-              {
-                "data": {
-                  "id": "Ireland"
-                }
-              },
-              {
-                "data": {
-                  "id": "Isle of Man"
-                }
-              },
-              {
-                "data": {
-                  "id": "Latvia"
-                }
-              },
-              {
-                "data": {
-                  "id": "Lithuania"
-                }
-              },
-              {
-                "data": {
-                  "id": "Norway"
-                }
-              },
-              {
-                "data": {
-                  "id": "Sweden"
-                }
-              },
-              {
-                "data": {
-                  "id": "United Kingdom"
-                }
-              }
-            ]
+          
+            
           }
         ]
       }
