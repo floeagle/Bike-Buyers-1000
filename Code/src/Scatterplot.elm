@@ -87,7 +87,57 @@ main =
             Html.main_ []
                 [ Html.h1 [] [ Html.text "Bike_Buyers" ]]
 
+scatterplot : XyData -> Svg msg
+scatterplot model =
+    let
 
+        kreisbeschriftung : String
+        kreisbeschriftung =
+            ""
+
+        xValues : List Float
+        xValues =
+            List.map .x model.data
+
+        yValues : List Float
+        yValues =
+            List.map .y model.data
+
+        xScaleLocal : ContinuousScale Float
+        xScaleLocal =
+            xScale xValues
+
+        yScaleLocal : ContinuousScale Float
+        yScaleLocal =
+            yScale yValues
+
+        half : ( Float, Float ) -> Float
+        half t =
+            (Tuple.second t - Tuple.first t) / 2
+
+        labelPositions : { x : Float, y : Float }
+        labelPositions =
+            { x = wideExtent xValues |> half
+            , y = wideExtent yValues |> Tuple.second
+            }
+    in
+    svg [ viewBox 0 0 w h, TypedSvg.Attributes.width <| TypedSvg.Types.Percent 100, TypedSvg.Attributes.height <| TypedSvg.Types.Percent 100 ]
+        [ style [] [ TypedSvg.Core.text """
+            .point circle { stroke: rgba(0, 0, 0,0.4); fill: rgba(255, 255, 255,0.3); }
+            .point text { display: none; }
+            .point:hover circle { stroke: rgba(0, 0, 0,1.0); fill: rgb(118, 214, 78); }
+            .point:hover text { display: inline; }
+          """ ]
+          , g [ transform [ Translate padding padding ] ]
+            (List.map (points xScaleLocal yScaleLocal) model.data)
+
+          , g [textAnchor AnchorMiddle, transform [ Translate (padding) (padding )]]
+          [ yAxis yValues, text_ [ y (Scale.convert yScaleLocal labelPositions.y), y -10] [TypedSvg.Core.text model.yDescription]]
+                
+          , g [textAnchor AnchorMiddle, transform [ Translate (padding) (h-padding)]] 
+            [xAxis xValues , text_ [ x (Scale.convert xScaleLocal labelPositions.x), x 400, y 40] [TypedSvg.Core.text model.xDescription]]
+            
+            ]  
 
 decoder : Decoder BikeBuyers
 decoder =
