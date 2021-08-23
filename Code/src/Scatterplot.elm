@@ -138,6 +138,13 @@ scatterplot model =
             [xAxis xValues , text_ [ x (Scale.convert xScaleLocal labelPositions.x), x 400, y 40] [TypedSvg.Core.text model.xDescription]]
             
             ]  
+
+-- Bike Buyers werden mit maybe map für Punktdarstellung konfiguriert            
+bikeToMaybePoints : BikeBuyers -> Maybe Point
+bikeToMaybePoints bbuyers =
+    Maybe.map3 pointName (Just bbuyers.purchasedBike) bbuyers.income bbuyers.age
+
+
 -- Für Punktdarstellung
 points : ContinuousScale Float -> ContinuousScale Float -> Point -> Svg msg
 points scaleX scaleY xyPoint =
@@ -167,6 +174,9 @@ decoder =
         |> Decode.pipeline (Decode.field "Region" Decode.string)
         |> Decode.pipeline (Decode.field "Age" (Decode.blank Decode.int))
         |> Decode.pipeline (Decode.field "PurchasedBike" Decode.string)
+
+
+
 
 
 --Für Scatterplot
