@@ -138,6 +138,18 @@ scatterplot model =
             [xAxis xValues , text_ [ x (Scale.convert xScaleLocal labelPositions.x), x 400, y 40] [TypedSvg.Core.text model.xDescription]]
             
             ]  
+-- Für Punktdarstellung
+points : ContinuousScale Float -> ContinuousScale Float -> Point -> Svg msg
+points scaleX scaleY xyPoint =
+    g [ class [ "point" ], fontSize <| Px 15.0, fontFamily [ "serif" ]
+        , transform
+            [ Translate (Scale.convert scaleX xyPoint.x)
+                        (Scale.convert scaleY xyPoint.y)
+            ]
+        ]
+        [ circle [ cx 0, cy 0, r 5 ] []
+        , text_ [ x 10, y -20, textAnchor AnchorMiddle ] [ Html.text xyPoint.pointName ]
+        ]
 
 decoder : Decoder BikeBuyers
 decoder =
