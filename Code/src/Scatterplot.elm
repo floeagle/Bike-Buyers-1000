@@ -149,6 +149,13 @@ filter : List BikeBuyers -> XyData
 filter bikes =
     XyData "income" "age" (List.filterMap bikeToMaybePoints bikes)
 
+-- Für Hovern über Punkte im Scatterplot --> Bietet Zusatzinformationen zu den Datenwerten    
+pointName : String -> Int -> Int -> Point
+pointName purchasedBike income age =
+    Point ("Own Bike? " ++ purchasedBike ++ 
+    " (" ++ String.fromInt income ++ ", " ++ String.fromInt age ++ ")") 
+        (toFloat income) (toFloat age)
+        
 -- Für Punktdarstellung
 points : ContinuousScale Float -> ContinuousScale Float -> Point -> Svg msg
 points scaleX scaleY xyPoint =
