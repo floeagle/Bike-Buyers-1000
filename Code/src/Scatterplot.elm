@@ -83,9 +83,21 @@ yAxis values =
 
 main : Html msg
 main =
-            
+    case Decode.decodeCsv Decode.FieldNamesFromFirstRow decoder csv of
+        Ok bikes ->
+            let
+                
+                filteredbikes =
+                    filter bikes
+            in
             Html.main_ []
-                [ Html.h1 [] [ Html.text "Bike_Buyers 1000" ]]
+                [ Html.h1 [] [ Html.text "Bike Buyers 1000" ]
+
+                , scatterplot filteredbikes
+                ]
+
+        Err problem ->
+            Html.text ("There was a problem loading your data")
 
 scatterplot : XyData -> Svg msg
 scatterplot model =
@@ -155,7 +167,7 @@ pointName purchasedBike income age =
     Point ("Own Bike? " ++ purchasedBike ++ 
     " (" ++ String.fromInt income ++ ", " ++ String.fromInt age ++ ")") 
         (toFloat income) (toFloat age)
-        
+
 -- Für Punktdarstellung
 points : ContinuousScale Float -> ContinuousScale Float -> Point -> Svg msg
 points scaleX scaleY xyPoint =
