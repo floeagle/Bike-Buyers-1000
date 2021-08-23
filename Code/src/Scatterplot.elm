@@ -144,6 +144,10 @@ bikeToMaybePoints : BikeBuyers -> Maybe Point
 bikeToMaybePoints bbuyers =
     Maybe.map3 pointName (Just bbuyers.purchasedBike) bbuyers.income bbuyers.age
 
+-- Für Achsenbeschriftung Scatterplot
+filter : List BikeBuyers -> XyData
+filter bikes =
+    XyData "income" "age" (List.filterMap bikeToMaybePoints bikes)
 
 -- Für Punktdarstellung
 points : ContinuousScale Float -> ContinuousScale Float -> Point -> Svg msg
