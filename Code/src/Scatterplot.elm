@@ -85,7 +85,7 @@ main : Html msg
 main =
             
             Html.main_ []
-                [ Html.h1 [] [ Html.text "Bike_Buyers" ]]
+                [ Html.h1 [] [ Html.text "Bike_Buyers 1000" ]]
 
 scatterplot : XyData -> Svg msg
 scatterplot model =
