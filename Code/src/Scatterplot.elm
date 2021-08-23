@@ -107,11 +107,19 @@ decoder =
         |> Decode.pipeline (Decode.field "PurchasedBike" Decode.string)
 
 
+--Für Scatterplot
+type alias Point =
+    { pointName : String, x : Float, y : Float }
 
 
+type alias XyData =
+    { xDescription : String
+    , yDescription : String
+    , data : List Point
+    }
 
 
-
+-- Um Datensatz zu definieren
 type alias BikeBuyers =
     { id :  Int
     , maritalStatus: String
