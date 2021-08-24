@@ -125,10 +125,15 @@ parallelCoodinatesPlot w ar model =
         [ viewBox 0 0 (w + 2 * padding) (h + 2 * padding)
         , TypedSvg.Attributes.width <| TypedSvg.Types.Percent 90
         , TypedSvg.Attributes.height <| TypedSvg.Types.Percent 90
+        , TypedSvg.Attributes.preserveAspectRatio (TypedSvg.Types.Align TypedSvg.Types.ScaleMin TypedSvg.Types.ScaleMin) TypedSvg.Types.Slice
         ]
     <|
         [ TypedSvg.style []
-            []
+            [TypedSvg.Core.text """
+      .parallelAxis g g text { display: none; }
+      .parallelAxis:hover g g text { display: inline; }
+
+    """]
         , g [ TypedSvg.Attributes.class [ "parallelAxis" ] ]
             [ g [ transform [ Translate (padding - 1) padding ] ] <|
                 List.indexedMap
@@ -160,7 +165,7 @@ parallelCoodinatesPlot w ar model =
             , TypedSvg.Attributes.y1 <| TypedSvg.Types.Px 1
             , TypedSvg.Attributes.width <| TypedSvg.Types.Px (w + 2 * padding - 1)
             , TypedSvg.Attributes.height <| TypedSvg.Types.Px (h + 2 * padding - 1)
-            , TypedSvg.Attributes.fill <| Paint <| Color.rgba 0 0 0 1
+            , TypedSvg.Attributes.fill TypedSvg.Types.PaintNone
             , stroke <| Paint <| Color.rgba 0 0 0 1
             , strokeWidth <| Px 0.5
             ]
@@ -184,7 +189,7 @@ parallelCoodinatesPlot w ar model =
                                     |> Shape.line Shape.linearCurve
                         in
                         Path.element linePath
-                            [ stroke <| Paint <| Color.rgba 255 255 255 0.1
+                            [ stroke <| Paint <| Color.rgba 0 0 0 1
                             , strokeWidth <| Px 2
                             , fill PaintNone
                             ]
