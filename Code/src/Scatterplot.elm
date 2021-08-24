@@ -133,7 +133,7 @@ scatterplot model dat dat2=
             case dat of 
                 Einkommen -> "Einkommen"
                 Kinder -> "Kinder"
-                AnzahlAutos -> "AnzahlAutos"
+                AnzahlAutos -> "Autos"
 
 
         xScaleLocal : ContinuousScale Float
@@ -158,7 +158,7 @@ scatterplot model dat dat2=
         [ style [] [ TypedSvg.Core.text """
             .point circle { stroke: rgba(0, 0, 0,0.4); fill: rgba(255, 255, 255,0.3); }
             .point text { display: none; }
-            .point:hover circle { stroke: rgba(0, 0, 0,1.0); fill: rgb(118, 214, 78); }
+            .point:hover circle { stroke: rgba(0, 0, 0,1.0); fill: rgb(127,255,0,1); }
             .point:hover text { display: inline; }
           """ ]
           , g [ transform [ Translate padding padding ] ]
@@ -171,7 +171,7 @@ scatterplot model dat dat2=
             ]
             [ xAxis xValues
             , text_
-                [ x (w / 2 - 50)
+                [ x (w / 2 - 75)
                 , y 30
                 ]
                 [ TypedSvg.Core.text "Alter" ]
@@ -202,7 +202,7 @@ pointName purchasedBike income age =
 type alias Point =
     { pointName : String, x : Float, y : Float }
     --}
--- ToDO: Farbe anpassen
+
 
 -- newMain:
 
@@ -404,7 +404,7 @@ decoder =
 
 
 
-
+{-
 
 --Für ScatterplotohneOnClick
 type alias Point =
@@ -417,7 +417,7 @@ type alias XyData =
     , data : List Point
     }
 
-
+-}
 -- Um Datensatz zu definieren
 
 type alias BikeBuyers =
