@@ -84,6 +84,14 @@ parallelCoodinatesPlot w ar model =
             []
 
 
+-- Aus Übung 
+
+type alias FilteredBikeBuyers =
+    { purchasedBike : String, region : String,  income : Float, children : Float, cars : Float, age : Float }
+
+
+
+
 decoder : Decoder BikeBuyers
 decoder =
     Decode.into BikeBuyers
