@@ -4,6 +4,43 @@ module ParalleleKoordinaten exposing (..)
 
 
 
+--  Grundgerüst aus Übung
+type alias MultiDimPoint =
+    { pointName : String, value : List Float }
+
+
+type alias MultiDimData =
+    { dimDescription : List String
+    , data : List (List MultiDimPoint)
+    }
+
+parallelCoodinatesPlot : Float -> Float -> MultiDimData -> Svg msg
+parallelCoodinatesPlot w ar model = ...
+
+
+
+
+
+
+
+
+
+decoder : Decoder BikeBuyers
+decoder =
+    Decode.into BikeBuyers
+        |> Decode.pipeline (Decode.field "ID" Decode.int)
+        |> Decode.pipeline (Decode.field "MaritalStatus" Decode.string)
+        |> Decode.pipeline (Decode.field "Gender" Decode.string)
+        |> Decode.pipeline (Decode.field "Income" Decode.float)
+        |> Decode.pipeline (Decode.field "Children" Decode.float)
+        |> Decode.pipeline (Decode.field "Education" Decode.string)
+        |> Decode.pipeline (Decode.field "Occupation" Decode.string)
+        |> Decode.pipeline (Decode.field "HomeOwner" Decode.string)
+        |> Decode.pipeline (Decode.field "Cars" Decode.float)
+        |> Decode.pipeline (Decode.field "CommuteDistance" Decode.string)
+        |> Decode.pipeline (Decode.field "Region" Decode.string)
+        |> Decode.pipeline (Decode.field "Age" Decode.float)
+        |> Decode.pipeline (Decode.field "PurchasedBike" Decode.string)
 
 
 
@@ -19,17 +56,23 @@ module ParalleleKoordinaten exposing (..)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+type alias BikeBuyers =
+    { id :  Int
+    , maritalStatus: String
+    , gender: String
+    , income : Float
+    , children :  Float
+    , education : String
+    , occupation : String
+    , homeOwner: String
+    , cars: Float
+    , commuteDistance: String
+    , region: String
+    , age:  Float
+    , purchasedBike: String
+    
+    
+    }
 
 
 
