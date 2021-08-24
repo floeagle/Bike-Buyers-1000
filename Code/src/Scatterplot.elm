@@ -1,16 +1,22 @@
 module Scatterplot exposing (..)
 
 import Axis
-import Statistics
-import Html exposing (Html)
+import Csv.Decode as Decode exposing (Decoder)
+import Color exposing (Color)
+import Shape
+import Html exposing (Html, text, pre, button)
+import Html.Events exposing (onClick)
+import Html.Attributes
+import Http
+import Browser
 import Scale exposing (ContinuousScale)
+import Statistics
 import TypedSvg exposing (circle, g, rect, style, svg, text_)
-import TypedSvg.Attributes exposing (class, fontFamily, fontSize, textAnchor, transform, viewBox)
+import TypedSvg.Attributes exposing (class, fontFamily, fill, fontSize, textAnchor, stroke, strokeWidth, transform, viewBox)
 import TypedSvg.Attributes.InPx exposing (cx, cy, height, r, width, x, y)
 import TypedSvg.Core exposing (Svg)
-import TypedSvg.Types exposing (AnchorAlignment(..), Length(..), Transform(..))
-import Csv.Decode as Decode exposing (Decoder)
-
+import TypedSvg.Events
+import TypedSvg.Types exposing (AnchorAlignment(..), Length(..), Paint(..), Transform(..))
 
 w : Float
 w =
@@ -79,41 +85,56 @@ xAxis values =
 yAxis : List Float -> Svg msg
 yAxis values =
     Axis.left [ Axis.tickCount tickCount ] (yScale values)
-
-
-main : Html msg
-main =
-    case Decode.decodeCsv Decode.FieldNamesFromFirstRow decoder csv of
-        Ok bikes ->
-            let
-                
-                filteredbikes =
-                    filter bikes
-            in
-            Html.main_ []
-                [ Html.h1 [] [ Html.text "Bike Buyers 1000" ]
-
-                , scatterplot filteredbikes
-                ]
-
-        Err problem ->
-            Html.text ("There was a problem loading your data")
-
-scatterplot : XyData -> Svg msg
-scatterplot model =
+-- Für Punktdarstellung
+points : ContinuousScale Float -> ContinuousScale Float -> YAchse -> BikeBuyers -> Svg Msg
+points scaleX scaleY buttons xyPoint =
     let
+        y : Float
+        y = 
+            case buttons of 
+                Einkommen -> xyPoint.income
+                Kinder -> xyPoint.children
+                AnzahlAutos -> xyPoint.cars
+    in
+    g [ class [ "point" ]
+        , fontSize <| Px 10.0, 
+        fontFamily [ "sans-serif" ] ]
+        [ circle
+            [ fill <| Paint <| Color.rgba 0 0 0 1
+            , stroke <| Paint <| Color.rgba 0 0 0 1
+            , strokeWidth <| Px 0.5
+            , cx (Scale.convert scaleX xyPoint.age)
+            , cy (Scale.convert scaleY y)
+            , r 5         
+            , TypedSvg.Events.onClick <| Display buttons
+            ]
+            []
+        , text_ [ transform [ Translate (Scale.convert scaleX xyPoint.age) (Scale.convert scaleY y - (2 * radius)) ]
+                , textAnchor AnchorMiddle] 
+                [Html.text ("OwnBike? " ++ xyPoint.purchasedBike ++ ", " ++ "Einkommen: " ++  String.fromFloat xyPoint.income ++ ", " ++ "Beruf: " ++  xyPoint.occupation )]
+        ]
 
-        kreisbeschriftung : String
-        kreisbeschriftung =
-            ""
-
+scatterplot : List BikeBuyers -> YAchse -> List BikeBuyers-> Svg Msg
+scatterplot model dat dat2=
+    let
         xValues : List Float
         xValues =
-            List.map .x model.data
+            List.map .age model
 
         yValues : List Float
         yValues =
-            List.map .y model.data
+            case dat of 
+                Einkommen -> List.map .income model
+                Kinder -> List.map .children model
+                AnzahlAutos -> List.map .cars model
+        
+        yName : String
+        yName = 
+            case dat of 
+                Einkommen -> "Einkommen"
+                Kinder -> "Kinder"
+                AnzahlAutos -> "AnzahlAutos"
+
 
         xScaleLocal : ContinuousScale Float
         xScaleLocal =
@@ -141,16 +162,146 @@ scatterplot model =
             .point:hover text { display: inline; }
           """ ]
           , g [ transform [ Translate padding padding ] ]
-            (List.map (points xScaleLocal yScaleLocal) model.data)
+            (List.map (points xScaleLocal yScaleLocal dat) model)
 
-          , g [textAnchor AnchorMiddle, transform [ Translate (padding) (padding )]]
-          [ yAxis yValues, text_ [ y (Scale.convert yScaleLocal labelPositions.y), y -10] [TypedSvg.Core.text model.yDescription]]
-                
-          , g [textAnchor AnchorMiddle, transform [ Translate (padding) (h-padding)]] 
-            [xAxis xValues , text_ [ x (Scale.convert xScaleLocal labelPositions.x), x 400, y 40] [TypedSvg.Core.text model.xDescription]]
-            
+          , g
+            [ transform [ Translate (padding - 1) (h - padding) ]
+            , fontSize <| Px 10.0
+            , fontFamily [ "sans-serif" ]
+            ]
+            [ xAxis xValues
+            , text_
+                [ x (w / 2 - 50)
+                , y 30
+                ]
+                [ TypedSvg.Core.text "Alter" ]
+            ]
+        , g
+            [ transform [ Translate (padding - 1) padding ]
+            , fontSize <| Px 10.0
+            , fontFamily [ "sans-serif" ]
+            ]
+            [ yAxis yValues
+            , text_
+                [ x -30
+                , y (Scale.convert yScaleLocal labelPositions.y - 20)
+                ]
+                [ TypedSvg.Core.text yName ]
+            ]
             ]  
+            
 
+{--      
+bikeToMaybePoints : BikeBuyers -> Maybe Point
+bikeToMaybePoints test =
+    Maybe.map pointName (Just test.purchasedBike) 
+
+pointName : String -> Float -> Float -> Point
+pointName purchasedBike income age =
+    Point ("Bike? " ++ purchasedBike ++ " (" ++ String.fromFloat income ++ ", " ++ String.fromFloat age ++ ")") ( income) ( age)
+type alias Point =
+    { pointName : String, x : Float, y : Float }
+    --}
+-- ToDO: Farbe anpassen
+
+-- newMain:
+
+
+type alias Model =
+    {abbildung : YAchse}
+
+type YAchse
+    = Einkommen
+    | Kinder
+    | AnzahlAutos
+
+
+main =
+    Browser.element
+        { init = init
+        , view = view
+        , update = update
+        , subscriptions = subscriptions
+        }
+
+
+-- INIT
+init : () -> (Model, Cmd Msg)
+init _ =
+    ({abbildung = Einkommen }, Cmd.none)
+
+
+
+-- UPDATE
+
+
+type Msg
+  = GotText (Result Http.Error String)
+  | Display YAchse
+
+update : Msg -> Model -> (Model, Cmd Msg)
+update msg model =
+    case msg of
+        GotText result ->
+            case result of
+                Ok fullText ->
+                    (model, Cmd.none )
+
+                Err _ ->
+                    ( model, Cmd.none )
+        Display wechsel ->
+            ({model| abbildung = wechsel}  ,Cmd.none) 
+
+        
+
+
+
+
+
+-- SUBSCRIPTIONS
+
+
+subscriptions : Model -> Sub Msg
+subscriptions model =
+  Sub.none
+
+
+
+-- VIEW
+
+
+view : Model -> Html Msg
+view model =
+      case Decode.decodeCsv Decode.FieldNamesFromFirstRow decoder csv of
+        Ok bikebuyers ->
+            
+            
+            let   
+                ic =    
+                   List.filter(\bikes -> bikes.purchasedBike == "Yes") bikebuyers
+                   
+                   
+                   
+            in
+            Html.div []
+                [ Html.p []
+                    [  Html.div [] 
+                        [ button [ Html.Events.onClick (Display Einkommen) ] [ Html.text "Einkommen" ]
+                        , button [ Html.Events.onClick (Display Kinder) ] [ Html.text "Kinder" ]
+                        , button [ Html.Events.onClick (Display AnzahlAutos) ] [ Html.text "Autos"]
+                        ]
+                        ]            
+                , Html.p []
+                    [ Html.div []
+                        [ scatterplot bikebuyers model.abbildung ic ]
+                    ] 
+                ]
+
+        Err problem ->
+            Html.text ("There was a problem loading your data")
+
+
+{-
 -- Bike Buyers werden mit maybe map für Punktdarstellung konfiguriert            
 bikeToMaybePoints : BikeBuyers -> Maybe Point
 bikeToMaybePoints bbuyers =
@@ -167,19 +318,72 @@ pointName purchasedBike income age =
     Point ("Own Bike? " ++ purchasedBike ++ 
     " (" ++ String.fromInt income ++ ", " ++ String.fromInt age ++ ")") 
         (toFloat income) (toFloat age)
+-}
 
--- Für Punktdarstellung
-points : ContinuousScale Float -> ContinuousScale Float -> Point -> Svg msg
-points scaleX scaleY xyPoint =
-    g [ class [ "point" ], fontSize <| Px 15.0, fontFamily [ "serif" ]
-        , transform
-            [ Translate (Scale.convert scaleX xyPoint.x)
-                        (Scale.convert scaleY xyPoint.y)
-            ]
+{- zum filtern: 
+
+view :  Model -> Html Msg
+view model =
+   case Decode.decodeCsv Decode.FieldNamesFromFirstRow decoder csv of
+        Ok bike ->
+            let
+               income1 =
+                   List.filter (\bikes -> bikes.income >=100000) bike
+               income2 =
+                   List.sortBy (\bikes -> bikes.income) bike    
+                   
+               ic =    
+                   List.filter(\bikes -> bikes.purchasedBike == "Yes") bike
+                   
+               ic2 =    
+                   List.filter(\bikes -> bikes.purchasedBike == "No") bike    
+               
+               ic3= 
+                  List.filter(\bikes -> bikes.region == "Pacific") bike 
+               
+               
+    
+
+                   
+            in
+            Html.main_ []
+                [ Html.h1 [] [ Html.text "Bike_ Buyers" ]
+                , bikeData income1
+                , Html.h2 [] [ Html.text "Income from lowest -> highest" ]
+                , bikeData ic
+                , Html.h2 [] [ Html.text "region Test" ]
+                , bikeData ic3
+               
+                
+                ]
+
+        Err problem ->
+            Html.text ("There was a problem loading your data")
+
+
+
+
+- zum Laden
+
+
+-- Daten von type alias wertden in html messege gewandelt
+bikeData : List Data -> Html msg
+bikeData bike =
+    bike
+        |> List.map (\bikes -> Html.li [] [ bikeInf  bikes ])
+        |> Html.ul []
+        
+       
+-- Datas ausgewählt für Stichpubkte aufgeführt 
+bikeInf : Data -> Html msg
+bikeInf  {purchasedBike,income } =
+    Html.span []
+        [ Html.text purchasedBike
         ]
-        [ circle [ cx 0, cy 0, r 5 ] []
-        , text_ [ x 10, y -20, textAnchor AnchorMiddle ] [ Html.text xyPoint.pointName ]
-        ]
+-}      
+
+
+
 
 decoder : Decoder BikeBuyers
 decoder =
@@ -187,22 +391,22 @@ decoder =
         |> Decode.pipeline (Decode.field "ID" Decode.int)
         |> Decode.pipeline (Decode.field "MaritalStatus" Decode.string)
         |> Decode.pipeline (Decode.field "Gender" Decode.string)
-        |> Decode.pipeline (Decode.field "Income" (Decode.blank Decode.int))
-        |> Decode.pipeline (Decode.field "Children" (Decode.blank Decode.int))
+        |> Decode.pipeline (Decode.field "Income" Decode.float)
+        |> Decode.pipeline (Decode.field "Children" Decode.float)
         |> Decode.pipeline (Decode.field "Education" Decode.string)
         |> Decode.pipeline (Decode.field "Occupation" Decode.string)
         |> Decode.pipeline (Decode.field "HomeOwner" Decode.string)
-        |> Decode.pipeline (Decode.field "Cars" (Decode.blank Decode.int))
+        |> Decode.pipeline (Decode.field "Cars" Decode.float)
         |> Decode.pipeline (Decode.field "CommuteDistance" Decode.string)
         |> Decode.pipeline (Decode.field "Region" Decode.string)
-        |> Decode.pipeline (Decode.field "Age" (Decode.blank Decode.int))
+        |> Decode.pipeline (Decode.field "Age" Decode.float)
         |> Decode.pipeline (Decode.field "PurchasedBike" Decode.string)
 
 
 
 
 
---Für Scatterplot
+--Für ScatterplotohneOnClick
 type alias Point =
     { pointName : String, x : Float, y : Float }
 
@@ -215,19 +419,20 @@ type alias XyData =
 
 
 -- Um Datensatz zu definieren
+
 type alias BikeBuyers =
     { id :  Int
     , maritalStatus: String
     , gender: String
-    , income : Maybe Int
-    , children :  Maybe Int
+    , income : Float
+    , children :  Float
     , education : String
     , occupation : String
     , homeOwner: String
-    , cars: Maybe Int
+    , cars: Float
     , commuteDistance: String
     , region: String
-    , age:  Maybe Int
+    , age:  Float
     , purchasedBike: String
     
     
