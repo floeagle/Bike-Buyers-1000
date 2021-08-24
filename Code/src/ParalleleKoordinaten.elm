@@ -1,28 +1,87 @@
 module ParalleleKoordinaten exposing (..)
 
+import Axis
+import Color
+import Html exposing (Html, a, li, ul)
+import Html.Attributes exposing (href)
+import List.Extra
+import Path
+import Scale exposing (ContinuousScale)
+import Shape
+import Statistics
+import TypedSvg exposing (circle, g, line, path, rect, style, svg, text_)
+import TypedSvg.Attributes exposing (class, d, fill, fontFamily, fontSize, stroke, strokeWidth, textAnchor, transform, viewBox)
+import TypedSvg.Attributes.InPx exposing (cx, cy, height, r, width, x, x1, x2, y, y1, y2)
+import TypedSvg.Core exposing (Svg)
+import TypedSvg.Types exposing (AnchorAlignment(..), Length(..), Paint(..), Transform(..))
+import Csv.Decode as Decode exposing (Decoder)
+import Http
+import Browser
 
 
 
 
---  Grundgerüst aus Übung
-type alias MultiDimPoint =
-    { pointName : String, value : List Float }
+defaultExtent : ( number, number1 )
+defaultExtent =
+    ( 0, 100 )
 
 
-type alias MultiDimData =
-    { dimDescription : List String
-    , data : List (List MultiDimPoint)
-    }
+tickCount_ : Int
+tickCount_ =
+    10
+
+
+wideExtent : List Float -> ( Float, Float )
+wideExtent values =
+    let
+        closeExtent =
+            Statistics.extent values
+                |> Maybe.withDefault defaultExtent
+
+        extension =
+            (Tuple.second closeExtent - Tuple.first closeExtent) / toFloat (2 * tickCount_)
+    in
+    ( Tuple.first closeExtent - extension
+      --|> max 0
+    , Tuple.second closeExtent + extension
+    )
+
 
 parallelCoodinatesPlot : Float -> Float -> MultiDimData -> Svg msg
-parallelCoodinatesPlot w ar model = ...
+parallelCoodinatesPlot w ar model =
+    let
+        h : Float
+        h =
+            w / ar
 
+        listTransformieren : List (List Float)
+        listTransformieren =
+            model.data
+                |> List.concat
+                |> List.map .value
+                |> List.Extra.transpose
 
+        listWideExtent : List ( Float, Float )
+        listWideExtent =
+            listTransformieren |> List.map wideExtent
 
+        listScale =
+            List.map (Scale.linear ( h, 0 )) listWideExtent
 
+        listAxis =
+            List.map (Axis.left [ Axis.tickCount tickCount_ ]) listScale
 
-
-
+        xScale =
+            Scale.linear ( 0, w ) ( 1, List.length model.dimDescription |> toFloat )
+    in
+    svg
+        [ viewBox 0 0 (w + 2 * padding) (h + 2 * padding)
+        , TypedSvg.Attributes.width <| TypedSvg.Types.Percent 90
+        , TypedSvg.Attributes.height <| TypedSvg.Types.Percent 90
+        ]
+    <|
+        [ TypedSvg.style []
+            []
 
 
 decoder : Decoder BikeBuyers
@@ -43,19 +102,6 @@ decoder =
         |> Decode.pipeline (Decode.field "PurchasedBike" Decode.string)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 type alias BikeBuyers =
     { id :  Int
     , maritalStatus: String
@@ -73,13 +119,15 @@ type alias BikeBuyers =
     
     
     }
+--  Grundgerüst aus Übung
+type alias MultiDimPoint =
+    { pointName : String, value : List Float }
 
 
-
-
-
-
-
+type alias MultiDimData =
+    { dimDescription : List String
+    , data : List (List MultiDimPoint)
+    }
 csv : String
 csv =
      """ID,MaritalStatus,Gender,Income,Children,Education,Occupation,HomeOwner,Cars,CommuteDistance,Region,Age,PurchasedBike
