@@ -89,7 +89,21 @@ parallelCoodinatesPlot w ar model =
 type alias FilteredBikeBuyers =
     { purchasedBike : String, region : String,  income : Float, children : Float, cars : Float, age : Float }
 
-
+filterMissingValues : List BikeBuyers -> List FilteredBikeBuyers
+filterMissingValues mybikes =
+    let
+        bike2filteredBike : BikeBuyers -> Maybe FilteredBikeBuyers
+        bike2filteredBike bbuyers =
+        -- purchasedBike und region für Vorfilter der Visualisierung
+            Maybe.map4 (FilteredBikeBuyers bbuyers.purchasedBike bbuyers.region)
+            -- Für Parallele Achsen
+                bbuyers.income
+                bbuyers.children
+                bbuyers.cars
+                bbuyers.age
+    in
+    List.filterMap 
+        bike2filteredBike mybikes
 
 
 decoder : Decoder BikeBuyers
