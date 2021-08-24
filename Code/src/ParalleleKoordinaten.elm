@@ -49,6 +49,51 @@ wideExtent values =
     )
 
 
+main : Html msg
+main =
+    case Decode.decodeCsv Decode.FieldNamesFromFirstRow decoder csv of
+        Ok bikes1 ->
+            let   
+
+            {- beim ersten compilen ist mir aufgefallen, dass zu viele Daten in die Parallelen Koordinaten geladen werden (n=1000) 
+                -> Durch die Funktion filteredBikes können über List.filter Datenstrings gefiltert werden. 
+
+                    -}
+                filteredBikes : List FilteredBikeBuyers
+                filteredBikes =
+                    filterMissingValues bikes1
+                        |> List.filter (.purchasedBike
+                                >> (==) "Yes"
+                            )
+                        |> List.filter (.region
+                                >> (==) "Pacific"
+                            )
+               
+
+
+
+                data =
+                    MultiDimData [ "income", "children", "cars", "age" ]
+                        [ List.map
+                        (\x ->
+                                [ x.income, x.children, x.cars, x.age ]
+                                    
+                                    |> MultiDimPoint x.purchasedBike
+                            )
+                            filteredBikes
+                        ]
+            in
+            Html.div []
+                [ ul []
+                    [ 
+                    ]
+                , parallelCoodinatesPlot 400 2 data
+                ]
+        Err problem ->
+            Html.text ("There was a problem loading your data")
+
+
+
 parallelCoodinatesPlot : Float -> Float -> MultiDimData -> Svg msg
 parallelCoodinatesPlot w ar model =
     let
@@ -180,15 +225,15 @@ decoder =
         |> Decode.pipeline (Decode.field "ID" Decode.int)
         |> Decode.pipeline (Decode.field "MaritalStatus" Decode.string)
         |> Decode.pipeline (Decode.field "Gender" Decode.string)
-        |> Decode.pipeline (Decode.field "Income" Decode.float)
-        |> Decode.pipeline (Decode.field "Children" Decode.float)
+        |> Decode.pipeline (Decode.field "Income" (Decode.blank Decode.float))
+        |> Decode.pipeline (Decode.field "Children" (Decode.blank Decode.float))
         |> Decode.pipeline (Decode.field "Education" Decode.string)
         |> Decode.pipeline (Decode.field "Occupation" Decode.string)
         |> Decode.pipeline (Decode.field "HomeOwner" Decode.string)
-        |> Decode.pipeline (Decode.field "Cars" Decode.float)
+        |> Decode.pipeline (Decode.field "Cars" (Decode.blank Decode.float))
         |> Decode.pipeline (Decode.field "CommuteDistance" Decode.string)
         |> Decode.pipeline (Decode.field "Region" Decode.string)
-        |> Decode.pipeline (Decode.field "Age" Decode.float)
+        |> Decode.pipeline (Decode.field "Age" (Decode.blank Decode.float))
         |> Decode.pipeline (Decode.field "PurchasedBike" Decode.string)
 
 
@@ -196,15 +241,15 @@ type alias BikeBuyers =
     { id :  Int
     , maritalStatus: String
     , gender: String
-    , income : Float
-    , children :  Float
+    , income : Maybe Float
+    , children :  Maybe Float
     , education : String
     , occupation : String
     , homeOwner: String
-    , cars: Float
+    , cars: Maybe Float
     , commuteDistance: String
     , region: String
-    , age:  Float
+    , age: Maybe Float
     , purchasedBike: String
     
     
