@@ -19,7 +19,9 @@ import Http
 import Browser
 
 
-
+padding : Float
+padding =
+    60
 
 defaultExtent : ( number, number1 )
 defaultExtent =
@@ -82,7 +84,73 @@ parallelCoodinatesPlot w ar model =
     <|
         [ TypedSvg.style []
             []
-
+        , g [ TypedSvg.Attributes.class [ "parallelAxis" ] ]
+            [ g [ transform [ Translate (padding - 1) padding ] ] <|
+                List.indexedMap
+                    (\i axis ->
+                        g
+                            [ transform
+                                [ Translate (Scale.convert xScale (toFloat i + 1)) 0
+                                ]
+                            ]
+                            [ axis ]
+                    )
+                    listAxis
+            , g [ transform [ Translate (padding - 1) 0 ] ] <|
+                List.indexedMap
+                    (\i desc ->
+                        text_
+                            [ fontFamily [ "sans-serif" ]
+                            , fontSize (Px 10)
+                            , x <| Scale.convert xScale (toFloat i + 1)
+                            , y <| padding * 7 / 8
+                            , textAnchor AnchorMiddle
+                            ]
+                            [ TypedSvg.Core.text desc ]
+                    )
+                    model.dimDescription
+            ]
+          , TypedSvg.rect
+            [ TypedSvg.Attributes.x1 <| TypedSvg.Types.Px 1
+            , TypedSvg.Attributes.y1 <| TypedSvg.Types.Px 1
+            , TypedSvg.Attributes.width <| TypedSvg.Types.Px (w + 2 * padding - 1)
+            , TypedSvg.Attributes.height <| TypedSvg.Types.Px (h + 2 * padding - 1)
+            , TypedSvg.Attributes.fill <| Paint <| Color.rgba 0 0 0 1
+            , stroke <| Paint <| Color.rgba 0 0 0 1
+            , strokeWidth <| Px 0.5
+            ]
+            []  
+        ]
+            ++ (let
+                    drawPoint p =
+                        let
+                            linePath : Path.Path
+                            linePath =
+                                List.map3
+                                    (\desc s px ->
+                                        Just
+                                            ( Scale.convert xScale <| toFloat desc
+                                            , Scale.convert s px
+                                            )
+                                    )
+                                    (List.range 1 (List.length model.dimDescription))
+                                    listScale
+                                    p
+                                    |> Shape.line Shape.linearCurve
+                        in
+                        Path.element linePath
+                            [ stroke <| Paint <| Color.rgba 255 255 255 0.1
+                            , strokeWidth <| Px 2
+                            , fill PaintNone
+                            ]
+                in
+                model.data
+                    |> List.map
+                        (\dataset ->
+                            g [ transform [ Translate (padding - 1) padding ] ]
+                                (List.map (.value >> drawPoint) dataset)
+                        )
+               )
 
 -- Aus Übung 
 
