@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{Marquart.2021}
 Heike Marquart, Julia Schuppan, Benjamin Heldt, Lisa Buchmann, Julia Jarass,
@@ -26,6 +26,46 @@ Martin Platter.
 Andreas J{\"o}hrens.
 \newblock Boomendes gesch{\"a}ft, steigende preise: Lieferprobleme im
   fahrrad-handel, 2021.
+
+\bibitem{Yi.16.10.2019}
+Mike Yi.
+\newblock A complete guide to scatter plots, 2019.
+
+\bibitem{Anscombe.1973}
+F.~J. Anscombe.
+\newblock Graphs in statistical analysis.
+\newblock {\em The American Statistician}, 27(1):17, 1973.
+
+\bibitem{Cleveland.1984}
+William~S. Cleveland and Robert McGill.
+\newblock The many faces of a scatterplot.
+\newblock {\em Journal of the American Statistical Association}, 79(388):807,
+  1984.
+
+\bibitem{Inselberg.1990}
+A.~Inselberg and B.~Dimsdale.
+\newblock Parallel coordinates: a tool for visualizing multi-dimensional
+  geometry.
+\newblock In IEEE, editor, {\em Proceedings of the First IEEE Conference on
+  Visualization: Visualization `90}, pages 361--378. {IEEE Comput. Soc. Press},
+  1990.
+
+\bibitem{Moustafa.2006}
+Rida Moustafa and Ed~Wegman.
+\newblock Multivariate continuous data --- parallel coordinates.
+\newblock In {\em Graphics of Large Datasets}, Statistics and Computing, pages
+  143--155. {Springer New York}, New York, NY, 2006.
+
+\bibitem{Few.2008}
+Stephen Few.
+\newblock Line graphs and irregular intervals.
+\newblock {\em Visual Business Intelligence Newsletter}, (11):1--11, 2008.
+
+\bibitem{Heinrich.2009}
+Julian Heinrich and Daniel Weiskopf.
+\newblock Continuous parallel coordinates.
+\newblock {\em IEEE transactions on visualization and computer graphics},
+  15(6):1531--1538, 2009.
 
 \bibitem{Dedhia.22.09.2020}
 Heeral Dedhia.
