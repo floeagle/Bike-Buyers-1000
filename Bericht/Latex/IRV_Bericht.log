@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  25 AUG 2021 13:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  25 AUG 2021 14:18
 entering extended mode
 **./IRV_Bericht.tex
 (IRV_Bericht.tex
@@ -582,31 +582,23 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 30.
 (C:\Users\Floyd\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-
-LaTeX Warning: Citation `Munzner2008' on page 1 undefined on input line 33.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--35
-
- []
-
 [1
 
 
 {C:/Users/Floyd/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
-Overfull \hbox (0.36551pt too wide) in paragraph at lines 53--54
+Overfull \hbox (0.36551pt too wide) in paragraph at lines 52--53
  []\T1/lmss/bx/n/10.95 Zielgruppe:[] \T1/lmr/m/n/10.95 Fahr-rad-un-ter-neh-men 
 mit In-ter-es-se zur Preis-bil-dung, Markt-seg-men-tie-rung -> Kun-
  []
 
 [2] [3]
-<Scatterplot1.png, id=41, 1215.79219pt x 684.30656pt>
+<Scatterplot1.png, id=45, 1215.79219pt x 684.30656pt>
 File: Scatterplot1.png Graphic file (type png)
 <use Scatterplot1.png>
-Package pdftex.def Info: Scatterplot1.png  used on input line 99.
+Package pdftex.def Info: Scatterplot1.png  used on input line 98.
 (pdftex.def)             Requested size: 1215.78923pt x 684.30489pt.
 
-Overfull \hbox (760.54504pt too wide) in paragraph at lines 99--100
+Overfull \hbox (760.54504pt too wide) in paragraph at lines 98--99
 [] 
  []
 
@@ -615,42 +607,38 @@ Overfull \vbox (59.26987pt too high) has occurred while \output is active []
 
 
 [6 <./Scatterplot1.png>]
-<parallelcoordinates.png, id=61, 1145.02782pt x 643.6547pt>
+<parallelcoordinates.png, id=65, 1145.02782pt x 643.6547pt>
 File: parallelcoordinates.png Graphic file (type png)
 <use parallelcoordinates.png>
-Package pdftex.def Info: parallelcoordinates.png  used on input line 105.
+Package pdftex.def Info: parallelcoordinates.png  used on input line 104.
 (pdftex.def)             Requested size: 1145.02504pt x 643.65312pt.
 
-Overfull \hbox (700.73085pt too wide) in paragraph at lines 105--106
+Overfull \hbox (700.73085pt too wide) in paragraph at lines 104--105
 [][] 
  []
 
 [7] [8 <./parallelcoordinates.png>] [9] [10] (IRV_Bericht.bbl) [11]
 (IRV_Bericht.aux)
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `IRV_Bericht.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 13186 strings out of 478864
- 224610 string characters out of 2848660
+ 13192 strings out of 478864
+ 224727 string characters out of 2848660
  678125 words of memory out of 3000000
- 30876 multiletter control sequences out of 15000+600000
+ 30879 multiletter control sequences out of 15000+600000
  446859 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,8n,108p,10635b,336s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/Floyd/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}<C
-:/Users/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C
 :/Users/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C
 :/Users/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:
 /Users/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/
 Users/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/
 Users/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on IRV_Bericht.pdf (11 pages, 541695 bytes).
+Output written on IRV_Bericht.pdf (11 pages, 522873 bytes).
 PDF statistics:
  203 PDF objects out of 1000 (max. 8388607)
- 44 named destinations out of 1000 (max. 500000)
+ 47 named destinations out of 1000 (max. 500000)
  187 words of extra memory for PDF output out of 10000 (max. 10000000)
 
