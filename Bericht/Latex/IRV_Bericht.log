@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  25 AUG 2021 12:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  25 AUG 2021 13:19
 entering extended mode
 **./IRV_Bericht.tex
 (IRV_Bericht.tex
@@ -407,7 +407,7 @@ Package geometry Warning: Over-specification in `v'-direction.
 ) (C:\Users\Floyd\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 16
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 17
 .
  (C:\Users\Floyd\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -420,25 +420,25 @@ File: l3backend-pdftex.def 2021-05-07 L3 backend support: PDF output (pdfTeX)
 ) (IRV_Bericht.aux)
 \openout1 = `IRV_Bericht.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-Package hyperref Info: Link coloring OFF on input line 16.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+Package hyperref Info: Link coloring OFF on input line 17.
 
 (C:\Users\Floyd\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -452,9 +452,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count273
 )
-LaTeX Info: Redefining \ref on input line 16.
-LaTeX Info: Redefining \pageref on input line 16.
-LaTeX Info: Redefining \nameref on input line 16.
+LaTeX Info: Redefining \ref on input line 17.
+LaTeX Info: Redefining \pageref on input line 17.
+LaTeX Info: Redefining \nameref on input line 17.
  (IRV_Bericht.out) (IRV_Bericht.out)
 \@outlinefile=\write3
 \openout3 = `IRV_Bericht.out'.
@@ -466,7 +466,7 @@ Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           `bookmarkpackage=false' before \begin{document} and
 (scrartcl)           you can avoid this message adding:
 (scrartcl)             \usepackage{bookmark}
-(scrartcl)           before \begin{document} on input line 16.
+(scrartcl)           before \begin{document} on input line 17.
 
 (C:\Users\Floyd\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
@@ -535,58 +535,58 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for T1+lmss on input line 2
-9.
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 3
+0.
 (C:\Users\Floyd\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
-9.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 3
+0.
 
 (C:\Users\Floyd\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
-9.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 3
+0.
 
 (C:\Users\Floyd\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-29.
+30.
 
 (C:\Users\Floyd\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-29.
+30.
 
 (C:\Users\Floyd\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 29.
+(Font)              <14.4> on input line 30.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 29.
+(Font)              <10> on input line 30.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 29.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 29.
+(Font)              <7> on input line 30.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 30.
 
 
 (C:\Users\Floyd\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 29.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 30.
 
 
 (C:\Users\Floyd\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
-LaTeX Warning: Citation `Munzner2008' on page 1 undefined on input line 32.
+LaTeX Warning: Citation `Munzner2008' on page 1 undefined on input line 33.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--34
+Underfull \hbox (badness 10000) in paragraph at lines 32--35
 
  []
 
@@ -594,7 +594,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--34
 
 
 {C:/Users/Floyd/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
-Overfull \hbox (0.36551pt too wide) in paragraph at lines 51--52
+Overfull \hbox (0.36551pt too wide) in paragraph at lines 53--54
  []\T1/lmss/bx/n/10.95 Zielgruppe:[] \T1/lmr/m/n/10.95 Fahr-rad-un-ter-neh-men 
 mit In-ter-es-se zur Preis-bil-dung, Markt-seg-men-tie-rung -> Kun-
  []
@@ -603,10 +603,10 @@ mit In-ter-es-se zur Preis-bil-dung, Markt-seg-men-tie-rung -> Kun-
 <Scatterplot1.png, id=41, 1215.79219pt x 684.30656pt>
 File: Scatterplot1.png Graphic file (type png)
 <use Scatterplot1.png>
-Package pdftex.def Info: Scatterplot1.png  used on input line 97.
+Package pdftex.def Info: Scatterplot1.png  used on input line 99.
 (pdftex.def)             Requested size: 1215.78923pt x 684.30489pt.
 
-Overfull \hbox (760.54504pt too wide) in paragraph at lines 97--98
+Overfull \hbox (760.54504pt too wide) in paragraph at lines 99--100
 [] 
  []
 
@@ -618,10 +618,10 @@ Overfull \vbox (59.26987pt too high) has occurred while \output is active []
 <parallelcoordinates.png, id=61, 1145.02782pt x 643.6547pt>
 File: parallelcoordinates.png Graphic file (type png)
 <use parallelcoordinates.png>
-Package pdftex.def Info: parallelcoordinates.png  used on input line 103.
+Package pdftex.def Info: parallelcoordinates.png  used on input line 105.
 (pdftex.def)             Requested size: 1145.02504pt x 643.65312pt.
 
-Overfull \hbox (700.73085pt too wide) in paragraph at lines 103--104
+Overfull \hbox (700.73085pt too wide) in paragraph at lines 105--106
 [][] 
  []
 
@@ -648,7 +648,7 @@ Here is how much of TeX's memory you used:
 /Users/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/
 Users/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/
 Users/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on IRV_Bericht.pdf (11 pages, 541677 bytes).
+Output written on IRV_Bericht.pdf (11 pages, 541695 bytes).
 PDF statistics:
  203 PDF objects out of 1000 (max. 8388607)
  44 named destinations out of 1000 (max. 500000)
