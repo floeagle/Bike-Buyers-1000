@@ -50,4 +50,9 @@ treeDecoder =
                         (\_ -> treeDecoder)
         )
 
-        
+ -- SUBSCRIPTIONS
+
+
+subscriptions : Model -> Sub Msg
+subscriptions model =
+  Sub.none       
