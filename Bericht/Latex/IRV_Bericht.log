@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  25 AUG 2021 15:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  25 AUG 2021 15:34
 entering extended mode
 **./IRV_Bericht.tex
 (IRV_Bericht.tex
@@ -591,20 +591,15 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 4
 
 (C:\Users\Floyd\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Overfull \hbox (0.36551pt too wide) in paragraph at lines 58--59
- []\T1/lmss/bx/n/10.95 Zielgruppe:[] \T1/lmr/m/n/10.95 Fahr-rad-un-ter-neh-men 
-mit In-ter-es-se zur Preis-bil-dung, Markt-seg-men-tie-rung -> Kun-
- []
-
-[2] [3]
-<Scatterplot1.png, id=47, 1215.79219pt x 684.30656pt>
+) [2]
+[3]
+<Scatterplot1.png, id=45, 1215.79219pt x 684.30656pt>
 File: Scatterplot1.png Graphic file (type png)
 <use Scatterplot1.png>
-Package pdftex.def Info: Scatterplot1.png  used on input line 104.
+Package pdftex.def Info: Scatterplot1.png  used on input line 105.
 (pdftex.def)             Requested size: 1215.78923pt x 684.30489pt.
 
-Overfull \hbox (760.54504pt too wide) in paragraph at lines 104--105
+Overfull \hbox (760.54504pt too wide) in paragraph at lines 105--106
 [] 
  []
 
@@ -613,13 +608,13 @@ Overfull \vbox (59.26987pt too high) has occurred while \output is active []
 
 
 [6 <./Scatterplot1.png>]
-<parallelcoordinates.png, id=70, 1145.02782pt x 643.6547pt>
+<parallelcoordinates.png, id=68, 1145.02782pt x 643.6547pt>
 File: parallelcoordinates.png Graphic file (type png)
 <use parallelcoordinates.png>
-Package pdftex.def Info: parallelcoordinates.png  used on input line 110.
+Package pdftex.def Info: parallelcoordinates.png  used on input line 111.
 (pdftex.def)             Requested size: 1145.02504pt x 643.65312pt.
 
-Overfull \hbox (700.73085pt too wide) in paragraph at lines 110--111
+Overfull \hbox (700.73085pt too wide) in paragraph at lines 111--112
 [][] 
  []
 
@@ -629,8 +624,8 @@ Package rerunfilecheck Info: File `IRV_Bericht.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 13227 strings out of 478864
- 225661 string characters out of 2848660
+ 13225 strings out of 478864
+ 225639 string characters out of 2848660
  679125 words of memory out of 3000000
  30909 multiletter control sequences out of 15000+600000
  447224 words of font info for 56 fonts, out of 8000000 for 9000
@@ -644,9 +639,9 @@ sers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Us
 ers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Use
 rs/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Use
 rs/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on IRV_Bericht.pdf (11 pages, 548828 bytes).
+Output written on IRV_Bericht.pdf (11 pages, 550140 bytes).
 PDF statistics:
- 215 PDF objects out of 1000 (max. 8388607)
- 48 named destinations out of 1000 (max. 500000)
+ 213 PDF objects out of 1000 (max. 8388607)
+ 46 named destinations out of 1000 (max. 500000)
  187 words of extra memory for PDF output out of 10000 (max. 10000000)
 
