@@ -6,7 +6,7 @@
 \contentsline {paragraph}{\nonumberline Überblick:}{4}{paragraph*.3}%
 \contentsline {section}{\numberline {2}Daten}{4}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Technische Bereitstellung der Daten}{5}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Datenvorverarbeitung}{5}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.2}Datenvorverarbeitung}{6}{subsection.2.2}%
 \contentsline {paragraph}{\nonumberline Vorverarbeitung:}{6}{paragraph*.5}%
 \contentsline {section}{\numberline {3}Visualisierungen}{6}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Analyse der Anwendungsaufgaben}{6}{subsection.3.1}%
