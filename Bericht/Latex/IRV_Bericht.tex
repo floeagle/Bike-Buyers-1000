@@ -5,12 +5,13 @@
 \usepackage[utf8]{inputenc}
 \usepackage{hyperref}
 \usepackage{amssymb}
+\usepackage{graphicx}
 % Dimensionen bitte nicht ändern. 
 \usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm, bindingoffset=1cm, includeheadfoot]{geometry}
 %Zeilenabstand bitte nicht ändern
 \usepackage[onehalfspacing]{setspace}
 
-\usepackage[backend=biber,style=numeric,]{biblatex}\addbibresource{literatur.bib}
+\bibliographystyle{unsrt}
 
 \begin{document}
 % ----------------------------------------------------------------------------
@@ -32,11 +33,10 @@ Der Bericht fällt in die Kategorie von InfoVis-Paper, die Tamara Munzner Design
 \newline Fragestellungen: Welche Eigenschaften lasssen sich aus den Bike-Buyers-Daten ableiten? Darstellungen: Scatterplot, Parallele Koordinaten
 
 \subsection{Anwendungshintergrund}
-Sie müssen genug Hintergrund bereitstellen, so dass die Lesenden sich ein Urteil bilden können, ob ihre Lösung funktioniert. Sie sollen die Lesenden jedoch nicht mit Anwendungsdetails so überschütten, dass der Fokus auf die Fragen zur Informationsvisualisierung untergehen. 
+Sie müssen genug Hintergrund bereitstellen, so dass die Lesenden sich ein Urteil bilden können, ob ihre Lösung funktioniert. Sie sollen die Lesenden jedoch nicht mit Anwendungsdetails so überschütten, dass der Fokus auf die Fragen zur Informationsvisualisierung untergehen. \cite{Platter.2020}
 
-Anwendungshintergrund: Diese Forschunngsarbeit bereitet Informationen auf, die Interessante Einblicke in das Kaufverhalten von Fahrrad-Kunden geben. So laassen sich anhand von einkommensdaten, dem Alter und dem Bildungshintergrund g 
-
-
+Anwendungshintergrund: Diese Forschunngsarbeit bereitet Informationen auf, die Interessante Einblicke in das Kaufverhalten von Fahrrad-Kunden geben. So laassen sich anhand von einkommensdaten, dem Alter und dem Bildungshintergrund \cite{Munzner.2008} g 
+\cite{Platter.2020}
 \subsection{Zielgruppen}
 Beschreiben sie die Personengruppe oder Personengruppen, die das von ihnen benannte Anwendungsproblem lösen möchte. Auf welches Vorwissen können sie in dieser Gruppen von Anwenderinnen aufbauen? Welche Informations"-bedürf"-nisse werden durch die Visualisierungen adressiert?
 Dieser Forschungsbericht richtet sich vor allem an die Anbieterseite auf den B2C Fahrradmarkt. Hierzu lassen sich verschiedene Untergruppen kategorisieren.
@@ -91,7 +91,18 @@ Die besten Begründungen diskutieren explizit die konkrete Auswahl der Visualisi
 
 Die eben beschriebenen Präsentationen und Begründungen sollen für jede der drei folgenden Visualisierungen durchgeführt werden. 
 \subsubsection{Visualisierung Eins}
+
+
+
+\includegraphics{Scatterplot1}
+
 \subsubsection{Visualisierung Zwei}
+
+TestText 123
+
+\includegraphics{parallelcoordinates}
+
+TestText 123
 \subsubsection{Visualisierung Drei}
 
 \subsection{Interaktion}
@@ -117,8 +128,9 @@ Fassen sie die Beiträge ihre Visualisierungsanwendung zusammen. Wo bietet sie f
 Was wären mögliche sinnvolle Erweiterungen, entweder auf der Ebene der Visualisierungen und/oder auf der Datenebene?
 
 \section*{Anhang: Git-Historie}
+\newpage
+\bibliography{literatur}
 
-\printbibliography
 
 \end{document}
 
