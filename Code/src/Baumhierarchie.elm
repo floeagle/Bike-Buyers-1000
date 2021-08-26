@@ -15,20 +15,34 @@ import TypedSvg.Types exposing (AnchorAlignment(..), Length(..), Paint(..), Tran
 
 
 
--- MAIN
-
-
+main : Program () Model Msg
 main =
-  Browser.element
-    { init = init
-    , update = update
-    , subscriptions = subscriptions
-    , view = view
-    }
+    Browser.element
+        { init = init
+        , view = view
+        , update = update
+        , subscriptions = subscriptions
+        }
 
--- aus übungsvorlage
+
 type alias Model =
     { tree : TreeDiagram.Tree String, errorMsg : String }
+
+
+init : () -> ( Model, Cmd Msg )
+init () =
+    ( { tree = TreeDiagram.node "" [], errorMsg = "Loading" }
+    , Http.get { url = "https://raw.githubusercontent.com/floeagle/Bike-Buyers-1000/main/Daten%20zum%20Laden/JSON/DatenvorverarbeitungohneCarWorldwide.json"
+    , expect = Http.expectJson GotTree treeDecoder }
+    )
+
+
+type Msg
+    = GotTree (Result Http.Error (TreeDiagram.Tree String))
+
+subscriptions : Model -> Sub Msg
+subscriptions model =
+  Sub.none
 
 
 treeDecoder : Json.Decode.Decoder (TreeDiagram.Tree String)
@@ -42,7 +56,7 @@ treeDecoder =
                 Just c ->
                     TreeDiagram.node name c
         )
-        (Json.Decode.field "name" Json.Decode.string)
+        (Json.Decode.field "data" (Json.Decode.field "id" Json.Decode.string))
         (Json.Decode.maybe <|
             Json.Decode.field "children" <|
                 Json.Decode.list <|
@@ -50,9 +64,64 @@ treeDecoder =
                         (\_ -> treeDecoder)
         )
 
- -- SUBSCRIPTIONS
+update : Msg -> Model -> ( Model, Cmd Msg )
+update msg model =
+    case msg of
+        GotTree (Ok newTree) ->
+            ( { model | tree = newTree, errorMsg = "No Error" }, Cmd.none )
+
+        GotTree (Err error) ->
+            ( { model
+                | tree = TreeDiagram.node "" []
+                , errorMsg =
+                    case error of
+                        Http.BadBody newErrorMsg ->
+                            newErrorMsg
+
+                        _ ->
+                            "Some other Error"
+              }
+            , Cmd.none
+            )
 
 
-subscriptions : Model -> Sub Msg
-subscriptions model =
-  Sub.none       
+drawLine : ( Float, Float ) -> Svg msg
+drawLine ( targetX, targetY ) =
+    line
+        [ x1 0
+        , y1 0
+        , x2 targetX
+        , y2 targetY
+        , stroke (TypedSvg.Types.Paint Color.black) 
+        ]
+        []
+
+
+
+drawNode : String -> Svg msg
+drawNode str =
+    g
+        []
+        [ circle 
+            [ r 16
+            , stroke (Paint Color.black)
+            , fill (Paint Color.darkYellow)
+            , cx 0
+            , cy 0 
+            ] 
+            []
+        , text_ 
+            [ textAnchor AnchorStart
+            , transform 
+                [ Translate 0.5 0.5 
+                , Rotate 90.0 0.0 0.0
+                ]
+            ] 
+            [ text str ]
+        ]
+
+view : Model -> Html Msg
+view model =
+    div []
+        [ TreeDiagram.Svg.draw TreeDiagram.defaultTreeLayout drawNode drawLine model.tree 
+        ]
