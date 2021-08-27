@@ -4,6 +4,7 @@ import Axis
 import Color
 import Html exposing (Html, a, li, ul)
 import Html.Attributes exposing (href)
+import Html.Events exposing (onClick)
 import List.Extra
 import Path
 import Scale exposing (ContinuousScale)
@@ -18,6 +19,18 @@ import Csv.Decode as Decode exposing (Decoder)
 import Http
 import Browser
 
+
+
+-- erweiterung mit Buttons für Interaktion
+main : Program () Model Msg
+main =
+    Browser.sandbox
+        { init = initialModel
+        , view = view
+        , update = update
+        }
+
+ --    
 
 padding : Float
 padding =
@@ -49,8 +62,8 @@ wideExtent values =
     )
 
 
-main : Html msg
-main =
+view : Html msg
+view =
     case Decode.decodeCsv Decode.FieldNamesFromFirstRow decoder csv of
         Ok bikes1 ->
             let   
@@ -92,7 +105,14 @@ main =
         Err problem ->
             Html.text ("There was a problem loading your data")
 
+update : Msg -> Model -> Model
+update msg model =
+    case msg of
+        Increment ->
+            model + 1
 
+        Decrement ->
+            model - 1
 
 parallelCoodinatesPlot : Float -> Float -> MultiDimData -> Svg msg
 parallelCoodinatesPlot w ar model =
