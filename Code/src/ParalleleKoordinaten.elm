@@ -31,7 +31,15 @@ main =
         }
 
  --    
-
+type alias Model =
+    { start1 : Int
+    , start2 : Int
+    , display : List ( String, FilteredBikeBuyers -> Int )
+    , value1 : String
+    , value2 : String
+    , value3 : String
+    , value4 : String
+    }
 padding : Float
 padding =
     60
