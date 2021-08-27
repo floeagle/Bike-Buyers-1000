@@ -141,7 +141,7 @@ view model=
                 , Html.button [ onClick Switch2 ] [ Html.text <| "Switch " ++ model.value2 ++" & " ++ model.value3 ]
                 , Html.button [ onClick Switch3 ] [ Html.text <| "Switch " ++ model.value3 ++" & " ++ model.value4 ]
                 ]  
-                , parallelCoodinatesPlot 400 2 data
+                , parallelCoordinatesPlot 400 2 data
                 ]
         Err problem ->
             Html.text ("There was a problem loading your data")
@@ -170,8 +170,8 @@ update msg model =
             { model | start2 = 3 }         
 
 
-parallelCoodinatesPlot : Float -> Float -> MultiDimData -> Svg msg
-parallelCoodinatesPlot w ar model =
+parallelCoordinatesPlot : Float -> Float -> MultiDimData -> Svg msg
+parallelCoordinatesPlot w ar model =
     let
         h : Float
         h =
@@ -206,10 +206,21 @@ parallelCoodinatesPlot w ar model =
     <|
         [ TypedSvg.style []
             [TypedSvg.Core.text """
-      .parallelAxis g g text { display: none; }
+      .parallelAxis g g text { display: inline; fill: rgb(118, 214, 78) }
       .parallelAxis:hover g g text { display: inline; }
 
     """]
+
+        , TypedSvg.rect
+            [ TypedSvg.Attributes.x1 <| TypedSvg.Types.Px 1
+            , TypedSvg.Attributes.y1 <| TypedSvg.Types.Px 1
+            , TypedSvg.Attributes.width <| TypedSvg.Types.Px (w + 2 * padding - 1)
+            , TypedSvg.Attributes.height <| TypedSvg.Types.Px (h + 2 * padding - 1)
+            , TypedSvg.Attributes.fill <| Paint <| Color.rgba 0 0 0 1
+            , stroke <| Paint <| Color.rgba 0 0 0 1
+            , strokeWidth <| Px 0.5
+            ]
+            [] 
         , g [ TypedSvg.Attributes.class [ "parallelAxis" ] ]
             [ g [ transform [ Translate (padding - 1) padding ] ] <|
                 List.indexedMap
@@ -222,7 +233,7 @@ parallelCoodinatesPlot w ar model =
                             [ axis ]
                     )
                     listAxis
-            , g [ transform [ Translate (padding - 1) 0 ] ] <|
+            , g [ transform [ Translate (padding - 1) 0 ] , TypedSvg.Attributes.fill <| Paint <|Color.green ] <|
                 List.indexedMap
                     (\i desc ->
                         text_
@@ -236,16 +247,7 @@ parallelCoodinatesPlot w ar model =
                     )
                     model.dimDescription
             ]
-          , TypedSvg.rect
-            [ TypedSvg.Attributes.x1 <| TypedSvg.Types.Px 1
-            , TypedSvg.Attributes.y1 <| TypedSvg.Types.Px 1
-            , TypedSvg.Attributes.width <| TypedSvg.Types.Px (w + 2 * padding - 1)
-            , TypedSvg.Attributes.height <| TypedSvg.Types.Px (h + 2 * padding - 1)
-            , TypedSvg.Attributes.fill <| Paint <| Color.rgba 0 0 0 1
-            , stroke <| Paint <| Color.rgba 0 0 0 1
-            , strokeWidth <| Px 0.5
-            ]
-            []  
+           
         ]
             ++ (let
                     drawPoint p =
