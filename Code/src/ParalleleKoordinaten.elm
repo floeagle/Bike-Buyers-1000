@@ -18,6 +18,7 @@ import TypedSvg.Types exposing (AnchorAlignment(..), Length(..), Paint(..), Tran
 import Csv.Decode as Decode exposing (Decoder)
 import Http
 import Browser
+import List.Extra exposing (initialize)
 
 
 
@@ -25,7 +26,7 @@ import Browser
 main : Program () Model Msg
 main =
     Browser.sandbox
-        { init = initialModel
+        { init = initial
         , view = view
         , update = update
         }
@@ -40,7 +41,16 @@ type alias Model =
     , value3 : String
     , value4 : String
     }
-
+type Msg
+    = StartUp
+    | StartDown
+    | IncomeVal
+    | ChildrenVal
+    | CarsVal
+    | AgeVal
+    | Switch1
+    | Switch2
+    | Switch3
 initial : Model
 initial =
     { start1 = 0
@@ -137,11 +147,26 @@ view =
 update : Msg -> Model -> Model
 update msg model =
     case msg of
-        Increment ->
-            model + 1
+        StartUp ->
+            { model | start1 = model.start1 + 1 }
+        Switch1 ->
+            { model | display = List.Extra.swapAt 0 1 model.display, value1 = model.value2, value2 = model.value1 }
+        Switch2 ->
+            { model | display = List.Extra.swapAt 1 2 model.display, value2 = model.value3, value3 = model.value2  }
+        Switch3 ->
+            { model | display = List.Extra.swapAt 2 3 model.display, value3 = model.value4, value4 = model.value3 }
 
-        Decrement ->
-            model - 1
+        StartDown ->
+            { model | start1 = model.start1 - 1 }
+        IncomeVal ->
+            { model | start2 = 0 }
+        ChildrenVal ->
+            { model | start2 = 1 }
+        CarsVal ->
+            { model | start2 = 2 }
+        AgeVal ->
+            { model | start2 = 3 }         
+
 
 parallelCoodinatesPlot : Float -> Float -> MultiDimData -> Svg msg
 parallelCoodinatesPlot w ar model =
