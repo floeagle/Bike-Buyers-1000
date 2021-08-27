@@ -40,6 +40,27 @@ type alias Model =
     , value3 : String
     , value4 : String
     }
+
+initial : Model
+initial =
+    { start1 = 0
+    , start2 = 0 
+    , display =
+        [ ( "Income", .income )
+        , ( "Children", .children )
+        , ( "Cars", .cars )
+        , ( "Age", .age )
+        ]
+    , value1 = "Income" 
+    , value2 = "Children"
+    , value3 = "Cars"
+    , value4 = "Age"
+    } 
+indexSwap : Model -> List ( String, FilteredBikeBuyers -> Int )
+indexSwap model =
+            List.Extra.swapAt model.start1 model.start2 model.display
+
+
 padding : Float
 padding =
     60
