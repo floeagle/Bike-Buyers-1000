@@ -265,7 +265,7 @@ parallelCoodinatesPlot w ar model =
                                     |> Shape.line Shape.linearCurve
                         in
                         Path.element linePath
-                            [ stroke <| Paint <| Color.rgba 0 0 0 1
+                            [ stroke <| Paint <| Color.rgba 255 255 255 0.1
                             , strokeWidth <| Px 2
                             , fill PaintNone
                             ]
