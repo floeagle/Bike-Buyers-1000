@@ -35,7 +35,7 @@ main =
 type alias Model =
     { start1 : Int
     , start2 : Int
-    , display : List ( String, FilteredBikeBuyers -> Int )
+    , display : List ( String, FilteredBikeBuyers -> Float )
     , value1 : String
     , value2 : String
     , value3 : String
@@ -66,7 +66,7 @@ initial =
     , value3 = "Cars"
     , value4 = "Age"
     } 
-indexSwap : Model -> List ( String, FilteredBikeBuyers -> Int )
+indexSwap : Model -> List ( String, FilteredBikeBuyers -> Float )
 indexSwap model =
             List.Extra.swapAt model.start1 model.start2 model.display
 
@@ -101,8 +101,8 @@ wideExtent values =
     )
 
 
-view : Html msg
-view =
+view : Model -> Html Msg
+view model=
     case Decode.decodeCsv Decode.FieldNamesFromFirstRow decoder csv of
         Ok bikes1 ->
             let   
@@ -125,10 +125,10 @@ view =
 
 
                 data =
-                    MultiDimData [ "income", "children", "cars", "age" ]
+                    MultiDimData (List.map Tuple.first (indexSwap model))
                         [ List.map
                         (\x ->
-                                [ x.income, x.children, x.cars, x.age ]
+                                List.map (\bikes -> Tuple.second bikes x) (indexSwap model)
                                     
                                     |> MultiDimPoint x.purchasedBike
                             )
@@ -137,8 +137,10 @@ view =
             in
             Html.div []
                 [ ul []
-                    [ 
-                    ]
+                [ Html.button [ onClick Switch1 ] [ Html.text <| "Switch " ++ model.value1 ++" & " ++ model.value2 ]
+                , Html.button [ onClick Switch2 ] [ Html.text <| "Switch " ++ model.value2 ++" & " ++ model.value3 ]
+                , Html.button [ onClick Switch3 ] [ Html.text <| "Switch " ++ model.value3 ++" & " ++ model.value4 ]
+                ]  
                 , parallelCoodinatesPlot 400 2 data
                 ]
         Err problem ->
