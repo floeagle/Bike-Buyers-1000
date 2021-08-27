@@ -16,7 +16,7 @@ import TypedSvg.Attributes.InPx exposing (cx, cy, height, r, width, x, x1, x2, y
 import TypedSvg.Core exposing (Svg)
 import TypedSvg.Types exposing (AnchorAlignment(..), Length(..), Paint(..), Transform(..))
 import Csv.Decode as Decode exposing (Decoder)
-import Http
+
 import Browser
 import List.Extra exposing (initialize)
 
