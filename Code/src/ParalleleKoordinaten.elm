@@ -205,11 +205,7 @@ parallelCoordinatesPlot w ar model =
         ]
     <|
         [ TypedSvg.style []
-            [TypedSvg.Core.text """
-      .parallelAxis g g text { display: inline; fill: rgb(118, 214, 78) }
-      .parallelAxis:hover g g text { display: inline; }
-
-    """]
+            [TypedSvg.Core.text colordescr ] 
 
         , TypedSvg.rect
             [ TypedSvg.Attributes.x1 <| TypedSvg.Types.Px 1
@@ -279,7 +275,13 @@ parallelCoordinatesPlot w ar model =
                                 (List.map (.value >> drawPoint) dataset)
                         )
                )
+colordescr: String
+colordescr = 
+    """
+      .parallelAxis g g text { display: none; fill: rgb(118, 214, 78) }
+      .parallelAxis:hover g g text { display: inline; }
 
+    """
 -- Aus Übung 
 
 type alias FilteredBikeBuyers =
