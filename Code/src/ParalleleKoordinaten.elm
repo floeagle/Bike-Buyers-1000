@@ -241,7 +241,7 @@ parallelCoodinatesPlot w ar model =
             , TypedSvg.Attributes.y1 <| TypedSvg.Types.Px 1
             , TypedSvg.Attributes.width <| TypedSvg.Types.Px (w + 2 * padding - 1)
             , TypedSvg.Attributes.height <| TypedSvg.Types.Px (h + 2 * padding - 1)
-            , TypedSvg.Attributes.fill TypedSvg.Types.PaintNone
+            , TypedSvg.Attributes.fill <| Paint <| Color.rgba 0 0 0 1
             , stroke <| Paint <| Color.rgba 0 0 0 1
             , strokeWidth <| Px 0.5
             ]
