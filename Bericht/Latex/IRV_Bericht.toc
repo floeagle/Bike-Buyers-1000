@@ -10,7 +10,7 @@
 \contentsline {section}{\numberline {3}Visualisierungen}{7}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Analyse der Anwendungsaufgaben}{7}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Anforderungen an die Visualisierungen}{7}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Präsentation der Visualisierungen}{7}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.3}Präsentation der Visualisierungen}{9}{subsection.3.3}%
 \contentsline {subsubsection}{\numberline {3.3.1}Visualisierung Eins}{9}{subsubsection.3.3.1}%
 \contentsline {subsubsection}{\numberline {3.3.2}Visualisierung Zwei}{10}{subsubsection.3.3.2}%
 \contentsline {subsubsection}{\numberline {3.3.3}Visualisierung Drei}{12}{subsubsection.3.3.3}%

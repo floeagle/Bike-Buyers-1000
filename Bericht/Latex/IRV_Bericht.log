@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  28 AUG 2021 15:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  28 AUG 2021 19:32
 entering extended mode
 **./IRV_Bericht.tex
 (IRV_Bericht.tex
@@ -613,25 +613,25 @@ File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 <Scatterplot1.png, id=109, 1215.79219pt x 684.30656pt>
 File: Scatterplot1.png Graphic file (type png)
 <use Scatterplot1.png>
-Package pdftex.def Info: Scatterplot1.png  used on input line 113.
+Package pdftex.def Info: Scatterplot1.png  used on input line 107.
 (pdftex.def)             Requested size: 1215.78923pt x 684.30489pt.
 
-Overfull \hbox (760.54504pt too wide) in paragraph at lines 113--114
+Overfull \hbox (760.54504pt too wide) in paragraph at lines 107--108
 [] 
  []
 
 [7] [8]
-Overfull \vbox (59.26987pt too high) has occurred while \output is active []
+Overfull \vbox (82.8384pt too high) has occurred while \output is active []
 
 
 [9 <./Scatterplot1.png>]
 <parallelcoordinates.png, id=127, 1145.02782pt x 643.6547pt>
 File: parallelcoordinates.png Graphic file (type png)
 <use parallelcoordinates.png>
-Package pdftex.def Info: parallelcoordinates.png  used on input line 119.
+Package pdftex.def Info: parallelcoordinates.png  used on input line 113.
 (pdftex.def)             Requested size: 1145.02504pt x 643.65312pt.
 
-Overfull \hbox (700.73085pt too wide) in paragraph at lines 119--120
+Overfull \hbox (700.73085pt too wide) in paragraph at lines 113--114
 [][] 
  []
 
@@ -656,7 +656,7 @@ sers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Us
 ers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Use
 rs/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Use
 rs/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on IRV_Bericht.pdf (14 pages, 568791 bytes).
+Output written on IRV_Bericht.pdf (14 pages, 568396 bytes).
 PDF statistics:
  264 PDF objects out of 1000 (max. 8388607)
  56 named destinations out of 1000 (max. 500000)

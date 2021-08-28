@@ -89,23 +89,17 @@ Die dem Kaggle Account (hier Ztat) entstammenden, bereinigten Rohdaten in der Da
 Der zugrundeliegende Datensatz wurde um keine zusätzlichen Daten erweitert. Die Daten bilden eine gute Verteilung in verschiedenen Regionen ab, sind ausgewogen verteilt und bieten eine vielzahl an Informationen, mit denen Fahrradhersteller / Verkäufer wie Onlineshiops gezielt Kundengruppen ansprechen können. 
 \subsection{Datenvorverarbeitung}
 
-Um die CSV Daten in den jeweiligen ELM Programme zu verwenden war für die Dateien "Scatterplot.elm" und "ParalleleKoordinaten.elm" keine Datenvorverarbeitung notwendig
-Die Datei "Visualisierung3 Vorverarbeitung.xlsx" zeigt das Ergebnis, dass aus dem CSV-String der Rohdatei einzelne Excel Spalten gemacht wurden. Für die Datrstellungsziele der Baumhierarchie sind die Spalten ID, Cars, Commute Distance, Region und Purchased Bike notwenig. Diese sind in der Datei "Visualsierung3 Vorverarbeitung.csv" enthalten. Die Spalte ID wurde für die letzte Hierarchieebene in eine neue Spalte zusammen mit "data id " übertragen, damit die Daten vom ELm Json Decoder erkannt werden. Dies erfolgte mit dem Excelbefehl "Verketten". Anschließend wurden die Daten ausgewählt, welche 0 Autos aufweisen, damit der Effekt zwischen Fahrradkäufern und Nicht-Käufern vergleichbar wird. Für die JSOn Atei wurde die Länderliste aus der Übung als Vorlage für den Syntax genommen. Dabei wurden alle Länder raus gelöscht. In den Syntax wurden die Daten übertragen und um die Ebene mit den IDs aus der CSV- Datei erweitert. 
+Um die CSV Daten in den jeweiligen ELM Programme zu verwenden war für die Dateien "Scatterplot.elm" und "ParalleleKoordinaten.elm" keine Datenvorverarbeitung notwendig. Die Rohdaten wurden in der jeweiligen Datei als String hinzugefügt und entsprechend decodiert. 
+Die Datei "Visualisierung3 Vorverarbeitung.xlsx" zeigt das Ergebnis, dass aus dem CSV-String der Rohdatei einzelne Excel Spalten gemacht wurden. Für die Datrstellungsziele der Baumhierarchie sind die Spalten ID, Cars, Commute Distance, Region und Purchased Bike notwenig. Diese sind in der Datei "Visualsierung3 Vorverarbeitung.csv" enthalten. Die Spalte ID wurde für die letzte Hierarchieebene in eine neue Spalte zusammen mit "data id " übertragen, damit die Daten vom ELm Json Decoder erkannt werden. Dies erfolgte mit dem Excelbefehl "Verketten(...)". Anschließend wurden die Daten ausgewählt, welche 0 Autos aufweisen, damit der Effekt zwischen Fahrradkäufern und Nicht-Käufern und deren Pendler-Distanz vergleichbar wird. Für die JSOn Atei wurde die Länderliste aus der Übung als Vorlage für den Syntax genommen. Dabei wurden alle Länder raus gelöscht. In den Syntax wurden die Daten übertragen und um die Ebene mit den IDs aus der CSV- Datei erweitert. 
 \paragraph{Vorverarbeitung:} Die Vorverarbeitung erfolgt im filtern leerer Felder
 
 \section{Visualisierungen}
 \subsection{Analyse der Anwendungsaufgaben}
-Analysieren sie die konkreten Anwendungsaufgaben. Welche Visualisierungen helfen den Personen, die die Software verwenden, sinnvolle mentale Modelle aufzubauen. Sind diese mentalen Modelle für sie notwendig, um die Aufgaben lösen zu können?
+In diesem Kapitel werden die Visualisierungen und Ihre Aussagekraft beschrieben. 
 \subsection{Anforderungen an die Visualisierungen}
-Leiten sie Anforderungen an das Design der Visualisierungen ab, die sich durch ihre Analyse des Zielproblems ergeben.
+Leiten sie Anforderungen an das Design der Visualisierungen ab, die sich durch ihre Analyse des Zielproblems ergeben. Im ersten Kapitel wurde die eingehende Motivation beschrieben, den verschiedenen Zielgruppen bestmögliche Anhaltspunkte zu finden, um die Fahrradkungengruppe nachhaltig an die jeweilige Unternehmensbranche zu binden. 
 \subsection{Präsentation der Visualisierungen}
-Präsentieren sie die visuelle Abbildungen und Kodierungen der Daten und Interaktionsmöglichkeiten. 
-Sie müssen  begründen, warum und wiegut ihre Designentscheidungen die erstellten Anforderungen erfüllen. 
-Weiterhin müssen sie begründen, warum die gewählte visuelle Kodierung der Daten für das zulösenden Problem passend ist. 
-Typische Argumente würden hier auf Wahrnehmungsprinzipien und Theorie über Informationsvisualisierung verweisen. 
-Die besten Begründungen diskutieren explizit die konkrete Auswahl der Visualisierungen im Kontext von mehreren verschiedenen Alternativen. Diskutieren sie die Expressivität und die Effektivität der einzelnen Visualisierungen. 
 
-Die eben beschriebenen Präsentationen und Begründungen sollen für jede der drei folgenden Visualisierungen durchgeführt werden. 
 \subsubsection{Visualisierung Eins}
 
 
@@ -127,6 +121,7 @@ Erklären sie die möglichen Interaktionen mit den einzelnen Visualisierungen un
 
 \section{Implementierung}
 Beschreiben Sie die Implementierung ihrer Visualisierungsanwendung in Elm. Stellen die Gliederung ihres Quellcodes vor. Haben Sie verschiedene Elm-Module erstellt. Was war aufwändig umzusetzen, was ließ sich mit dem vorhanden Code aus den Übungen relativ einfach umsetzen? 
+
 
 Wie sieht die Elm-Datenstruktur für das Model aus, in dem die verschiedenen Zustände der Interaktion gespeichert werden können.
 
