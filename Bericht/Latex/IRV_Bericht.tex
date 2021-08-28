@@ -88,9 +88,9 @@ Die dem Kaggle Account (hier Ztat) entstammenden, bereinigten Rohdaten in der Da
 
 Der zugrundeliegende Datensatz wurde um keine zusätzlichen Daten erweitert. Die Daten bilden eine gute Verteilung in verschiedenen Regionen ab, sind ausgewogen verteilt und bieten eine vielzahl an Informationen, mit denen Fahrradhersteller / Verkäufer wie Onlineshiops gezielt Kundengruppen ansprechen können. 
 \subsection{Datenvorverarbeitung}
-Welche Datenvorverarbeitungsschritte sind notwendig? Beschreiben Sie die einzelnen Schritte und begründen sie sie, z.B. warum werden manche Daten weggelassen, über welche Mengen werden Durchschnitte berechnet, warum sind die so berechneten Werte aussagekräftiger als andere Werte. 
-Um die CSV Daten in den jeweiligen ELM Programme zu verwenden war für die Dateien "Scatterplot.elm" und "ParalleleKoordinaten.elm" keine Datenvorverarbeitung notwendig
 
+Um die CSV Daten in den jeweiligen ELM Programme zu verwenden war für die Dateien "Scatterplot.elm" und "ParalleleKoordinaten.elm" keine Datenvorverarbeitung notwendig
+Die Datei "Visualisierung3 Vorverarbeitung.xlsx" zeigt das Ergebnis, dass aus dem CSV-String der Rohdatei einzelne Excel Spalten gemacht wurden. Für die Datrstellungsziele der Baumhierarchie sind die Spalten ID, Cars, Commute Distance, Region und Purchased Bike notwenig. Diese sind in der Datei "Visualsierung3 Vorverarbeitung.csv" enthalten. Die Spalte ID wurde für die letzte Hierarchieebene in eine neue Spalte zusammen mit "data id " übertragen, damit die Daten vom ELm Json Decoder erkannt werden. Dies erfolgte mit dem Excelbefehl "Verketten". Anschließend wurden die Daten ausgewählt, welche 0 Autos aufweisen, damit der Effekt zwischen Fahrradkäufern und Nicht-Käufern vergleichbar wird. Für die JSOn Atei wurde die Länderliste aus der Übung als Vorlage für den Syntax genommen. Dabei wurden alle Länder raus gelöscht. In den Syntax wurden die Daten übertragen und um die Ebene mit den IDs aus der CSV- Datei erweitert. 
 \paragraph{Vorverarbeitung:} Die Vorverarbeitung erfolgt im filtern leerer Felder
 
 \section{Visualisierungen}
