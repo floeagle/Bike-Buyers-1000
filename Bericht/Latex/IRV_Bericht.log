@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  29 AUG 2021 13:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  29 AUG 2021 15:20
 entering extended mode
 **./IRV_Bericht.tex
 (IRV_Bericht.tex
@@ -615,17 +615,17 @@ File: Bilder/Scatterplot.png Graphic file (type png)
 <use Bilder/Scatterplot.png>
 Package pdftex.def Info: Bilder/Scatterplot.png  used on input line 109.
 (pdftex.def)             Requested size: 455.24408pt x 228.39833pt.
- [8 <./Bilder/Scatterplot.png>] [9]
-<Bilder/ParallelCoords.png, id=128, 776.9025pt x 441.44925pt>
+ [8 <./Bilder/Scatterplot.png>]
+<Bilder/ParallelCoords.png, id=124, 776.9025pt x 441.44925pt>
 File: Bilder/ParallelCoords.png Graphic file (type png)
 <use Bilder/ParallelCoords.png>
-Package pdftex.def Info: Bilder/ParallelCoords.png  used on input line 121.
+Package pdftex.def Info: Bilder/ParallelCoords.png  used on input line 122.
 (pdftex.def)             Requested size: 455.24408pt x 258.68123pt.
- [10 <./Bilder/ParallelCoords.png>]
+ [9 <./Bilder/ParallelCoords.png>] [10]
 <Bilder/Baumhierarchie.png, id=135, 952.7595pt x 199.34476pt>
 File: Bilder/Baumhierarchie.png Graphic file (type png)
 <use Bilder/Baumhierarchie.png>
-Package pdftex.def Info: Bilder/Baumhierarchie.png  used on input line 132.
+Package pdftex.def Info: Bilder/Baumhierarchie.png  used on input line 134.
 (pdftex.def)             Requested size: 455.24408pt x 95.2494pt.
  [11 <./Bilder/Baumhierarchie.png>] [12] (IRV_Bericht.bbl) [13]
 (IRV_Bericht.aux)
@@ -648,7 +648,7 @@ sers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Us
 ers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Use
 rs/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Use
 rs/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on IRV_Bericht.pdf (13 pages, 817604 bytes).
+Output written on IRV_Bericht.pdf (13 pages, 819871 bytes).
 PDF statistics:
  265 PDF objects out of 1000 (max. 8388607)
  58 named destinations out of 1000 (max. 500000)
