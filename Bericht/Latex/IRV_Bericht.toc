@@ -13,7 +13,7 @@
 \contentsline {subsection}{\numberline {3.3}Präsentation der Visualisierungen}{8}{subsection.3.3}%
 \contentsline {subsubsection}{\numberline {3.3.1}Visualisierung Eins}{8}{subsubsection.3.3.1}%
 \contentsline {subsubsection}{\numberline {3.3.2}Visualisierung Zwei}{9}{subsubsection.3.3.2}%
-\contentsline {subsubsection}{\numberline {3.3.3}Visualisierung Drei}{11}{subsubsection.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.3}Visualisierung Drei}{10}{subsubsection.3.3.3}%
 \contentsline {subsection}{\numberline {3.4}Interaktion}{11}{subsection.3.4}%
 \contentsline {section}{\numberline {4}Implementierung}{11}{section.4}%
 \contentsline {section}{\numberline {5}Anwendungsfälle}{11}{section.5}%
