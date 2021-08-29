@@ -10,16 +10,16 @@
 \contentsline {section}{\numberline {3}Visualisierungen}{7}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Analyse der Anwendungsaufgaben}{7}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Anforderungen an die Visualisierungen}{7}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Präsentation der Visualisierungen}{9}{subsection.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.1}Visualisierung Eins}{9}{subsubsection.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.2}Visualisierung Zwei}{10}{subsubsection.3.3.2}%
-\contentsline {subsubsection}{\numberline {3.3.3}Visualisierung Drei}{12}{subsubsection.3.3.3}%
-\contentsline {subsection}{\numberline {3.4}Interaktion}{12}{subsection.3.4}%
-\contentsline {section}{\numberline {4}Implementierung}{12}{section.4}%
-\contentsline {section}{\numberline {5}Anwendungsfälle}{12}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Anwendung Visualisierung Eins}{12}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Anwendung Visualisierung Zwei}{12}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Anwendung Visualisierung Drei}{12}{subsection.5.3}%
-\contentsline {section}{\numberline {6}Verwandte Arbeiten}{12}{section.6}%
-\contentsline {section}{\numberline {7}Zusammenfassung und Ausblick}{13}{section.7}%
+\contentsline {subsection}{\numberline {3.3}Präsentation der Visualisierungen}{8}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Visualisierung Eins}{10}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Visualisierung Zwei}{11}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3}Visualisierung Drei}{13}{subsubsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.4}Interaktion}{13}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Implementierung}{13}{section.4}%
+\contentsline {section}{\numberline {5}Anwendungsfälle}{13}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Anwendung Visualisierung Eins}{13}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Anwendung Visualisierung Zwei}{13}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Anwendung Visualisierung Drei}{13}{subsection.5.3}%
+\contentsline {section}{\numberline {6}Verwandte Arbeiten}{13}{section.6}%
+\contentsline {section}{\numberline {7}Zusammenfassung und Ausblick}{14}{section.7}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
