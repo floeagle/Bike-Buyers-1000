@@ -138,9 +138,15 @@ Als dritte Visualiserungstechnik wurde die Baumhierarchie ausgewählt. Diese ste
 \newline
 Die Abbildung 3 zeigt einen Ausschnitt aus der umfangreichen Baumdarstellung. Hierbei lassen sich die eingefärbten Knoten gut unterscheiden. Im Vergleich zu den beiden vorangegangenen Visualiserungen wurde auf eine Interaktionsmöglichkeit verzichtet. Die angeleiteten Baumhierarchie-Bedingungen, nämlich die übersichtliche Darstellung und Einteilung in Gruppen konnte umgesetzt werden. Trotz Vorfilterung der Parameter, dass die befragten Personen keine Autos besitze, ist die Baumstruktur sehr umfangreich, was zu Überlappungen in der HTML-Darstellungen in der letzten Verzweigung geführt hat. Aus diesem Grund wurde auf weitere Parameter (wie Beruf, oder Bildungsgrad) verzichtet, da diese teilweise über den Scatterplot gezeigt werden. Neben der Möglichkeit die dritte Visualisierung als Baum darzustellen, gibt es weitere Kategorien, die die Darstellung komplexer machen. Hierunter fallen verschiedene Graphenanwendungen, die Mehrfachzuweisungen auf Knoten ermöglichen. Auf Grund der Zielsetzung, abgestuft aufzeigen, welche Pendlerdistanzen auftreten, wurde auf eine komplexere Darstellungsmethode verzichtet. 
 \subsection{Interaktion}
+Für die Visualisierungen Scatterplot und Parallele Koordinaten wurden zwei verschiedene Interaktionsmöglichkeiten in den jeweils zugrunde liegenden Code integriert. 
 
-Erklären sie die möglichen Interaktionen mit den einzelnen Visualisierungen und die möglichen Verknüpfungen zwischen ihnen. Begründen Sie warum die konkreten Interaktionen umgesetzt wurden und welche Zwecke für die Anwenderinnen mit ihnen unterstützt werden. Begründen sie ebenfalls warum sie andere Interaktionsmöglichkeiten nicht umgesetzt haben. 
-Interaktion über Buttons: Individuelle Schwerpunktsetzung der Zielgruppe ermöglicht 
+Bei der Visualiserung des Scatterplots haben Anwendende die Option, die Gegenüberstellung des Alters auf der X Achse mit einem beliebig verfügbaren Zahlenwert des Bike-Buyers-Datensatzes auf der Y-Achse  über das Klicken auf die verschiedenen Buttons anzeigen zu lassen. Dadurch kann der Fokus individuell auf bestimmte Sachverhalte gelegt werden, was insbesondere für Fahrradhersteller und Fahrradhändler interessant ist. Um die eingeschränkte Funktionalität der zweidimensionalen Zahlengegenüberstellung zu erweitern, wurde die Hover-Funktion integriert. Durch das Hovern über den Punkten des aufgespannten Koordinatensystems werden auch String-Werte als Informationen, wie der Beruf ausgegeben. Daneben lassen sich die exakten Datenwerte beim Einkommen anzeigen, welche als Achseneinteilung zu ungenau wären. 
+
+Die zweite Visualsierung, Parallele Koordinaten, bietet Interessenten die Möglichkeit über Buttons die Achsen nach belieben zu verschieben. Je nach Einstellung lassen sich Zusammenhänge des mehrdoímensionalen Punktes hervorheben, was durch eine eindeutigere Überlappung der hellen Linien sichtbar wird. Anwendende werden dadurch ermutigt, selbst die Daten in eine für sie interessante Sichtweise zu bringen. 
+
+Für das Baumdiagramm wurde auf eine Interaktionsmöglichkeit verzichtet, da das Visualsierungsziel über eine Version erfüllt ist. 
+
+Auf eine Interaktion der Visualiserungen untereinander wurde verzichtet, da je nach Visualiserungszweck Datenmerkmale hervorgerufen werden sollen, die durch eine gemeinsame Verknüpfung nicht funktionieren würden. 
 
 \section{Implementierung}
 
