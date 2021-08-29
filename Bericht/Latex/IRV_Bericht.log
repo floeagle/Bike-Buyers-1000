@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  29 AUG 2021 12:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  29 AUG 2021 12:51
 entering extended mode
 **./IRV_Bericht.tex
 (IRV_Bericht.tex
@@ -610,11 +610,11 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 5
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 [4] [5] [6] [7]
-<Scatterplot1.png, id=116, 1215.79219pt x 684.30656pt>
-File: Scatterplot1.png Graphic file (type png)
-<use Scatterplot1.png>
-Package pdftex.def Info: Scatterplot1.png  used on input line 110.
-(pdftex.def)             Requested size: 455.24408pt x 256.22798pt.
+<Bilder/Scatterplot.png, id=116, 887.11424pt x 445.06274pt>
+File: Bilder/Scatterplot.png Graphic file (type png)
+<use Bilder/Scatterplot.png>
+Package pdftex.def Info: Bilder/Scatterplot.png  used on input line 110.
+(pdftex.def)             Requested size: 455.24408pt x 228.39833pt.
 <parallelcoordinates.png, id=118, 1145.02782pt x 643.6547pt>
 File: parallelcoordinates.png Graphic file (type png)
 <use parallelcoordinates.png>
@@ -625,14 +625,14 @@ Overfull \hbox (700.73085pt too wide) in paragraph at lines 118--119
 [][] 
  []
 
-[8 <./Scatterplot1.png>] [9 <./parallelcoordinates.png>] [10] [11]
+[8 <./Bilder/Scatterplot.png>] [9 <./parallelcoordinates.png>] [10] [11]
 (IRV_Bericht.bbl) [12] (IRV_Bericht.aux)
 Package rerunfilecheck Info: File `IRV_Bericht.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 13291 strings out of 478864
- 226697 string characters out of 2848660
+ 13292 strings out of 478864
+ 226739 string characters out of 2848660
  680125 words of memory out of 3000000
  30956 multiletter control sequences out of 15000+600000
  459256 words of font info for 71 fonts, out of 8000000 for 9000
@@ -646,7 +646,7 @@ sers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Us
 ers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Use
 rs/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Use
 rs/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on IRV_Bericht.pdf (12 pages, 568881 bytes).
+Output written on IRV_Bericht.pdf (12 pages, 565034 bytes).
 PDF statistics:
  256 PDF objects out of 1000 (max. 8388607)
  55 named destinations out of 1000 (max. 500000)
