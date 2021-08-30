@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  30 AUG 2021 14:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  30 AUG 2021 17:13
 entering extended mode
 **./IRV_Bericht.tex
 (IRV_Bericht.tex
@@ -646,16 +646,22 @@ File: Bilder/ParallelCoordsA2.png Graphic file (type png)
 Package pdftex.def Info: Bilder/ParallelCoordsA2.png  used on input line 183.
 (pdftex.def)             Requested size: 455.24408pt x 214.44781pt.
 
-[14 <./Bilder/ParallelCoordsA2.png>] [15] (IRV_Bericht.bbl) [16]
-(IRV_Bericht.aux)
+[14 <./Bilder/ParallelCoordsA2.png>]
+<Bilder/BaumhierarchieA3.png, id=161, 1149.69525pt x 308.95425pt>
+File: Bilder/BaumhierarchieA3.png Graphic file (type png)
+<use Bilder/BaumhierarchieA3.png>
+Package pdftex.def Info: Bilder/BaumhierarchieA3.png  used on input line 192.
+(pdftex.def)             Requested size: 455.24408pt x 122.33495pt.
+ [15 <./Bilder/BaumhierarchieA3.png>]
+[16] (IRV_Bericht.bbl) [17] (IRV_Bericht.aux)
 Package rerunfilecheck Info: File `IRV_Bericht.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 13320 strings out of 478864
- 227379 string characters out of 2848660
+ 13329 strings out of 478864
+ 227607 string characters out of 2848660
  680125 words of memory out of 3000000
- 30972 multiletter control sequences out of 15000+600000
+ 30978 multiletter control sequences out of 15000+600000
  459256 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,8n,108p,10635b,406s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -667,9 +673,9 @@ sers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Us
 ers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Use
 rs/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Use
 rs/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on IRV_Bericht.pdf (16 pages, 1293920 bytes).
+Output written on IRV_Bericht.pdf (17 pages, 1383297 bytes).
 PDF statistics:
- 284 PDF objects out of 1000 (max. 8388607)
- 63 named destinations out of 1000 (max. 500000)
- 202 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 291 PDF objects out of 1000 (max. 8388607)
+ 65 named destinations out of 1000 (max. 500000)
+ 207 words of extra memory for PDF output out of 10000 (max. 10000000)
 
