@@ -118,7 +118,7 @@ view model=
                                 >> (==) "Yes"
                             )
                         |> List.filter (.region
-                                >> (==) "Pacific"
+                                >> (==) "North America"
                             )
                
 

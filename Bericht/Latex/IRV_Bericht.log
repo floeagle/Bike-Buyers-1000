@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  30 AUG 2021 13:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  30 AUG 2021 14:42
 entering extended mode
 **./IRV_Bericht.tex
 (IRV_Bericht.tex
@@ -616,12 +616,12 @@ File: Bilder/ScatterplotV1.png Graphic file (type png)
 Package pdftex.def Info: Bilder/ScatterplotV1.png  used on input line 109.
 (pdftex.def)             Requested size: 455.24408pt x 229.25479pt.
  [8 <./Bilder/ScatterplotV1.png>]
-<Bilder/ParallelCoords.png, id=124, 776.9025pt x 441.44925pt>
-File: Bilder/ParallelCoords.png Graphic file (type png)
-<use Bilder/ParallelCoords.png>
-Package pdftex.def Info: Bilder/ParallelCoords.png  used on input line 122.
-(pdftex.def)             Requested size: 455.24408pt x 258.68123pt.
- [9 <./Bilder/ParallelCoords.png>]
+<Bilder/ParallelCoordsV2.png, id=124, 914.2155pt x 537.207pt>
+File: Bilder/ParallelCoordsV2.png Graphic file (type png)
+<use Bilder/ParallelCoordsV2.png>
+Package pdftex.def Info: Bilder/ParallelCoordsV2.png  used on input line 122.
+(pdftex.def)             Requested size: 455.24408pt x 267.51262pt.
+ [9 <./Bilder/ParallelCoordsV2.png>]
 <Bilder/Baumhierarchie.png, id=131, 952.7595pt x 199.34476pt>
 File: Bilder/Baumhierarchie.png Graphic file (type png)
 <use Bilder/Baumhierarchie.png>
@@ -640,11 +640,11 @@ File: Bilder/ScatterplotA1.png Graphic file (type png)
 Package pdftex.def Info: Bilder/ScatterplotA1.png  used on input line 172.
 (pdftex.def)             Requested size: 455.24408pt x 215.46335pt.
  [13 <./Bilder/ScatterplotA1.png>]
-<Bilder/ParallelCoordsA2.png, id=154, 926.86275pt x 436.029pt>
+<Bilder/ParallelCoordsA2.png, id=154, 952.15726pt x 435.42674pt>
 File: Bilder/ParallelCoordsA2.png Graphic file (type png)
 <use Bilder/ParallelCoordsA2.png>
 Package pdftex.def Info: Bilder/ParallelCoordsA2.png  used on input line 183.
-(pdftex.def)             Requested size: 455.24408pt x 214.16171pt.
+(pdftex.def)             Requested size: 455.24408pt x 208.19188pt.
 
 [14 <./Bilder/ParallelCoordsA2.png>] [15] (IRV_Bericht.bbl) [16]
 (IRV_Bericht.aux)
@@ -653,7 +653,7 @@ Package rerunfilecheck Info: File `IRV_Bericht.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  13320 strings out of 478864
- 227365 string characters out of 2848660
+ 227379 string characters out of 2848660
  680125 words of memory out of 3000000
  30972 multiletter control sequences out of 15000+600000
  459256 words of font info for 71 fonts, out of 8000000 for 9000
@@ -667,7 +667,7 @@ sers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Us
 ers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Use
 rs/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Use
 rs/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on IRV_Bericht.pdf (16 pages, 1232642 bytes).
+Output written on IRV_Bericht.pdf (16 pages, 1370820 bytes).
 PDF statistics:
  284 PDF objects out of 1000 (max. 8388607)
  63 named destinations out of 1000 (max. 500000)
