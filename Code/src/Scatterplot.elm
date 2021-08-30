@@ -18,6 +18,95 @@ import TypedSvg.Core exposing (Svg)
 import TypedSvg.Events
 import TypedSvg.Types exposing (AnchorAlignment(..), Length(..), Paint(..), Transform(..))
 
+
+
+
+
+
+
+main =
+    Browser.element
+        { init = init
+        , view = view
+        , update = update
+        , subscriptions = subscriptions
+        }
+
+
+-- INIT
+init : () -> (Model, Cmd Msg)
+init _ =
+    ({abbildung = Einkommen }, Cmd.none)
+
+
+
+-- UPDATE
+
+
+type Msg
+  = GotText (Result Http.Error String)
+  | Display YAchse
+
+update : Msg -> Model -> (Model, Cmd Msg)
+update msg model =
+    case msg of
+        GotText result ->
+            case result of
+                Ok fullText ->
+                    (model, Cmd.none )
+
+                Err _ ->
+                    ( model, Cmd.none )
+        Display wechsel ->
+            ({model| abbildung = wechsel}  ,Cmd.none) 
+
+        
+
+
+
+
+
+-- SUBSCRIPTIONS
+
+
+subscriptions : Model -> Sub Msg
+subscriptions model =
+  Sub.none
+
+
+
+-- VIEW
+
+
+view : Model -> Html Msg
+view model =
+      case Decode.decodeCsv Decode.FieldNamesFromFirstRow decoder csv of
+        Ok bikebuyers ->
+            
+            
+            let   
+                ic =    
+                   List.filter(\bikes -> bikes.purchasedBike == "Yes") bikebuyers
+                   
+                   
+                   
+            in
+            Html.div []
+                [ Html.p []
+                    [  Html.div [] 
+                        [ button [ Html.Events.onClick (Display Einkommen) ] [ Html.text "Einkommen" ]
+                        , button [ Html.Events.onClick (Display Kinder) ] [ Html.text "Kinder" ]
+                        , button [ Html.Events.onClick (Display AnzahlAutos) ] [ Html.text "Autos"]
+                        ]
+                        ]            
+                , Html.p []
+                    [ Html.div []
+                        [ scatterplot bikebuyers model.abbildung ic ]
+                    ] 
+                ]
+
+        Err problem ->
+            Html.text ("There was a problem loading your data")
 w : Float
 w =
     900
@@ -192,20 +281,7 @@ scatterplot model dat dat2=
             ]  
             
 
-{--      
-bikeToMaybePoints : BikeBuyers -> Maybe Point
-bikeToMaybePoints test =
-    Maybe.map pointName (Just test.purchasedBike) 
 
-pointName : String -> Float -> Float -> Point
-pointName purchasedBike income age =
-    Point ("Bike? " ++ purchasedBike ++ " (" ++ String.fromFloat income ++ ", " ++ String.fromFloat age ++ ")") ( income) ( age)
-type alias Point =
-    { pointName : String, x : Float, y : Float }
-    --}
-
-
--- newMain:
 
 
 type alias Model =
@@ -217,171 +293,8 @@ type YAchse
     | AnzahlAutos
 
 
-main =
-    Browser.element
-        { init = init
-        , view = view
-        , update = update
-        , subscriptions = subscriptions
-        }
 
 
--- INIT
-init : () -> (Model, Cmd Msg)
-init _ =
-    ({abbildung = Einkommen }, Cmd.none)
-
-
-
--- UPDATE
-
-
-type Msg
-  = GotText (Result Http.Error String)
-  | Display YAchse
-
-update : Msg -> Model -> (Model, Cmd Msg)
-update msg model =
-    case msg of
-        GotText result ->
-            case result of
-                Ok fullText ->
-                    (model, Cmd.none )
-
-                Err _ ->
-                    ( model, Cmd.none )
-        Display wechsel ->
-            ({model| abbildung = wechsel}  ,Cmd.none) 
-
-        
-
-
-
-
-
--- SUBSCRIPTIONS
-
-
-subscriptions : Model -> Sub Msg
-subscriptions model =
-  Sub.none
-
-
-
--- VIEW
-
-
-view : Model -> Html Msg
-view model =
-      case Decode.decodeCsv Decode.FieldNamesFromFirstRow decoder csv of
-        Ok bikebuyers ->
-            
-            
-            let   
-                ic =    
-                   List.filter(\bikes -> bikes.purchasedBike == "Yes") bikebuyers
-                   
-                   
-                   
-            in
-            Html.div []
-                [ Html.p []
-                    [  Html.div [] 
-                        [ button [ Html.Events.onClick (Display Einkommen) ] [ Html.text "Einkommen" ]
-                        , button [ Html.Events.onClick (Display Kinder) ] [ Html.text "Kinder" ]
-                        , button [ Html.Events.onClick (Display AnzahlAutos) ] [ Html.text "Autos"]
-                        ]
-                        ]            
-                , Html.p []
-                    [ Html.div []
-                        [ scatterplot bikebuyers model.abbildung ic ]
-                    ] 
-                ]
-
-        Err problem ->
-            Html.text ("There was a problem loading your data")
-
-
-{-
--- Bike Buyers werden mit maybe map für Punktdarstellung konfiguriert            
-bikeToMaybePoints : BikeBuyers -> Maybe Point
-bikeToMaybePoints bbuyers =
-    Maybe.map3 pointName (Just bbuyers.purchasedBike) bbuyers.income bbuyers.age
-
--- Für Achsenbeschriftung Scatterplot
-filter : List BikeBuyers -> XyData
-filter bikes =
-    XyData "income" "age" (List.filterMap bikeToMaybePoints bikes)
-
--- Für Hovern über Punkte im Scatterplot --> Bietet Zusatzinformationen zu den Datenwerten    
-pointName : String -> Int -> Int -> Point
-pointName purchasedBike income age =
-    Point ("Own Bike? " ++ purchasedBike ++ 
-    " (" ++ String.fromInt income ++ ", " ++ String.fromInt age ++ ")") 
-        (toFloat income) (toFloat age)
--}
-
-{- zum filtern: 
-
-view :  Model -> Html Msg
-view model =
-   case Decode.decodeCsv Decode.FieldNamesFromFirstRow decoder csv of
-        Ok bike ->
-            let
-               income1 =
-                   List.filter (\bikes -> bikes.income >=100000) bike
-               income2 =
-                   List.sortBy (\bikes -> bikes.income) bike    
-                   
-               ic =    
-                   List.filter(\bikes -> bikes.purchasedBike == "Yes") bike
-                   
-               ic2 =    
-                   List.filter(\bikes -> bikes.purchasedBike == "No") bike    
-               
-               ic3= 
-                  List.filter(\bikes -> bikes.region == "Pacific") bike 
-               
-               
-    
-
-                   
-            in
-            Html.main_ []
-                [ Html.h1 [] [ Html.text "Bike_ Buyers" ]
-                , bikeData income1
-                , Html.h2 [] [ Html.text "Income from lowest -> highest" ]
-                , bikeData ic
-                , Html.h2 [] [ Html.text "region Test" ]
-                , bikeData ic3
-               
-                
-                ]
-
-        Err problem ->
-            Html.text ("There was a problem loading your data")
-
-
-
-
-- zum Laden
-
-
--- Daten von type alias wertden in html messege gewandelt
-bikeData : List Data -> Html msg
-bikeData bike =
-    bike
-        |> List.map (\bikes -> Html.li [] [ bikeInf  bikes ])
-        |> Html.ul []
-        
-       
--- Datas ausgewählt für Stichpubkte aufgeführt 
-bikeInf : Data -> Html msg
-bikeInf  {purchasedBike,income } =
-    Html.span []
-        [ Html.text purchasedBike
-        ]
--}      
 
 
 
@@ -405,21 +318,7 @@ decoder =
 
 
 
-{-
 
---Für ScatterplotohneOnClick
-type alias Point =
-    { pointName : String, x : Float, y : Float }
-
-
-type alias XyData =
-    { xDescription : String
-    , yDescription : String
-    , data : List Point
-    }
-
--}
--- Um Datensatz zu definieren
 
 type alias BikeBuyers =
     { id :  Int
