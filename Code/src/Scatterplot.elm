@@ -20,10 +20,6 @@ import TypedSvg.Types exposing (AnchorAlignment(..), Length(..), Paint(..), Tran
 
 
 
-
-
-
-
 main =
     Browser.element
         { init = init
@@ -41,11 +37,6 @@ init _ =
 
 
 -- UPDATE
-
-
-type Msg
-  = GotText (Result Http.Error String)
-  | Display YAchse
 
 update : Msg -> Model -> (Model, Cmd Msg)
 update msg model =
@@ -107,6 +98,8 @@ view model =
 
         Err problem ->
             Html.text ("There was a problem loading your data")
+
+-- Für Anzeige            
 w : Float
 w =
     900
@@ -282,6 +275,9 @@ scatterplot model dat dat2=
             
 
 
+type Msg
+  = GotText (Result Http.Error String)
+  | Display YAchse
 
 
 type alias Model =
@@ -297,7 +293,7 @@ type YAchse
 
 
 
-
+-- Decoding des CSV Strings
 
 decoder : Decoder BikeBuyers
 decoder =
