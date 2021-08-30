@@ -112,7 +112,7 @@ points scaleX scaleY buttons xyPoint =
         , text_ [ transform [ Translate (Scale.convert scaleX xyPoint.age) (Scale.convert scaleY y - (2 * radius)) ]
                 , textAnchor AnchorMiddle] 
                 [Html.text ("OwnBike? " ++ xyPoint.purchasedBike ++ ", " ++ "Einkommen: " ++  String.fromFloat xyPoint.income ++", " ++ " Alter: " ++ 
-                String.fromFloat xyPoint.age ++ ", " ++ "Beruf: " ++  xyPoint.occupation )]
+                String.fromFloat xyPoint.age ++ ", " ++ "Beruf: " ++  xyPoint.occupation ++ "," ++ " HomeOwner: " ++ xyPoint.homeOwner )]
         ]
 
 scatterplot : List BikeBuyers -> YAchse -> List BikeBuyers-> Svg Msg
