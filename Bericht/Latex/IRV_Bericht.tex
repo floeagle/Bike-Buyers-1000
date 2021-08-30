@@ -149,9 +149,15 @@ Für das Baumdiagramm wurde auf eine Interaktionsmöglichkeit verzichtet, da das
 Auf eine Interaktion der Visualiserungen untereinander wurde verzichtet, da je nach Visualiserungszweck Datenmerkmale hervorgerufen werden sollen, die durch eine gemeinsame Verknüpfung nicht funktionieren würden. 
 
 \section{Implementierung}
+Die Ausgangsbasis für diesen Projektbericht stellen die Programmcodes aus der Übung dar. Für die Scatterplot Visualiserung wurden die im Rahmen der Übungen eins, drei entwickelten Codegerüste als Grundlage verwendet. Für die Parallelen Koordinaten ist die Übung 7 der Ausgangspunkt. Bei der Baumhierarchie galt die Übung 10 als Orientierung. 
 
+Während der frühen Entwicklungsphase zu Beginn des Projektes wurde versucht, mit Hilfe des CSV-Decoders nach dem Vorbild aus Übug 8 die Daten zu laden. Allerdings ist der unübersichtliche Aufbau des Decoders nicht für die Projektarbeit mit den Fahrraddaten geeignet. Hierzu sind weitere Decodr Funktionen notenig, Daten können nicht direkt nach ihren natürlichen Datentypen decodet werden, etc. Bereits nach der ersten Sichtung des Bike-Buyers-1000 Datensatzes wurde überlegt, die Daten als String in das Codeprogramm zu laden. damit verbundene Vorteile wurden im Kapitel 2 aufgeführt. 
+Nach intensiver Alternativenrecherche wurden die Programmcoides für den Scatterplot und die Parallelen Koordinaten nach dem Vorbild des CSV-Decoders von Brian Hicks aufgebaut. Dieser besteht aus einer Funktion, welche problemlos Strings, Ints und Floats decodet. Drüber hinaus ist der Decoder explizit für das Decoden eines CSV-Strings geeignet. 
+
+Eine weitere Herausforderung stellt das Übertragen der Codefundamente aus der Übung auf den neuen Sachverhalt mit den Fahrraddaten dar. In der Übung stellt der Datensatz einen für ELM optimal geeignet Datensatz dar, über welchen eigene Datentypen problemlos über "type" definiert werden können und anschließend damit filterungen durchgeführt wrden können. 
 Drei verschiedene ELM Programme für jeweils eine Visualisierung. Aufbau aus Übungen Scatterplot, Parallele Koordinaten, Baumhierarchie -> Decoder einbauen, geeigneten Decoder finden, richtige Daten auswählen, Datentypen richtig festlegen 
 
+Der Code wurde in mehren Phasen erstellt. Nach erfolgreichen Decoder Tests wurden die Daten mit den zugrundeliegenden Funktionen für den Scatterplot verbunden. Komplikationen mit dem Einbinden des Decoders in die main Funktionen konnten gelöst werden. Nach erweiterung und individueller Anpassung des Codes konnte ein Scatterplot komiliert werden. Hierbei war die Hoverfunktion bereits integriert. Die Überlegte weiterentwicklung mit Buttons konnte über die init model view update Elm-Grundgleiderung umgesetzt werden. 
 Wie sieht die Elm-Datenstruktur für das Model aus, in dem die verschiedenen Zustände der Interaktion gespeichert werden können.
 
 \section{Anwendungsfälle}
