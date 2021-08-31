@@ -77,4 +77,16 @@ Heinz-Peter Gumm and Manfred Sommer.
 Heeral Dedhia.
 \newblock Bike buyers 1000, 22.09.2020.
 
+\bibitem{Rios.06212016}
+Ivan Rios, Lukasz Golab, and S.~Keshav.
+\newblock Analyzing the usage patterns of electric bicycles.
+\newblock In {\em Proceedings of the Workshop on Electric Vehicle Systems,
+  Data, and Applications}, pages 1--6, New York, NY, USA, 06212016. ACM.
+
+\bibitem{Kashyap.2021}
+Aditya~Singh Kashyap and Swastika Swastik.
+\newblock Regression model to predict bike sharing demand.
+\newblock {\em International Journal of Innovative Science and Research
+  Technology}, 6(3):1024--1028, 2021.
+
 \end{thebibliography}

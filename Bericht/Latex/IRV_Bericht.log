@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  31 AUG 2021 15:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  31 AUG 2021 17:55
 entering extended mode
 **./IRV_Bericht.tex
 (IRV_Bericht.tex
@@ -653,18 +653,18 @@ File: Bilder/BaumhierarchieA3.png Graphic file (type png)
 Package pdftex.def Info: Bilder/BaumhierarchieA3.png  used on input line 192.
 (pdftex.def)             Requested size: 455.24408pt x 122.33495pt.
  [15 <./Bilder/BaumhierarchieA3.png>]
-[16] (IRV_Bericht.bbl) [17] (IRV_Bericht.aux)
+[16] (IRV_Bericht.bbl [17]) [18] (IRV_Bericht.aux)
 Package rerunfilecheck Info: File `IRV_Bericht.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 13329 strings out of 478864
- 227607 string characters out of 2848660
+ 13334 strings out of 478864
+ 227678 string characters out of 2848660
  680125 words of memory out of 3000000
- 30978 multiletter control sequences out of 15000+600000
+ 30980 multiletter control sequences out of 15000+600000
  459256 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,8n,108p,10635b,406s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 108i,7n,108p,10635b,472s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/Floyd/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C
 :/Users/Floyd/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}<C:/U
 sers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/U
@@ -673,9 +673,9 @@ sers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Us
 ers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Use
 rs/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Use
 rs/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on IRV_Bericht.pdf (17 pages, 1383507 bytes).
+Output written on IRV_Bericht.pdf (18 pages, 1386184 bytes).
 PDF statistics:
- 291 PDF objects out of 1000 (max. 8388607)
- 65 named destinations out of 1000 (max. 500000)
+ 300 PDF objects out of 1000 (max. 8388607)
+ 68 named destinations out of 1000 (max. 500000)
  207 words of extra memory for PDF output out of 10000 (max. 10000000)
 
