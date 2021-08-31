@@ -146,7 +146,7 @@ Die zweite Visualsierung, Parallele Koordinaten, bietet Interessenten die Mögli
 
 Für das Baumdiagramm wurde auf eine Interaktionsmöglichkeit verzichtet, da das Visualsierungsziel über eine Version erfüllt ist. 
 
-Auf eine Interaktion der Visualiserungen untereinander wurde verzichtet, da je nach Visualiserungszweck Datenmerkmale hervorgerufen werden sollen, die durch eine gemeinsame Verknüpfung nicht funktionieren würden. 
+Über eine Hauptseite (index.html) kann aus dem Github Repository eine Website dargestellt werden. Dabei wurden die drei Visualiserungen als HTML, hervorgerufen durch  den Terminalbefehl elm make, jeweils verlinkt. Untereinander findet ebenfalls eine Verlinkung statt, sodass eine Interaktion möglich ist. Diese Interaktion ist über Buttons abrufbar. 
 
 \section{Implementierung}
 Die Ausgangsbasis für diesen Projektbericht stellen die Programmcodes aus der Übung dar. Für die Scatterplot Visualiserung wurden die im Rahmen der Übungen eins, drei entwickelten Codegerüste als Grundlage verwendet. Für die Parallelen Koordinaten ist die Übung 7 der Ausgangspunkt. Bei der Baumhierarchie galt die Übung 10 als Orientierung. 
@@ -161,7 +161,7 @@ Der Code wurde in mehren Phasen erstellt. Nach erfolgreichen Decoder Tests wurde
 Wie sieht die Elm-Datenstruktur für das Model aus, in dem die verschiedenen Zustände der Interaktion gespeichert werden können.
 Das Vorgehen wurde bei den Parallen Koordinaten ebenfalls angewendet. Nach erfolgreicher Implementierung und Verknüpfung des Decoders, Anpassen / Erweitern der Daten, inklusive neuer Vorfilterung konnte die Darstellung umgesetzt werden. Nach Abwägung der vOR- UND Nachteile der Röntgendarstellung im vergleich zu "normalem" Hintergrund, wurde die Röntegendatrstellung ausgewählt. Die Weiterentwicklung wurde mit dem Ziel umgesetzt, dass sich die Achsen beliebig verschieben lassen. Diese Umsetzung konnte anhand der Übung 7 erreicht werden.
 Bei der Visualisierung der Baumhierarchie gab es bis auf die Datenvorverarbeitung keine Probleme mit dem JSON-Decoder und dem verfügbaren Programmcode aus der Übung 10. 
-Über eine Hauptseite (index.html) kann aus dem Github Repository eine Website dargestellt werden. Dabei wurden die drei Visualiserungen als HTML, hervorgerufen durch  den Terminalbefehl elm make, jeweils verlinkt. Untereinander findet ebenfalls eine Verlinkung statt, sodass eine Interaktion möglich ist. 
+
 \section{Anwendungsfälle}
 Im folgenden werden für die drei Darstellungen in Hinblick auf die Zielgruppe praktische Anwendungsfälle aufgezeigt. 
 \subsection{Anwendung Visualisierung Eins}
