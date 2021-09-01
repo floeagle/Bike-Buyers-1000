@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  1 SEP 2021 12:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  1 SEP 2021 14:11
 entering extended mode
 **./IRV_Bericht.tex
 (IRV_Bericht.tex
@@ -653,13 +653,13 @@ File: Bilder/BaumhierarchieA3.png Graphic file (type png)
 Package pdftex.def Info: Bilder/BaumhierarchieA3.png  used on input line 193.
 (pdftex.def)             Requested size: 455.24408pt x 122.33495pt.
  [15 <./Bilder/BaumhierarchieA3.png>]
-[16] (IRV_Bericht.bbl [17]) [18] (IRV_Bericht.aux)
+[16] [17] (IRV_Bericht.bbl [18]) [19] (IRV_Bericht.aux)
 Package rerunfilecheck Info: File `IRV_Bericht.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 13342 strings out of 478864
- 227772 string characters out of 2848660
+ 13343 strings out of 478864
+ 227779 string characters out of 2848660
  680125 words of memory out of 3000000
  30984 multiletter control sequences out of 15000+600000
  459256 words of font info for 71 fonts, out of 8000000 for 9000
@@ -673,9 +673,9 @@ sers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Us
 ers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Use
 rs/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Use
 rs/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on IRV_Bericht.pdf (18 pages, 1390214 bytes).
+Output written on IRV_Bericht.pdf (19 pages, 1391710 bytes).
 PDF statistics:
- 308 PDF objects out of 1000 (max. 8388607)
- 72 named destinations out of 1000 (max. 500000)
+ 315 PDF objects out of 1000 (max. 8388607)
+ 73 named destinations out of 1000 (max. 500000)
  207 words of extra memory for PDF output out of 10000 (max. 10000000)
 
