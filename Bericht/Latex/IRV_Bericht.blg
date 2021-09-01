@@ -6,45 +6,45 @@ The style file: unsrt.bst
 Reallocating 'name_of_file' (item size: 1) to 10 items.
 Database file #1: literatur.bib
 Warning--there's a number but no volume in Few.2008
-You've used 19 entries,
+You've used 20 entries,
             1791 wiz_defined-function locations,
-            578 strings with 6869 characters,
-and the built_in function-call counts, 4271 in all, are:
-= -- 360
-> -- 214
+            584 strings with 7016 characters,
+and the built_in function-call counts, 4542 in all, are:
+= -- 386
+> -- 225
 < -- 4
-+ -- 80
-- -- 61
-* -- 276
-:= -- 674
-add.period$ -- 54
-call.type$ -- 19
-change.case$ -- 17
++ -- 84
+- -- 64
+* -- 300
+:= -- 716
+add.period$ -- 57
+call.type$ -- 20
+change.case$ -- 18
 chr.to.int$ -- 0
-cite$ -- 20
-duplicate$ -- 183
-empty$ -- 432
-format.name$ -- 61
-if$ -- 955
+cite$ -- 21
+duplicate$ -- 192
+empty$ -- 458
+format.name$ -- 64
+if$ -- 1013
 int.to.chr$ -- 0
-int.to.str$ -- 19
-missing$ -- 15
-newline$ -- 92
-num.names$ -- 21
-pop$ -- 76
+int.to.str$ -- 20
+missing$ -- 16
+newline$ -- 97
+num.names$ -- 22
+pop$ -- 77
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 94
+skip$ -- 97
 stack$ -- 0
-substring$ -- 230
-swap$ -- 45
+substring$ -- 261
+swap$ -- 46
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 43
-width$ -- 21
-write$ -- 199
+while$ -- 46
+width$ -- 22
+write$ -- 210
 (There was 1 warning)
