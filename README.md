@@ -1,5 +1,8 @@
 # Bike-Buyers-1000
 
+## Starten des Projektes: 
+Nach dem Initalisieren läuft das Projekt über den 'localhost:8000'. Bei Ladeproblemem kann über den Terminalbefehl 'elm reactor --port=...' ein beliebiger anderer Port verwendet werden. 
+Das Projekt ist [hier](https://floeagle.github.io/Bike-Buyers-1000/index.html) abrufbar.
 ## Zugrundeliegender Datensatz:
 Die drei Visualisierungen entstammen der Website [Kaggle](https://www.kaggle.com/heeraldedhia/bike-buyers?select=bike_buyers_clean.csv)
 ## Verwendete ELM-Packages:
