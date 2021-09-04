@@ -261,7 +261,7 @@ wideExtent values =
 colordescr: String
 colordescr = 
     """
-      .parallelAxis g g text { display: inline; fill: rgb(118, 214, 78) }
+      .parallelAxis g g text { display: none; fill: rgb(118, 214, 78) }
       .parallelAxis:hover g g text { display: inline; }
 
     """
