@@ -304,17 +304,17 @@ type alias FilteredBikeBuyers =
 
 
 filterMissingValues : List BikeBuyers -> List FilteredBikeBuyers
-filterMissingValues my_cars =
+filterMissingValues mybikes =
     let
         car2filteredCar : BikeBuyers -> Maybe FilteredBikeBuyers
-        car2filteredCar car =
-            Maybe.map4 (FilteredBikeBuyers car.purchasedBike car.region car.occupation car.homeOwner)
-                car.income
-                car.children
-                car.cars
-                car.age
+        car2filteredCar bbuyers =
+            Maybe.map4 (FilteredBikeBuyers bbuyers.purchasedBike bbuyers.region bbuyers.occupation bbuyers.homeOwner)
+                bbuyers.income
+                bbuyers.children
+                bbuyers.cars
+                bbuyers.age
     in
-    List.filterMap car2filteredCar my_cars
+    List.filterMap car2filteredCar mybikes
 
 
 
