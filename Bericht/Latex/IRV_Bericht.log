@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  4 SEP 2021 18:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  4 SEP 2021 21:43
 entering extended mode
 **./IRV_Bericht.tex
 (IRV_Bericht.tex
@@ -605,34 +605,35 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 5
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [5]
 [6] [7]
-<Bilder/ScatterplotV1.png, id=129, 922.04475pt x 464.33475pt>
-File: Bilder/ScatterplotV1.png Graphic file (type png)
-<use Bilder/ScatterplotV1.png>
-Package pdftex.def Info: Bilder/ScatterplotV1.png  used on input line 109.
-(pdftex.def)             Requested size: 455.24408pt x 229.25479pt.
+<Bilder/V1Scatterplot.png, id=129, 919.63576pt x 463.7325pt>
+File: Bilder/V1Scatterplot.png Graphic file (type png)
+<use Bilder/V1Scatterplot.png>
+Package pdftex.def Info: Bilder/V1Scatterplot.png  used on input line 110.
+(pdftex.def)             Requested size: 455.24408pt x 229.5589pt.
  [8]
-<Bilder/ParallelCoordsV2.png, id=137, 914.2155pt x 537.207pt>
-File: Bilder/ParallelCoordsV2.png Graphic file (type png)
-<use Bilder/ParallelCoordsV2.png>
-Package pdftex.def Info: Bilder/ParallelCoordsV2.png  used on input line 122.
-(pdftex.def)             Requested size: 455.24408pt x 267.51262pt.
- [9 <./Bilder/ScatterplotV1.png>] [10 <./Bilder/ParallelCoordsV2.png>]
-<Bilder/Baumhierarchie.png, id=150, 952.7595pt x 199.34476pt>
-File: Bilder/Baumhierarchie.png Graphic file (type png)
-<use Bilder/Baumhierarchie.png>
-Package pdftex.def Info: Bilder/Baumhierarchie.png  used on input line 134.
-(pdftex.def)             Requested size: 455.24408pt x 95.2494pt.
+<Bilder/V2ParalleleKoordinaten.png, id=137, 808.82175pt x 461.92575pt>
+File: Bilder/V2ParalleleKoordinaten.png Graphic file (type png)
+<use Bilder/V2ParalleleKoordinaten.png>
+Package pdftex.def Info: Bilder/V2ParalleleKoordinaten.png  used on input line 
+123.
+(pdftex.def)             Requested size: 455.24408pt x 259.9947pt.
+ [9 <./Bilder/V1Scatterplot.png>] [10 <./Bilder/V2ParalleleKoordinaten.png>]
+<Bilder/V3Baumhierarchie.png, id=150, 1153.911pt x 211.38976pt>
+File: Bilder/V3Baumhierarchie.png Graphic file (type png)
+<use Bilder/V3Baumhierarchie.png>
+Package pdftex.def Info: Bilder/V3Baumhierarchie.png  used on input line 135.
+(pdftex.def)             Requested size: 455.24408pt x 83.39642pt.
 
-Overfull \hbox (4.71611pt too wide) in paragraph at lines 131--140
+Overfull \hbox (4.71611pt too wide) in paragraph at lines 132--141
 \T1/lmr/m/n/10.95 sua-li-se-run-gen wur-de auf ei-ne In-ter-ak-ti-ons-mög-lich-
 keit ver-zich-tet. Die an-ge-lei-te-ten Baumhierarchie-
  []
 
-[11 <./Bilder/Baumhierarchie.png>] [12]
+[11 <./Bilder/V3Baumhierarchie.png>] [12]
 <Bilder/ScatterplotA1.png, id=161, 867.84225pt x 410.7345pt>
 File: Bilder/ScatterplotA1.png Graphic file (type png)
 <use Bilder/ScatterplotA1.png>
-Package pdftex.def Info: Bilder/ScatterplotA1.png  used on input line 173.
+Package pdftex.def Info: Bilder/ScatterplotA1.png  used on input line 174.
 (pdftex.def)             Requested size: 455.24408pt x 215.46335pt.
 
 
@@ -642,13 +643,13 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <Bilder/ParallelCoordsA2.png, id=173, 925.65825pt x 436.029pt>
 File: Bilder/ParallelCoordsA2.png Graphic file (type png)
 <use Bilder/ParallelCoordsA2.png>
-Package pdftex.def Info: Bilder/ParallelCoordsA2.png  used on input line 184.
+Package pdftex.def Info: Bilder/ParallelCoordsA2.png  used on input line 185.
 (pdftex.def)             Requested size: 455.24408pt x 214.44781pt.
  [15 <./Bilder/ParallelCoordsA2.png>]
 <Bilder/BaumhierarchieA3.png, id=180, 1149.69525pt x 308.95425pt>
 File: Bilder/BaumhierarchieA3.png Graphic file (type png)
 <use Bilder/BaumhierarchieA3.png>
-Package pdftex.def Info: Bilder/BaumhierarchieA3.png  used on input line 193.
+Package pdftex.def Info: Bilder/BaumhierarchieA3.png  used on input line 194.
 (pdftex.def)             Requested size: 455.24408pt x 122.33495pt.
 
 [16 <./Bilder/BaumhierarchieA3.png>] [17] [18] (IRV_Bericht.bbl [19]) [20]
@@ -658,7 +659,7 @@ Package rerunfilecheck Info: File `IRV_Bericht.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  13358 strings out of 478864
- 228171 string characters out of 2848660
+ 228227 string characters out of 2848660
  680125 words of memory out of 3000000
  30991 multiletter control sequences out of 15000+600000
  459256 words of font info for 71 fonts, out of 8000000 for 9000
@@ -672,7 +673,7 @@ sers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Us
 ers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Use
 rs/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Use
 rs/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on IRV_Bericht.pdf (20 pages, 1400265 bytes).
+Output written on IRV_Bericht.pdf (20 pages, 1412322 bytes).
 PDF statistics:
  335 PDF objects out of 1000 (max. 8388607)
  81 named destinations out of 1000 (max. 500000)

@@ -74,6 +74,7 @@ Die durch Kaggle bereitgestellten Daten bestehen aus demographischen Kundeninfor
 
 \section{Daten}
 Die diesem Projektbericht zugrundeliegenden Rohdaten entstammen einem Datensatz des " Kaggle" -Account von Heeral Dedhia \cite{Dedhia.22.09.2020}, welche Antworten von 1.000 befragten Personen zum Thema Fahrradkauf in der zweiten Version bereitstellt. Die Nutzerin hat diese Daten zuletzt im Jahresverlauf 2020 dahingehend angepasst, dass fehlende Werte ergänzt und Ausreißer konfiguriert wurden. Ein genaues Datum sowie spezifische Hintergrundinformationen zur Erhebungsform sind hierbei unbekannt. In dieser aktuellsten Version liegen 13 verschiedene Attribute zu den 1000 befragten Personen vor. Die Nutzerin hat zwei verschiedene Datensätze bereitgestellt, die sich durch fehlende Werte voneinander unterscheiden. Um bei einer Datenvorverarbeitung keine Daten zu vergessen und die Funktionsfähigkeit des Elm CSV-Decoders zu gewährleisten, stellt die bereinigte Datei "bikebuyersclean.csv" die Grundlage für dieses Visualisierungsprojekt dar.
+
 Zu allen befragten Personen wurde eine eindeutige ID vergeben, welche ein INT-Typ ist. Zur quantifizierung der Baumhierarchie wurde diese Tabellenspalte für die dritte Visualiserung übernommen. Die nächsten beiden Spalten "Marital Status" , "Gender" und "Children" und "Age" als Int geben als String-Datentyp Aufschluss über den sozialen  Familienstand und Geschlecht der befragten Person. Die Spalten "Income", "Education" , "Occupation" geben Auffschluss über die berufliche Karriere. In Verbindung mit den Spalten "HomeOwner" und "Cars" lässt sich der Status der Person interpretieren. Das Attribut "Commute Distance" gibt Aufschluss über die Distanz zur Arbeit" dient der Befragung zur Entfernung zwischen Wohnort und Arbeitsstätte, wodurch wertvolle Informationen zwischen Cars, Bikes und co gewonnen werden können. Durch purchasedBike und Region können diese Daten weiter voneinander unterschieden oder für einen globalen Einblcik als ganzes betrachtet werden. 
 
 Die Daten eignen sich besonders für Analysten von Fahrradunternehmen, die beispielsweise einen Online-Fahhrad-Shop betreiben wollen. Hierdurch erhalten sie eine Grundlage über mögliche Kundengruppen, wodurch wertvolle Informationen, wie die Arbeitsentferung vorhanden sind und sich insbesondere in der zukünftigen Infrastruktur von Großstädten bemerkbar machen werden. Auch in Hinblick auf die anhaltende covid-19 Krise und den sicheren Aspekt des Individualverkehrs bietet eiun Fahrad auf kurze bis mittlere Distanz eine umweltschonende und kostengünstige Alternative zum Auto. 
@@ -106,7 +107,7 @@ In diesem Abschnitt werden die drei dem Projektbericht zugrunde liegenden Visual
 Für die erste Darstellung wurde der Scatterplot gewählt. Dessen einfache Grundfunktionen bieten eine gute Einleitung in die Visualiserung der Fahrradwerte. Die in der Einleitung beschriebenen Merkmale, wie die gegenüberstellung der X und Y Achse erfolgt über die Datenwerte Alter auf der X Achse und in dieser Abbildung über Einkommen. Anwendende haben darüber hinaus die Möglichkeit, über die oben gelegenen Buttons die Y-Achse des Scatterplots dynamisch anzupassen. Dabei können Einkommen, die Kinder- und Autoanzahl des Datensatzes in Abhängigkeit des Alters dargestellt werden und Die Punkte stellen jeweils einen koordinatenpunkt aus dem BikeBuyers Index dar. Um die Zielgruppe mit Zusatzinformationen zu versorgen können beim Hovern mit der Maus über die Punkte neben dem exakten Einkommen auch Informationen ob ein Fahrradkauf getätigt wurde und welcher Berufsgruppe die befragte Person angehört, eingeholt werden. Die Wahl den Beruf beim Hovern über die punkte  anzuzeigen, lässt sich damit begründen, dass String-Werte nicht in den Achsen dargestellt werden können. 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[width=16cm]{Bilder/ScatterplotV1.png}
+\includegraphics[width=16cm]{Bilder/V1Scatterplot.png}
 \caption{Scatterplot für Bike Buyers, Quelle: Eigene Darstellung}
 \end{center}
 \end{figure}
@@ -119,7 +120,7 @@ Mit der zweiten Visualisierung, den Parallelen Koordinaten, können Im Gegensatz
 Für den Datensatz der bikeBuyers ergibt sich hierdurch den Vorteil, gleichzeitig alle relevanten Zahlenwerte in einer Visualisierung darzustellen, was sich in Abbildung 2 bemerkbar macht. Ebenso wie beim Scatterplot haben Anwendende die Möglichkeit die Darstellung über Buttons zu verändern. Durch die Buttons können die Achsen beliebig miteinander vertauscht werden und neue Zusammenhänge, je nach Betrachtungsziel,identifiziert werden. 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[width=16cm]{Bilder/ParallelCoordsV2.png}
+\includegraphics[width=16cm]{Bilder/V2ParalleleKoordinaten.png}
 \caption{Parallele Koordinaten für Bike Buyers, Quelle: Eigene Darstellung}
 \end{center}
 \end{figure}
@@ -131,7 +132,7 @@ Neben Parallelen Koordinaten gibt es weitere Visualisierungsmöglichkeiten mehrd
 Als dritte Visualiserungstechnik wurde die Baumhierarchie ausgewählt. Diese stellt ein klassisches Baumdiagramm, wie in der Theorie beschrieben dar, durch welches die Fahrradkäuferdaten in eine Hierarchie gebracht werden. Die Knoten stellen hierbei Entscheidungsmöglichkeiten dar, welche durch die Linien miteinander verbunden werden. Die erste Unterscheidung besteht beim Fahrradkauf. Hierbei werden die Angaben in Ja oder Nein unterteilt. Anschließend erfolgt die Unterteilung nach den Regionen der befragten Personen. Die letzte Verweigung stellt die Pendlerdistan vom Wohnort zur Arbeit dar. 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[width=16cm]{Bilder/Baumhierarchie.png}
+\includegraphics[width=16cm]{Bilder/V3Baumhierarchie.png}
 \caption{Ausschnitt aus der Baumhierarchie für Bike Buyers, Quelle: Eigene Darstellung}
 \end{center}
 \end{figure}
