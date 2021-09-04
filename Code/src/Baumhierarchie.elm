@@ -105,7 +105,7 @@ drawNode str =
         [ circle 
             [ r 16
             , stroke (Paint Color.black)
-            , fill (Paint Color.darkYellow)
+            , fill (Paint Color.blue)
             , cx 0
             , cy 0 
             ] 
