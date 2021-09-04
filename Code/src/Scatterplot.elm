@@ -168,6 +168,15 @@ yAxis : List Float -> Svg msg
 yAxis values =
     Axis.left [ Axis.tickCount tickCount ] (yScale values)
 -- Für Punktdarstellung
+
+farbe2Buyers : FilteredBikeBuyers -> List String
+farbe2Buyers buyers =
+  if buyers.purchasedBike == "Yes" then
+    [ "point", "buyed" ]
+  else
+    [ "point" ]
+
+
 points : ContinuousScale Float -> ContinuousScale Float -> YAchse -> FilteredBikeBuyers -> Svg Msg
 points scaleX scaleY buttons xyPoint =
     let
@@ -178,7 +187,7 @@ points scaleX scaleY buttons xyPoint =
                 Kinder -> xyPoint.children
                 AnzahlAutos -> xyPoint.cars
     in
-    g [ class [ "point" ]
+    g [ class (farbe2Buyers xyPoint)
         , fontSize <| Px 10.0, 
         fontFamily [ "sans-serif" ] ]
         [ circle
@@ -239,8 +248,9 @@ scatterplot model dat =
     in
     svg [ viewBox 0 0 w h, TypedSvg.Attributes.width <| TypedSvg.Types.Percent 100, TypedSvg.Attributes.height <| TypedSvg.Types.Percent 100 ]
         [ style [] [ TypedSvg.Core.text """
-            .point circle { stroke: rgba(0, 0, 0,0.4); fill: rgba(255, 255, 255,0.3); }
+            .point circle { stroke: rgba(0, 0, 0,0.4); fill: rgba(245,230,27,0.8); }
             .point text { display: none; }
+            .point.buyed circle {stroke: rgba(0, 0, 0,0.4); fill: rgba(83, 51, 237,0.8);}
             .point:hover circle { stroke: rgba(0, 0, 0,1.0); fill: rgb(127,255,0,1); }
             .point:hover text { display: inline; }
           """ ]
