@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  4 SEP 2021 17:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  4 SEP 2021 17:33
 entering extended mode
 **./IRV_Bericht.tex
 (IRV_Bericht.tex
@@ -616,11 +616,7 @@ File: Bilder/ParallelCoordsV2.png Graphic file (type png)
 <use Bilder/ParallelCoordsV2.png>
 Package pdftex.def Info: Bilder/ParallelCoordsV2.png  used on input line 123.
 (pdftex.def)             Requested size: 455.24408pt x 267.51262pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[9 <./Bilder/ScatterplotV1.png>] [10 <./Bilder/ParallelCoordsV2.png>]
+ [9 <./Bilder/ScatterplotV1.png>] [10 <./Bilder/ParallelCoordsV2.png>]
 <Bilder/Baumhierarchie.png, id=150, 952.7595pt x 199.34476pt>
 File: Bilder/Baumhierarchie.png Graphic file (type png)
 <use Bilder/Baumhierarchie.png>
@@ -667,7 +663,7 @@ Here is how much of TeX's memory you used:
  30991 multiletter control sequences out of 15000+600000
  459256 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,7n,108p,10635b,474s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 108i,8n,108p,10635b,474s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/Floyd/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C
 :/Users/Floyd/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}<C:/U
 sers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/U
@@ -676,7 +672,7 @@ sers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Us
 ers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Use
 rs/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Use
 rs/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on IRV_Bericht.pdf (20 pages, 1399892 bytes).
+Output written on IRV_Bericht.pdf (20 pages, 1400165 bytes).
 PDF statistics:
  335 PDF objects out of 1000 (max. 8388607)
  81 named destinations out of 1000 (max. 500000)
