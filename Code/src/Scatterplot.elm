@@ -76,8 +76,8 @@ view model =
             
             
             let   
-                ic =    
-                   List.filter(\bikes -> bikes.purchasedBike == "Yes") bikebuyers
+                filteredBikeBuyers =
+                    filterMissingValues bikebuyers
                    
                    
                    
@@ -92,7 +92,7 @@ view model =
                         ]            
                 , Html.p []
                     [ Html.div []
-                        [ scatterplot bikebuyers model.abbildung ic ]
+                        [ scatterplot filteredBikeBuyers model.abbildung  ]
                     ] 
                 ]
 
@@ -168,7 +168,7 @@ yAxis : List Float -> Svg msg
 yAxis values =
     Axis.left [ Axis.tickCount tickCount ] (yScale values)
 -- Für Punktdarstellung
-points : ContinuousScale Float -> ContinuousScale Float -> YAchse -> BikeBuyers -> Svg Msg
+points : ContinuousScale Float -> ContinuousScale Float -> YAchse -> FilteredBikeBuyers -> Svg Msg
 points scaleX scaleY buttons xyPoint =
     let
         y : Float
@@ -197,8 +197,8 @@ points scaleX scaleY buttons xyPoint =
                 String.fromFloat xyPoint.age ++ ", " ++ "Beruf: " ++  xyPoint.occupation ++ "," ++ " HomeOwner: " ++ xyPoint.homeOwner )]
         ]
 
-scatterplot : List BikeBuyers -> YAchse -> List BikeBuyers-> Svg Msg
-scatterplot model dat dat2=
+scatterplot : List FilteredBikeBuyers -> YAchse -> Svg Msg
+scatterplot model dat =
     let
         xValues : List Float
         xValues =
