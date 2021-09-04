@@ -289,7 +289,22 @@ type YAchse
     | AnzahlAutos
 
 
+type alias FilteredBikeBuyers =
+    { purchasedBike : String, region : String, occupation: String, homeOwner: String, income : Float, children : Float, cars : Float, age : Float }
 
+
+filterMissingValues : List BikeBuyers -> List FilteredBikeBuyers
+filterMissingValues my_cars =
+    let
+        car2filteredCar : BikeBuyers -> Maybe FilteredBikeBuyers
+        car2filteredCar car =
+            Maybe.map4 (FilteredBikeBuyers car.purchasedBike car.region car.occupation car.homeOwner)
+                car.income
+                car.children
+                car.cars
+                car.age
+    in
+    List.filterMap car2filteredCar my_cars
 
 
 
