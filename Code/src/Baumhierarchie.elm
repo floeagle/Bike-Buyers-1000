@@ -92,7 +92,7 @@ drawLine ( targetX, targetY ) =
         , y1 0
         , x2 targetX
         , y2 targetY
-        , stroke (TypedSvg.Types.Paint Color.black) 
+        , stroke (TypedSvg.Types.Paint Color.lightBlue) 
         ]
         []
 
@@ -113,7 +113,7 @@ drawNode str =
         , text_ 
             [ textAnchor AnchorStart
             , transform 
-                [ Translate 0.5 0.5 
+                [ Translate 0.5 17
                 , Rotate 90.0 0.0 0.0
                 ]
             ] 
@@ -124,7 +124,7 @@ tLayout : TreeLayout
 tLayout =
     TreeLayout topToBottom 
             250 
-            25
+            20
             600
             300
 
