@@ -3,7 +3,7 @@ module Baumhierarchie exposing (..)
 import Html exposing (Html, button, div, text)
 import Http
 import Json.Decode
-import TreeDiagram
+import TreeDiagram exposing (TreeLayout, topToBottom)
 import TreeDiagram.Svg
 import TypedSvg exposing (circle, g, line, path,style, svg, text_)
 import Browser
@@ -120,8 +120,16 @@ drawNode str =
             [ text str ]
         ]
 
+tLayout : TreeLayout
+tLayout =
+    TreeLayout topToBottom 
+            250 
+            25
+            600
+            300
+
 view : Model -> Html Msg
 view model =
     div []
-        [ TreeDiagram.Svg.draw TreeDiagram.defaultTreeLayout drawNode drawLine model.tree 
+        [ TreeDiagram.Svg.draw tLayout drawNode drawLine model.tree 
         ]
