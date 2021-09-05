@@ -6233,6 +6233,8 @@ var $author$project$Baumhierarchie$update = F2(
 				$elm$core$Platform$Cmd$none);
 		}
 	});
+var $alex_tan$elm_tree_diagram$TreeDiagram$TopToBottom = {$: 'TopToBottom'};
+var $alex_tan$elm_tree_diagram$TreeDiagram$defaultTreeLayout = {levelHeight: 100, orientation: $alex_tan$elm_tree_diagram$TreeDiagram$TopToBottom, padding: 40, siblingDistance: 50, subtreeDistance: 80};
 var $elm$html$Html$div = _VirtualDom_node('div');
 var $elm$core$List$append = F2(
 	function (xs, ys) {
@@ -6817,7 +6819,7 @@ var $avh4$elm_color$Color$RgbaSpace = F4(
 	function (a, b, c, d) {
 		return {$: 'RgbaSpace', a: a, b: b, c: c, d: d};
 	});
-var $avh4$elm_color$Color$lightBlue = A4($avh4$elm_color$Color$RgbaSpace, 114 / 255, 159 / 255, 207 / 255, 1.0);
+var $avh4$elm_color$Color$black = A4($avh4$elm_color$Color$RgbaSpace, 0 / 255, 0 / 255, 0 / 255, 1.0);
 var $elm$virtual_dom$VirtualDom$nodeNS = function (tag) {
 	return _VirtualDom_nodeNS(
 		_VirtualDom_noScript(tag));
@@ -6989,7 +6991,7 @@ var $author$project$Baumhierarchie$drawLine = function (_v0) {
 				$elm_community$typed_svg$TypedSvg$Attributes$InPx$x2(targetX),
 				$elm_community$typed_svg$TypedSvg$Attributes$InPx$y2(targetY),
 				$elm_community$typed_svg$TypedSvg$Attributes$stroke(
-				$elm_community$typed_svg$TypedSvg$Types$Paint($avh4$elm_color$Color$lightBlue))
+				$elm_community$typed_svg$TypedSvg$Types$Paint($avh4$elm_color$Color$black))
 			]),
 		_List_Nil);
 };
@@ -7002,7 +7004,6 @@ var $elm_community$typed_svg$TypedSvg$Types$Translate = F2(
 	function (a, b) {
 		return {$: 'Translate', a: a, b: b};
 	});
-var $avh4$elm_color$Color$black = A4($avh4$elm_color$Color$RgbaSpace, 0 / 255, 0 / 255, 0 / 255, 1.0);
 var $avh4$elm_color$Color$blue = A4($avh4$elm_color$Color$RgbaSpace, 52 / 255, 101 / 255, 164 / 255, 1.0);
 var $elm_community$typed_svg$TypedSvg$circle = $elm_community$typed_svg$TypedSvg$Core$node('circle');
 var $elm_community$typed_svg$TypedSvg$Attributes$cx = function (length) {
@@ -7166,7 +7167,7 @@ var $author$project$Baumhierarchie$drawNode = function (str) {
 						$elm_community$typed_svg$TypedSvg$Attributes$transform(
 						_List_fromArray(
 							[
-								A2($elm_community$typed_svg$TypedSvg$Types$Translate, 0.5, 17),
+								A2($elm_community$typed_svg$TypedSvg$Types$Translate, 0.5, 0.5),
 								A3($elm_community$typed_svg$TypedSvg$Types$Rotate, 90.0, 0.0, 0.0)
 							]))
 					]),
@@ -7176,20 +7177,13 @@ var $author$project$Baumhierarchie$drawNode = function (str) {
 					]))
 			]));
 };
-var $alex_tan$elm_tree_diagram$TreeDiagram$TreeLayout = F5(
-	function (orientation, levelHeight, siblingDistance, subtreeDistance, padding) {
-		return {levelHeight: levelHeight, orientation: orientation, padding: padding, siblingDistance: siblingDistance, subtreeDistance: subtreeDistance};
-	});
-var $alex_tan$elm_tree_diagram$TreeDiagram$TopToBottom = {$: 'TopToBottom'};
-var $alex_tan$elm_tree_diagram$TreeDiagram$topToBottom = $alex_tan$elm_tree_diagram$TreeDiagram$TopToBottom;
-var $author$project$Baumhierarchie$tLayout = A5($alex_tan$elm_tree_diagram$TreeDiagram$TreeLayout, $alex_tan$elm_tree_diagram$TreeDiagram$topToBottom, 250, 20, 600, 300);
 var $author$project$Baumhierarchie$view = function (model) {
 	return A2(
 		$elm$html$Html$div,
 		_List_Nil,
 		_List_fromArray(
 			[
-				A4($alex_tan$elm_tree_diagram$TreeDiagram$Svg$draw, $author$project$Baumhierarchie$tLayout, $author$project$Baumhierarchie$drawNode, $author$project$Baumhierarchie$drawLine, model.tree)
+				A4($alex_tan$elm_tree_diagram$TreeDiagram$Svg$draw, $alex_tan$elm_tree_diagram$TreeDiagram$defaultTreeLayout, $author$project$Baumhierarchie$drawNode, $author$project$Baumhierarchie$drawLine, model.tree)
 			]));
 };
 var $author$project$Baumhierarchie$main = $elm$browser$Browser$element(
