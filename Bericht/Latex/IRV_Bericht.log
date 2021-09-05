@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  5 SEP 2021 13:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  5 SEP 2021 14:19
 entering extended mode
 **./IRV_Bericht.tex
 (IRV_Bericht.tex
@@ -604,48 +604,54 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 3
 (C:\Users\Floyd\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [3]
-[4] [5] [6] [7]
-<Bilder/V1Scatterplot.png, id=136, 919.63576pt x 463.7325pt>
+[4] [5]
+Overfull \hbox (15.02238pt too wide) in paragraph at lines 80--81
+\T1/lmr/m/n/10.95 Die die-sem Pro-jekt-be-richt zu-grun-de-lie-gen-den Roh-da-t
+en ent-stam-men ei-nem Da-ten-satz des Kaggle-
+ []
+
+[6] [7]
+<Bilder/V1Scatterplot.png, id=137, 919.63576pt x 463.7325pt>
 File: Bilder/V1Scatterplot.png Graphic file (type png)
 <use Bilder/V1Scatterplot.png>
-Package pdftex.def Info: Bilder/V1Scatterplot.png  used on input line 117.
+Package pdftex.def Info: Bilder/V1Scatterplot.png  used on input line 115.
 (pdftex.def)             Requested size: 455.24408pt x 229.5589pt.
  [8] [9 <./Bilder/V1Scatterplot.png>]
-<Bilder/V2ParalleleKoordinaten.png, id=150, 808.82175pt x 461.92575pt>
+<Bilder/V2ParalleleKoordinaten.png, id=151, 808.82175pt x 461.92575pt>
 File: Bilder/V2ParalleleKoordinaten.png Graphic file (type png)
 <use Bilder/V2ParalleleKoordinaten.png>
 Package pdftex.def Info: Bilder/V2ParalleleKoordinaten.png  used on input line 
-130.
+128.
 (pdftex.def)             Requested size: 455.24408pt x 259.9947pt.
  [10 <./Bilder/V2ParalleleKoordinaten.png>]
-<Bilder/V3Baumhierarchie.png, id=157, 1153.911pt x 211.38976pt>
+<Bilder/V3Baumhierarchie.png, id=158, 1153.911pt x 211.38976pt>
 File: Bilder/V3Baumhierarchie.png Graphic file (type png)
 <use Bilder/V3Baumhierarchie.png>
-Package pdftex.def Info: Bilder/V3Baumhierarchie.png  used on input line 142.
+Package pdftex.def Info: Bilder/V3Baumhierarchie.png  used on input line 140.
 (pdftex.def)             Requested size: 455.24408pt x 83.39642pt.
 
-Overfull \hbox (4.71611pt too wide) in paragraph at lines 139--148
+Overfull \hbox (4.71611pt too wide) in paragraph at lines 137--146
 \T1/lmr/m/n/10.95 sua-li-se-run-gen wur-de auf ei-ne In-ter-ak-ti-ons-mög-lich-
 keit ver-zich-tet. Die an-ge-lei-te-ten Baumhierarchie-
  []
 
 [11 <./Bilder/V3Baumhierarchie.png>] [12] [13]
-<Bilder/ScatterplotA1.png, id=173, 867.84225pt x 410.7345pt>
+<Bilder/ScatterplotA1.png, id=174, 867.84225pt x 410.7345pt>
 File: Bilder/ScatterplotA1.png Graphic file (type png)
 <use Bilder/ScatterplotA1.png>
-Package pdftex.def Info: Bilder/ScatterplotA1.png  used on input line 181.
+Package pdftex.def Info: Bilder/ScatterplotA1.png  used on input line 179.
 (pdftex.def)             Requested size: 455.24408pt x 215.46335pt.
  [14 <./Bilder/ScatterplotA1.png>]
-<Bilder/ParallelCoordsA2.png, id=180, 925.65825pt x 436.029pt>
+<Bilder/ParallelCoordsA2.png, id=181, 925.65825pt x 436.029pt>
 File: Bilder/ParallelCoordsA2.png Graphic file (type png)
 <use Bilder/ParallelCoordsA2.png>
-Package pdftex.def Info: Bilder/ParallelCoordsA2.png  used on input line 192.
+Package pdftex.def Info: Bilder/ParallelCoordsA2.png  used on input line 190.
 (pdftex.def)             Requested size: 455.24408pt x 214.44781pt.
  [15 <./Bilder/ParallelCoordsA2.png>]
-<Bilder/BaumhierarchieA3.png, id=187, 1149.69525pt x 308.95425pt>
+<Bilder/BaumhierarchieA3.png, id=188, 1149.69525pt x 308.95425pt>
 File: Bilder/BaumhierarchieA3.png Graphic file (type png)
 <use Bilder/BaumhierarchieA3.png>
-Package pdftex.def Info: Bilder/BaumhierarchieA3.png  used on input line 201.
+Package pdftex.def Info: Bilder/BaumhierarchieA3.png  used on input line 199.
 (pdftex.def)             Requested size: 455.24408pt x 122.33495pt.
  [16 <./Bilder/BaumhierarchieA3.png>]
 [17] [18] (IRV_Bericht.bbl [19]) [20] (IRV_Bericht.aux)
@@ -653,10 +659,10 @@ Package rerunfilecheck Info: File `IRV_Bericht.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 13366 strings out of 478864
- 228372 string characters out of 2848660
+ 13353 strings out of 478864
+ 228169 string characters out of 2848660
  680125 words of memory out of 3000000
- 30996 multiletter control sequences out of 15000+600000
+ 30983 multiletter control sequences out of 15000+600000
  459256 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,7n,108p,10635b,474s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -668,9 +674,9 @@ sers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Us
 ers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Use
 rs/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Use
 rs/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on IRV_Bericht.pdf (20 pages, 1414812 bytes).
+Output written on IRV_Bericht.pdf (20 pages, 1415211 bytes).
 PDF statistics:
- 342 PDF objects out of 1000 (max. 8388607)
+ 343 PDF objects out of 1000 (max. 8388607)
  84 named destinations out of 1000 (max. 500000)
  207 words of extra memory for PDF output out of 10000 (max. 10000000)
 
