@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  6 SEP 2021 14:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  6 SEP 2021 17:05
 entering extended mode
 **./IRV_Bericht.tex
 (IRV_Bericht.tex
@@ -624,34 +624,27 @@ File: Bilder/Excelbefehl.png Graphic file (type png)
 Package pdftex.def Info: Bilder/Excelbefehl.png  used on input line 106.
 (pdftex.def)             Requested size: 227.62204pt x 15.04964pt.
  [7] [8 <./Bilder/Excelbefehl.png>]
-<Bilder/V1Scatterplot.png, id=145, 919.63576pt x 463.7325pt>
+<Bilder/V1Scatterplot.png, id=145, 738.3585pt x 398.08725pt>
 File: Bilder/V1Scatterplot.png Graphic file (type png)
 <use Bilder/V1Scatterplot.png>
-Package pdftex.def Info: Bilder/V1Scatterplot.png  used on input line 130.
-(pdftex.def)             Requested size: 455.24408pt x 229.5589pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[9]
+Package pdftex.def Info: Bilder/V1Scatterplot.png  used on input line 132.
+(pdftex.def)             Requested size: 455.24408pt x 245.44482pt.
+ [9]
 <Bilder/V2ParalleleKoordinaten.png, id=150, 808.82175pt x 461.92575pt>
 File: Bilder/V2ParalleleKoordinaten.png Graphic file (type png)
 <use Bilder/V2ParalleleKoordinaten.png>
 Package pdftex.def Info: Bilder/V2ParalleleKoordinaten.png  used on input line 
-143.
+145.
 (pdftex.def)             Requested size: 455.24408pt x 259.9947pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[10 <./Bilder/V1Scatterplot.png>] [11 <./Bilder/V2ParalleleKoordinaten.png>]
+ [10 <./Bilder/V1Scatterplot.png>]
+[11 <./Bilder/V2ParalleleKoordinaten.png>]
 <Bilder/V3Baumhierarchie.png, id=163, 1153.911pt x 211.38976pt>
 File: Bilder/V3Baumhierarchie.png Graphic file (type png)
 <use Bilder/V3Baumhierarchie.png>
-Package pdftex.def Info: Bilder/V3Baumhierarchie.png  used on input line 155.
+Package pdftex.def Info: Bilder/V3Baumhierarchie.png  used on input line 157.
 (pdftex.def)             Requested size: 455.24408pt x 83.39642pt.
 
-Overfull \hbox (4.71611pt too wide) in paragraph at lines 152--161
+Overfull \hbox (4.71611pt too wide) in paragraph at lines 154--163
 \T1/lmr/m/n/10.95 sua-li-se-run-gen wur-de auf ei-ne In-ter-ak-ti-ons-mög-lich-
 keit ver-zich-tet. Die an-ge-lei-te-ten Baumhierarchie-
  []
@@ -660,30 +653,22 @@ keit ver-zich-tet. Die an-ge-lei-te-ten Baumhierarchie-
 <Bilder/ScatterplotA1.png, id=175, 867.84225pt x 410.7345pt>
 File: Bilder/ScatterplotA1.png Graphic file (type png)
 <use Bilder/ScatterplotA1.png>
-Package pdftex.def Info: Bilder/ScatterplotA1.png  used on input line 194.
+Package pdftex.def Info: Bilder/ScatterplotA1.png  used on input line 196.
 (pdftex.def)             Requested size: 455.24408pt x 215.46335pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[14]
-<Bilder/ParallelCoordsA2.png, id=180, 925.65825pt x 436.029pt>
+ [14] [15 <./Bilder/ScatterplotA1.png>]
+<Bilder/ParallelCoordsA2.png, id=186, 925.65825pt x 436.029pt>
 File: Bilder/ParallelCoordsA2.png Graphic file (type png)
 <use Bilder/ParallelCoordsA2.png>
-Package pdftex.def Info: Bilder/ParallelCoordsA2.png  used on input line 205.
+Package pdftex.def Info: Bilder/ParallelCoordsA2.png  used on input line 207.
 (pdftex.def)             Requested size: 455.24408pt x 214.44781pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[15 <./Bilder/ScatterplotA1.png>]
-<Bilder/BaumhierarchieA3.png, id=187, 1149.69525pt x 308.95425pt>
+ [16 <./Bilder/ParallelCoordsA2.png>]
+<Bilder/BaumhierarchieA3.png, id=193, 1149.69525pt x 308.95425pt>
 File: Bilder/BaumhierarchieA3.png Graphic file (type png)
 <use Bilder/BaumhierarchieA3.png>
-Package pdftex.def Info: Bilder/BaumhierarchieA3.png  used on input line 214.
+Package pdftex.def Info: Bilder/BaumhierarchieA3.png  used on input line 216.
 (pdftex.def)             Requested size: 455.24408pt x 122.33495pt.
- [16 <./Bilder/ParallelCoordsA2.png> <./Bilder/BaumhierarchieA3.png>] [17] [18]
- [19] (IRV_Bericht.bbl
+ [17 <./Bilder/BaumhierarchieA3.png>]
+[18] [19] (IRV_Bericht.bbl
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
 5.
 
@@ -813,7 +798,7 @@ ers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Use
 rs/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Use
 rs/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/U
 sers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
-Output written on IRV_Bericht.pdf (22 pages, 1463738 bytes).
+Output written on IRV_Bericht.pdf (22 pages, 1355143 bytes).
 PDF statistics:
  397 PDF objects out of 1000 (max. 8388607)
  85 named destinations out of 1000 (max. 500000)
