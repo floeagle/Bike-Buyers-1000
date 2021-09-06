@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  6 SEP 2021 22:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  6 SEP 2021 22:55
 entering extended mode
 **./IRV_Bericht.tex
 (IRV_Bericht.tex
@@ -638,18 +638,12 @@ Package pdftex.def Info: Bilder/V2ParalleleKoordinaten.png  used on input line
 (pdftex.def)             Requested size: 455.24408pt x 281.8812pt.
  [10 <./Bilder/V1Scatterplot.png>]
 [11 <./Bilder/V2ParalleleKoordinaten.png>]
-<Bilder/V3Baumhierarchie.png, id=165, 1153.911pt x 211.38976pt>
+<Bilder/V3Baumhierarchie.png, id=165, 1132.23pt x 516.12825pt>
 File: Bilder/V3Baumhierarchie.png Graphic file (type png)
 <use Bilder/V3Baumhierarchie.png>
 Package pdftex.def Info: Bilder/V3Baumhierarchie.png  used on input line 155.
-(pdftex.def)             Requested size: 455.24408pt x 83.39642pt.
-
-Overfull \hbox (4.71611pt too wide) in paragraph at lines 152--161
-\T1/lmr/m/n/10.95 sua-li-se-run-gen wur-de auf ei-ne In-ter-ak-ti-ons-mög-lich-
-keit ver-zich-tet. Die an-ge-lei-te-ten Baumhierarchie-
- []
-
-[12 <./Bilder/V3Baumhierarchie.png>] [13] [14]
+(pdftex.def)             Requested size: 341.43306pt x 155.64296pt.
+ [12 <./Bilder/V3Baumhierarchie.png>] [13] [14]
 <Bilder/ScatterplotA1.png, id=181, 867.84225pt x 410.7345pt>
 File: Bilder/ScatterplotA1.png Graphic file (type png)
 <use Bilder/ScatterplotA1.png>
@@ -667,8 +661,7 @@ File: Bilder/BaumhierarchieA3.png Graphic file (type png)
 <use Bilder/BaumhierarchieA3.png>
 Package pdftex.def Info: Bilder/BaumhierarchieA3.png  used on input line 214.
 (pdftex.def)             Requested size: 455.24408pt x 122.33495pt.
- [17 <./Bilder/BaumhierarchieA3.png>]
-[18] [19] (IRV_Bericht.bbl
+ [17 <./Bilder/BaumhierarchieA3.png>] [18] [19] (IRV_Bericht.bbl
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
 5.
 
@@ -798,7 +791,7 @@ ers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Use
 rs/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Use
 rs/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/U
 sers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
-Output written on IRV_Bericht.pdf (22 pages, 1172838 bytes).
+Output written on IRV_Bericht.pdf (22 pages, 1189559 bytes).
 PDF statistics:
  399 PDF objects out of 1000 (max. 8388607)
  86 named destinations out of 1000 (max. 500000)
