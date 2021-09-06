@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  6 SEP 2021 22:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  6 SEP 2021 23:08
 entering extended mode
 **./IRV_Bericht.tex
 (IRV_Bericht.tex
@@ -647,21 +647,21 @@ Package pdftex.def Info: Bilder/V3Baumhierarchie.png  used on input line 155.
 <Bilder/ScatterplotA1.png, id=181, 867.84225pt x 410.7345pt>
 File: Bilder/ScatterplotA1.png Graphic file (type png)
 <use Bilder/ScatterplotA1.png>
-Package pdftex.def Info: Bilder/ScatterplotA1.png  used on input line 194.
+Package pdftex.def Info: Bilder/ScatterplotA1.png  used on input line 193.
 (pdftex.def)             Requested size: 455.24408pt x 215.46335pt.
- [15 <./Bilder/ScatterplotA1.png>]
-<Bilder/ParallelCoordsA2.png, id=188, 925.65825pt x 436.029pt>
+ [15 <./Bilder/ScatterplotA1.png>] [16]
+<Bilder/ParallelCoordsA2.png, id=192, 925.65825pt x 436.029pt>
 File: Bilder/ParallelCoordsA2.png Graphic file (type png)
 <use Bilder/ParallelCoordsA2.png>
-Package pdftex.def Info: Bilder/ParallelCoordsA2.png  used on input line 205.
+Package pdftex.def Info: Bilder/ParallelCoordsA2.png  used on input line 204.
 (pdftex.def)             Requested size: 455.24408pt x 214.44781pt.
- [16 <./Bilder/ParallelCoordsA2.png>]
-<Bilder/BaumhierarchieA3.png, id=195, 1149.69525pt x 308.95425pt>
+ [17 <./Bilder/ParallelCoordsA2.png>]
+<Bilder/BaumhierarchieA3.png, id=199, 1149.69525pt x 308.95425pt>
 File: Bilder/BaumhierarchieA3.png Graphic file (type png)
 <use Bilder/BaumhierarchieA3.png>
-Package pdftex.def Info: Bilder/BaumhierarchieA3.png  used on input line 214.
+Package pdftex.def Info: Bilder/BaumhierarchieA3.png  used on input line 213.
 (pdftex.def)             Requested size: 455.24408pt x 122.33495pt.
- [17 <./Bilder/BaumhierarchieA3.png>] [18] [19] (IRV_Bericht.bbl
+ [18 <./Bilder/BaumhierarchieA3.png>] [19] [20] (IRV_Bericht.bbl
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
 5.
 
@@ -728,7 +728,7 @@ Underfull \hbox (badness 2012) in paragraph at lines 79--85
  auto /
  []
 
-[20]
+[21]
 Underfull \hbox (badness 1231) in paragraph at lines 122--128
 []\T1/lmr/m/n/10.95 Rida Mou-stafa and Ed Weg-man.  Mul-ti-va-ria-te con-ti-nuo
 us da-ta --- par-al-lel coor-
@@ -752,7 +752,7 @@ Overfull \hbox (38.4115pt too wide) in paragraph at lines 165--170
 katapultieren-[]sich-[]berliner-[]fahrradl %
  []
 
-[21]
+[22]
 Underfull \hbox (badness 2990) in paragraph at lines 178--182
 \T1/lmr/m/n/10.95 bau-boom, 2021.  URL []$\T1/lmtt/m/n/10.95 https : / / www . 
 handelsblatt . com / unternehmen / industrie /
@@ -770,13 +770,13 @@ Underfull \hbox (badness 1715) in paragraph at lines 184--188
 1/lmtt/m/n/10.95 https : / / www . kaggle . com /
  []
 
-) [22] (IRV_Bericht.aux)
+) [23] (IRV_Bericht.aux)
 Package rerunfilecheck Info: File `IRV_Bericht.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 13776 strings out of 478864
- 234175 string characters out of 2848660
+ 13777 strings out of 478864
+ 234182 string characters out of 2848660
  688034 words of memory out of 3000000
  31395 multiletter control sequences out of 15000+600000
  459575 words of font info for 72 fonts, out of 8000000 for 9000
@@ -791,9 +791,9 @@ ers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Use
 rs/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Use
 rs/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/U
 sers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
-Output written on IRV_Bericht.pdf (22 pages, 1189559 bytes).
+Output written on IRV_Bericht.pdf (23 pages, 1190592 bytes).
 PDF statistics:
- 399 PDF objects out of 1000 (max. 8388607)
- 86 named destinations out of 1000 (max. 500000)
+ 403 PDF objects out of 1000 (max. 8388607)
+ 87 named destinations out of 1000 (max. 500000)
  212 words of extra memory for PDF output out of 10000 (max. 10000000)
 
