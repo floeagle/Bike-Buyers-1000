@@ -10,9 +10,10 @@
 \usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm, bindingoffset=1cm, includeheadfoot]{geometry}
 %Zeilenabstand bitte nicht ändern
 \usepackage[onehalfspacing]{setspace}
+\usepackage[numbers]{natbib}
+%\usepackage[backend=biber,style=numeric,]{biblatex}\addbibresource{literatur.bib}
+\bibliographystyle{unsrtnat}
 
-
-\bibliographystyle{unsrt}
 
 \begin{document}
 % ----------------------------------------------------------------------------
@@ -31,7 +32,7 @@
 % Gliederung und Text:
 \newpage
 \section{Einleitung}
-Durch das wachsende Umweltbewusstsein in der Bevölkerung rückt besonders das Fahrrad als klimaneutrales Verkehrsmittel in den Fokus \cite{Marquart.2021}. Bereits 2019 betrug der Gesamtbestand an Fahrrädern in Deutschland fast 76 Millionen \cite{Kords.26.06.2020,Statista.25.08.2021}. Die anhaltende Covid-19 Krise verstärkt den zunehmenden Fahrrad-Boom für die Freizeitgestaltung und den Pendelverkehr \cite{Platter.2020}. Gründe hierfür liegen beispielsweise bei der Sportmöglichkeit als Ausgleich zu geschlossenen Sportstätten, sowie im Individualverkehr für das Einhalten der Abstandregeln als Alternative zum Nahverkehr. Dabei wird sich häufig für das Fahrrad anstelle des Autos entschieden. \cite{Kollner.30.12.2020,Thomannbusse.24.11.2020}. Passend dazu gaben im Rahmen einer Studie 61\%  von 782 Fahrradfahrenden an, dass Sie während der Covid-19 Krise bei Kurzstrecken auf das Fahrrad zurückgreifen, weswegen auch die Nachfrage nach dem Ausbau von Fahrradstrecken steigt. \cite{sinus.2021}. Um die Sicherheit von Fahrradfahrenden im Straßenverkehr zu verbessern, nimmt die Planung und der Bau neuer Fahrradstrecken in deutschen Städten zu \cite{sinus.2021,ADAC.05.09.2021,Muenchen.de.05.09.2021}. Durch die Krise bedingte Lieferverzögerungen und Knappheiten führen zu einer hohen Nachfrage und steigenden Preisen. Auch wärmere Winter begünstigen eine längere Fahrradsaison und sorgen dadurch zusätzlich für Lieferengpässe \cite{tagesschau.11.03.2021}. Gleichzeitig werden Neuentwicklungen, wie E-Bikes, immer beliebter, was sich an der Gesamtabsatzbeteiligung im Jahr 2020 von 38,7\% in Deutschland bemerkbar macht \cite{tagesschau.11.03.2021}. 
+Durch Test1 das wachsende Umweltbewusstsein in der Bevölkerung rückt besonders das Fahrrad als klimaneutrales Verkehrsmittel in den Fokus \cite{Marquart.2021}. Bereits 2019 betrug der Gesamtbestand an Fahrrädern in Deutschland fast 76 Millionen \cite{Kords.26.06.2020,Statista.25.08.2021}. Die anhaltende Covid-19 Krise verstärkt den zunehmenden Fahrrad-Boom für die Freizeitgestaltung und den Pendelverkehr \cite{Platter.2020}. Gründe hierfür liegen beispielsweise bei der Sportmöglichkeit als Ausgleich zu geschlossenen Sportstätten, sowie im Individualverkehr für das Einhalten der Abstandregeln als Alternative zum Nahverkehr. Dabei wird sich häufig für das Fahrrad anstelle des Autos entschieden. \cite{Kollner.30.12.2020,Thomannbusse.24.11.2020}. Passend dazu gaben im Rahmen einer Studie 61\%  von 782 Fahrradfahrenden an, dass Sie während der Covid-19 Krise bei Kurzstrecken auf das Fahrrad zurückgreifen, weswegen auch die Nachfrage nach dem Ausbau von Fahrradstrecken steigt. \cite{sinus.2021}. Um die Sicherheit von Fahrradfahrenden im Straßenverkehr zu verbessern, nimmt die Planung und der Bau neuer Fahrradstrecken in deutschen Städten zu \cite{sinus.2021,ADAC.05.09.2021,Muenchen.de.05.09.2021}. Durch die Krise bedingte Lieferverzögerungen und Knappheiten führen zu einer hohen Nachfrage und steigenden Preisen. Auch wärmere Winter begünstigen eine längere Fahrradsaison und sorgen dadurch zusätzlich für Lieferengpässe \cite{tagesschau.11.03.2021}. Gleichzeitig werden Neuentwicklungen, wie E-Bikes, immer beliebter, was sich an der Gesamtabsatzbeteiligung im Jahr 2020 von 38,7\% in Deutschland bemerkbar macht \cite{tagesschau.11.03.2021}. 
 In der Schweiz ist das Fahrrad nicht zuletzt durch den staatlich geförderten Ausbau von Fahrradspuren zum beliebtesten Verkehrsmittel geworden \cite{Platter.2020}.
 
 Lieferengpässe erschweren die Kapazitätsplanung und damit die Kundenbeziehung. Eine weitere Herausforderung ist der beschriebene Ausbau von Fahrradstrecken und die damit verbundene Planung. Daraus lassen sich die folgenden Fragen ableiten:
@@ -110,14 +111,18 @@ Parallel dazu wurde das Länderbeispiel aus der Übung zehn als Grundlage verwen
 Die fertige Vorverarbeitung der im ELM Programm verlinkten JSON-Datei ist im Ordner "`JSON"' unter "`DatenvorverarbeitungohneCarWorldwide.json"' abrufbar.
 
 \section{Visualisierungen}
+In diesem Kapitel werden drei ausgewählte Visualisierungstechniken vorgestellt und diskutiert.
 \subsection{Analyse der Anwendungsaufgaben}
 Über den Scatterplot erhält besonders die Zielgruppe der Fahrradhersteller wichtige Informationen auf einen Blick, die bei der Produktion unterstützen können. 
-Mit den Paralleln Koordinaten können die Zusammenhaänge der Zahlenwerte aus dem Datensatz besser untersucht werden. Die Röntgendarstellung ermöglicht es, Überschneidungsmuster gut zu erkennen. Hierdurch haben vor allem neue Fahradhandelsgeschäfte (auch mit Onlineshop) die Möglichkeit Ihren Kundengruppen zielgrerichteter Fahrräder anzubieten, wodurch die Value Proporsition un d die mit dem Fahrrradkauf verbundenen, positiven Erinnerungen stärker hervorgerufen werden können. 
+Mit den Parallelen Koordinaten können die Zusammenhänge der Zahlenwerte aus dem Datensatz besser untersucht werden. Die Röntgendarstellung ermöglicht es, Überschneidungen gut zu erkennen. Hierdurch haben vor allem Fahrradhandelsgeschäfte (auch mit Onlineshop) die Möglichkeit Ihren Kundengruppen zielgerichteter Fahrräder anzubieten.
+Durch das genaue Eingehen auf die Kundenbedürfnisse sind mit dem Fahrradkauf positive Assoziationen verbunden,wodurch auch die Value Proposition für die Kundengruppen gestärkt wird. 
+
+Durch die Visualisierung von Hierarchien über das Baumdiagramm erhalten Bauunternehmen auf einen Blick wesentliche Informationen über Entfernungen für die Infrastruktur, die diese und alle mit dem Bauvorhaben involvierten Gruppen in dieser Phase unterstützt.
 
 \subsection{Anforderungen an die Visualisierungen}
-Im ersten Kapitel wurde die eingehende Motivation beschrieben, den verschiedenen Zielgruppen bestmögliche Anhaltspunkte zu finden, um die Fahrradkungengruppe nachhaltig an die jeweilige Unternehmensbranche zu binden. Die Designs müssen die angesprochene Übersichtlichkeit einhalten. Des Weiteren liegt ihr Wertversrpechen für die Zielgruppe im Aufzeigen von Zusammenhängen und vereinfachen von Datenmengen. Dabei müssen die Visualisierungen besondere Merkmale gut hervorheben, was auf Grund der Datensatzgröße (n=1000) eine Herausforderung darstellt. 
+Im ersten Kapitel wurde die eingehende Motivation beschrieben, den verschiedenen Zielgruppen bestmögliche Anhaltspunkte zu finden, um die Fahrradkundengruppe nachhaltig an die jeweilige Unternehmensbranche zu binden. Die Designs müssen die angesprochene Übersichtlichkeit einhalten. Des Weiteren liegt ihr Wertversprechen für die Zielgruppe im Aufzeigen von Zusammenhängen und der Vereinfachung von Datenmengen. Dabei müssen die Visualisierungen darin enthaltene, besondere Merkmale gut hervorheben, was auf Grund der Datensatzgröße (n=1000) eine zu bewältigende  Herausforderung darstellt. des weiteren sollen Anwendende Interaktionsspielraum mit den Anwendungen haben, um für sie spezifischere Informationen entnehmen zu können. Des weiteren müssen Anwendende die Gewissheit haben, dass keine Datenwerte durch die Visualisierung verändert wurden und den Erhebungsdaten zu den Fahrradkäufen entsprechen. 
 \subsection{Präsentation der Visualisierungen}
-In diesem Abschnitt werden die drei dem Projektbericht zugrunde liegenden Visualisierungen, der Scatterplot, Parallele Koordinaten und die Baumhierarchie. 
+In diesem Abschnitt werden die drei dem Projektbericht zugrunde liegenden Visualisierungen, der Scatterplot, Parallele Koordinaten und die Baumhierarchie zu den Fahrraddaten präsentiert. 
 \subsubsection{Visualisierung Eins}
 Für die erste Darstellung wurde der Scatterplot gewählt. Dessen einfache Grundfunktionen bieten eine gute Einleitung in die Visualiserung der Fahrradwerte. Die in der Einleitung beschriebenen Merkmale, wie die gegenüberstellung der X und Y Achse erfolgt über die Datenwerte Alter auf der X Achse und in dieser Abbildung über Einkommen. Anwendende haben darüber hinaus die Möglichkeit, über die oben gelegenen Buttons die Y-Achse des Scatterplots dynamisch anzupassen. Dabei können Einkommen, die Kinder- und Autoanzahl des Datensatzes in Abhängigkeit des Alters dargestellt werden und Die Punkte stellen jeweils einen koordinatenpunkt aus dem BikeBuyers Index dar. Um die Zielgruppe mit Zusatzinformationen zu versorgen können beim Hovern mit der Maus über die Punkte neben dem exakten Einkommen auch Informationen ob ein Fahrradkauf getätigt wurde und welcher Berufsgruppe die befragte Person angehört, eingeholt werden. Die Wahl den Beruf beim Hovern über die punkte  anzuzeigen, lässt sich damit begründen, dass String-Werte nicht in den Achsen dargestellt werden können. 
 \begin{figure}[h]
@@ -239,6 +244,6 @@ Zusammenfassend bietet diese Forschungsarbeit zur Visualisierung von Fahrradkäu
 \section*{Anhang: Git-Historie}
 \newpage
 \bibliography{literatur}
-
+%\printbibliography
 \end{document}
 
