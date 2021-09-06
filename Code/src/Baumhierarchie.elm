@@ -14,6 +14,10 @@ import TypedSvg.Core exposing (Svg)
 import TypedSvg.Types exposing (AnchorAlignment(..), Length(..), Paint(..), Transform(..))
 
 
+type alias Model =
+    { tree : TreeDiagram.Tree String, errorMsg : String }
+type Msg
+    = GotTree (Result Http.Error (TreeDiagram.Tree String))
 
 main : Program () Model Msg
 main =
@@ -25,8 +29,7 @@ main =
         }
 
 
-type alias Model =
-    { tree : TreeDiagram.Tree String, errorMsg : String }
+
 
 
 init : () -> ( Model, Cmd Msg )
@@ -37,32 +40,13 @@ init () =
     )
 
 
-type Msg
-    = GotTree (Result Http.Error (TreeDiagram.Tree String))
 
 subscriptions : Model -> Sub Msg
 subscriptions model =
   Sub.none
 
 
-treeDecoder : Json.Decode.Decoder (TreeDiagram.Tree String)
-treeDecoder =
-    Json.Decode.map2
-        (\name children ->
-            case children of
-                Nothing ->
-                    TreeDiagram.node name []
 
-                Just c ->
-                    TreeDiagram.node name c
-        )
-        (Json.Decode.field "data" (Json.Decode.field "id" Json.Decode.string))
-        (Json.Decode.maybe <|
-            Json.Decode.field "children" <|
-                Json.Decode.list <|
-                    Json.Decode.lazy
-                        (\_ -> treeDecoder)
-        )
 
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
@@ -133,3 +117,21 @@ view model =
     div []
         [ TreeDiagram.Svg.draw tLayout drawNode drawLine model.tree 
         ]
+treeDecoder : Json.Decode.Decoder (TreeDiagram.Tree String)
+treeDecoder =
+    Json.Decode.map2
+        (\name children ->
+            case children of
+                Nothing ->
+                    TreeDiagram.node name []
+
+                Just c ->
+                    TreeDiagram.node name c
+        )
+        (Json.Decode.field "data" (Json.Decode.field "id" Json.Decode.string))
+        (Json.Decode.maybe <|
+            Json.Decode.field "children" <|
+                Json.Decode.list <|
+                    Json.Decode.lazy
+                        (\_ -> treeDecoder)
+        )

@@ -22,19 +22,78 @@ import List.Extra exposing (initialize)
 
 
 
+type alias Model =
+    { start1 : Int
+    , start2 : Int
+    , display : List ( String, FilteredBikeBuyers -> Float )
+    , value1 : String
+    , value2 : String
+    , value3 : String
+    , value4 : String
+    }
+type Msg
+    = StartUp
+    | StartDown
+    | IncomeVal
+    | ChildrenVal
+    | CarsVal
+    | AgeVal
+    | Switch1
+    | Switch2
+    | Switch3
+
+type alias MultiDimPoint =
+    { pointName : String, value : List Float }
+
+
+type alias MultiDimData =
+    { dimDescription : List String
+    , data : List (List MultiDimPoint)
+    }
+
+padding : Float
+padding =
+    60
+
+defaultExtent : ( number, number1 )
+defaultExtent =
+    ( 0, 100 )
+
+
+tickCount_ : Int
+tickCount_ =
+    10
+
+
+wideExtent : List Float -> ( Float, Float )
+wideExtent values =
+    let
+        closeExtent =
+            Statistics.extent values
+                |> Maybe.withDefault defaultExtent
+
+        extension =
+            (Tuple.second closeExtent - Tuple.first closeExtent) / toFloat (2 * tickCount_)
+    in
+    ( Tuple.first closeExtent - extension
+      --|> max 0
+    , Tuple.second closeExtent + extension
+    )
+
+
 -- erweiterung mit Buttons für Interaktion
 main : Program () Model Msg
 main =
     Browser.sandbox
-        { init = initial
+        { init = init
         , view = view
         , update = update
         }
 
    
 
-initial : Model
-initial =
+init : Model
+init =
     { start1 = 0
     , start2 = 0 
     , display =
@@ -48,9 +107,6 @@ initial =
     , value3 = "Cars"
     , value4 = "Age"
     } 
-indexSwap : Model -> List ( String, FilteredBikeBuyers -> Float )
-indexSwap model =
-            List.Extra.swapAt model.start1 model.start2 model.display
 
 
 
@@ -59,11 +115,6 @@ view model=
     case Decode.decodeCsv Decode.FieldNamesFromFirstRow decoder csv of
         Ok bikes1 ->
             let   
-
-            {- beim ersten compilen ist mir aufgefallen, dass zu viele Daten in die Parallelen Koordinaten geladen werden (n=1000) 
-                -> Durch die Funktion filteredBikes können über List.filter Datenstrings gefiltert werden. 
-
-                    -}
                 filteredBikes : List FilteredBikeBuyers
                 filteredBikes =
                     filterMissingValues bikes1
@@ -98,6 +149,12 @@ view model=
                 ]
         Err problem ->
             Html.text ("There was a problem loading your data")
+
+
+indexSwap : Model -> List ( String, FilteredBikeBuyers -> Float )
+indexSwap model =
+            List.Extra.swapAt model.start1 model.start2 model.display
+
 
 update : Msg -> Model -> Model
 update msg model =
@@ -228,34 +285,6 @@ parallelCoordinatesPlot w ar model =
                                 (List.map (.value >> drawPoint) dataset)
                         )
                )
-padding : Float
-padding =
-    60
-
-defaultExtent : ( number, number1 )
-defaultExtent =
-    ( 0, 100 )
-
-
-tickCount_ : Int
-tickCount_ =
-    10
-
-
-wideExtent : List Float -> ( Float, Float )
-wideExtent values =
-    let
-        closeExtent =
-            Statistics.extent values
-                |> Maybe.withDefault defaultExtent
-
-        extension =
-            (Tuple.second closeExtent - Tuple.first closeExtent) / toFloat (2 * tickCount_)
-    in
-    ( Tuple.first closeExtent - extension
-      --|> max 0
-    , Tuple.second closeExtent + extension
-    )
 
 
 colordescr: String
@@ -267,47 +296,20 @@ colordescr =
     """
 
 
-type alias Model =
-    { start1 : Int
-    , start2 : Int
-    , display : List ( String, FilteredBikeBuyers -> Float )
-    , value1 : String
-    , value2 : String
-    , value3 : String
-    , value4 : String
-    }
-type Msg
-    = StartUp
-    | StartDown
-    | IncomeVal
-    | ChildrenVal
-    | CarsVal
-    | AgeVal
-    | Switch1
-    | Switch2
-    | Switch3    
--- Aus Übung 
+    
+
 
 type alias FilteredBikeBuyers =
     { purchasedBike : String, region : String,  income : Float, children : Float, cars : Float, age : Float }
 
---  Grundgerüst aus Übung
-type alias MultiDimPoint =
-    { pointName : String, value : List Float }
 
 
-type alias MultiDimData =
-    { dimDescription : List String
-    , data : List (List MultiDimPoint)
-    }
 filterMissingValues : List BikeBuyers -> List FilteredBikeBuyers
 filterMissingValues mybikes =
     let
         bike2filteredBike : BikeBuyers -> Maybe FilteredBikeBuyers
         bike2filteredBike bbuyers =
-        -- purchasedBike und region für Vorfilter der Visualisierung
             Maybe.map4 (FilteredBikeBuyers bbuyers.purchasedBike bbuyers.region)
-            -- Für Parallele Achsen
                 bbuyers.income
                 bbuyers.children
                 bbuyers.cars

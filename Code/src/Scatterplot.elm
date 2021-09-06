@@ -18,6 +18,89 @@ import TypedSvg.Core exposing (Svg)
 import TypedSvg.Events
 import TypedSvg.Types exposing (AnchorAlignment(..), Length(..), Paint(..), Transform(..))
 
+-- Für Anzeige            
+w : Float
+w =
+    900
+
+
+h : Float
+h =
+    450
+
+
+padding : Float
+padding =
+    60
+
+
+radius : Float
+radius =
+    5.0
+
+
+tickCount : Int
+tickCount =
+    5
+
+
+defaultExtent : ( number, number1 )
+defaultExtent =
+    ( 0, 100 )
+
+xScale : List Float -> ContinuousScale Float
+xScale values =
+    Scale.linear ( 0, w - 2 * padding ) ( wideExtent values )
+
+
+yScale : List Float -> ContinuousScale Float
+yScale values =
+    Scale.linear ( h - 2 * padding, 0 ) ( wideExtent values )
+
+wideExtent : List Float -> ( Float, Float )
+wideExtent values =
+    let
+        scale: (Float, Float)
+        scale = Maybe.withDefault defaultExtent (Statistics.extent values)
+
+        range: Float
+        range = -(Tuple.first scale) + (Tuple.second scale)
+
+        down: Float
+        down = (Tuple.first scale) - range/(Basics.toFloat (2*tickCount))
+
+        up: Float
+        up = (Tuple.second scale)+range/(Basics.toFloat (2*tickCount))
+    in         
+        if (down < 0) then 
+            (0, up)
+        else
+            (down, up)
+
+
+xAxis : List Float -> Svg msg
+xAxis values =
+    Axis.bottom [ Axis.tickCount tickCount ] (xScale values)
+
+
+yAxis : List Float -> Svg msg
+yAxis values =
+    Axis.left [ Axis.tickCount tickCount ] (yScale values)
+
+
+type Msg
+  = GotText (Result Http.Error String)
+  | Display YAchse
+
+
+type alias Model =
+    {abbildung : YAchse}
+
+type YAchse
+    = Einkommen
+    | Kinder
+    | AnzahlAutos
+
 
 
 main =
@@ -99,82 +182,9 @@ view model =
         Err problem ->
             Html.text ("There was a problem loading your data")
 
--- Für Anzeige            
-w : Float
-w =
-    900
 
-
-h : Float
-h =
-    450
-
-
-padding : Float
-padding =
-    60
-
-
-radius : Float
-radius =
-    5.0
-
-
-tickCount : Int
-tickCount =
-    5
-
-
-defaultExtent : ( number, number1 )
-defaultExtent =
-    ( 0, 100 )
-
-xScale : List Float -> ContinuousScale Float
-xScale values =
-    Scale.linear ( 0, w - 2 * padding ) ( wideExtent values )
-
-
-yScale : List Float -> ContinuousScale Float
-yScale values =
-    Scale.linear ( h - 2 * padding, 0 ) ( wideExtent values )
-
-wideExtent : List Float -> ( Float, Float )
-wideExtent values =
-    let
-        scale: (Float, Float)
-        scale = Maybe.withDefault defaultExtent (Statistics.extent values)
-
-        range: Float
-        range = -(Tuple.first scale) + (Tuple.second scale)
-
-        down: Float
-        down = (Tuple.first scale) - range/(Basics.toFloat (2*tickCount))
-
-        up: Float
-        up = (Tuple.second scale)+range/(Basics.toFloat (2*tickCount))
-    in         
-        if (down < 0) then 
-            (0, up)
-        else
-            (down, up)
-
-
-xAxis : List Float -> Svg msg
-xAxis values =
-    Axis.bottom [ Axis.tickCount tickCount ] (xScale values)
-
-
-yAxis : List Float -> Svg msg
-yAxis values =
-    Axis.left [ Axis.tickCount tickCount ] (yScale values)
 -- Für Punktdarstellung
 
-farbe2Buyers : FilteredBikeBuyers -> List String
-farbe2Buyers buyers =
-  if buyers.purchasedBike == "Yes" then
-    [ "point", "buyed" ]
-  else
-    [ "point" ]
 
 
 points : ContinuousScale Float -> ContinuousScale Float -> YAchse -> FilteredBikeBuyers -> Svg Msg
@@ -205,6 +215,13 @@ points scaleX scaleY buttons xyPoint =
                 [Html.text ("OwnBike? " ++ xyPoint.purchasedBike ++ ", " ++ "Einkommen: " ++  String.fromFloat xyPoint.income ++", " ++ " Alter: " ++ 
                 String.fromFloat xyPoint.age ++ ", " ++ "Beruf: " ++  xyPoint.occupation ++ "," ++ " HomeOwner: " ++ xyPoint.homeOwner )]
         ]
+farbe2Buyers : FilteredBikeBuyers -> List String
+farbe2Buyers buyers =
+  if buyers.purchasedBike == "Yes" then
+    [ "point", "buyed" ]
+  else
+    [ "point" ]
+
 
 scatterplot : List FilteredBikeBuyers -> YAchse -> Svg Msg
 scatterplot model dat =
@@ -283,20 +300,6 @@ scatterplot model dat =
             ]
             ]  
             
-
-
-type Msg
-  = GotText (Result Http.Error String)
-  | Display YAchse
-
-
-type alias Model =
-    {abbildung : YAchse}
-
-type YAchse
-    = Einkommen
-    | Kinder
-    | AnzahlAutos
 
 
 type alias FilteredBikeBuyers =
