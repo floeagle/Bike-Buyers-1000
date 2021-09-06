@@ -1,4 +1,4 @@
-\begin{thebibliography}{30}
+\begin{thebibliography}{31}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -125,6 +125,15 @@ Rida Moustafa and Ed~Wegman.
   143--155. {Springer New York}, New York, NY, 2006.
 \newblock ISBN 978-0-387-32906-2.
 \newblock \doi{10.1007/0-387-37977-0{\textunderscore }7}.
+
+\bibitem[Heinrich and Weiskopf(2015)]{Heinrich.2015}
+Julian Heinrich and Daniel Weiskopf.
+\newblock Parallel coordinates for multidimensional data visualization: Basic
+  concepts.
+\newblock \emph{Computing in Science {\&} Engineering}, 17\penalty0
+  (3):\penalty0 70--76, 2015.
+\newblock ISSN 1521-9615.
+\newblock \doi{10.1109/MCSE.2015.55}.
 
 \bibitem[Few(2008)]{Few.2008}
 Stephen Few.
