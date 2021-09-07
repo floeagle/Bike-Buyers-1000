@@ -195,27 +195,33 @@ Um die drei Visualisierungsdateien miteinander zu verbinden, wurde der "elm-make
 \section{Anwendungsfälle}
 Im folgenden werden für die drei Darstellungen in Hinblick auf die Zielgruppe praktische Anwendungsfälle aufgezeigt. 
 \subsection{Anwendung Visualisierung Eins}
-
-Grundsätzlich werden über die Hoverfunktion beim Scatterplot wichtige Zusatzinformationen geliefert, die genauer über die Buttons angezeigt werden können. DIe erste Möglichkeit vergleicht das Alter mit dem Einkommen. 
-
+In der Abbildung 5 ist ein Scatterplot mit der Achsenauswahl Alter zu Autos abgebildet, welcher sich besonders für die Zielgruppe des Fahrradhandels richtet.
 \begin{figure}[h]
 \begin{center}
 \includegraphics[width=16cm]{Bilder/ScatterplotA1.png}
 \caption{Anwendung Scatterplot, Quelle: Eigene Darstellung}
 \end{center}
 \end{figure}
-In der Abbildujg 4 ist ein Scatterplot abgebilkdet, welcher sich besonders für die Zielgruppe des Fahrradhandels richtet. Durch Informationen, ob Kaufinteressierte eines Fahrrads ein Eigenheim besitzen kann auf eine Familie geschlossen werden, welche potenziell Platz für mehrere Fahrräder hat. Durch eine intensivierung der Kundenbeziehung, wie z.B. Rabtte beim Kauf eines zusätzlichen Kiunderfahrrads kann generationenübergreifend Fahrräder verkauft werden. Des weiteren kann aus dem Scatterplot entnommen werden, dass ab einem Alter von 30 Jahren die Kinderanzahl zunimmt und davor überwiegend zwischen 0 und 1 liegt. Mit der Zusatzinformation, ob die kaufinteressierte Person ein Eigenheim besitzt kann aber auch eine potenziell einkommensstarke Kundengruppe eingeordet werden, wodurch höherwertigere fahrräder für verschiedene Verwendungszwecke beworben werden können. Durch die Hover-Anzeige des Einkommens wird ersichtlich, dass Personen mit 4-5 Kindern ein hohes Einkommen aufweisen. 
-\newpage
+\newline Aus dieser Konfiguration lassen sich einige Informationen entnehmen, welche dabei helfen können, die Kundenzielgruppe besser einzuordnen. Aus diesen Informationen können beispielsweise im Rahmen von Schulungen Fragen abgeleitet werden, deren Antworten dabei helfen können, Kaufinteressierte besser einzuordnen. 
+So lässt sich erkennen, dass hauptsächlich Personen zwischen Ende 20 und Mitte 50 kein Auto und mehrheitlich ein Fahrrad besitzen. Diese Altersgruppe entspricht demographisch auch stark der berufstätigen Bevölkerung. Des weiteren haben Personen mit vier Autos tendenziell weniger Fahrräder. Auffällig wenige befragte Personen mit zwei Autos haben kein Fahrrad. Bei einem und bei drei angegebene Autos ist die Anzahl ohne Fahrrad zwar höher, allerdings ist der Vergleich ausgewogener als bei drei Autos. Personen mit vielen Autos werden voraussichtlich entsprechende Stellplätze zur Verfügung haben, wo sie platzsparender für verschiedene Einsatzbereiche (wie Baustelle im Stadtverkehr, bei einem Auto und Autoreparatur) ein Fahrrad als Alternative zum Auto abstellen könnten. 
+Diese Personengruppe mit vier Autos hat bis auf eine Ausnahme Berufe im Management und als spezialisierte Fachkräfte. Bei den Personen ohne Auto sind die Berufsgruppen gemischt, wobei viele Büroangestellte oder tätig im Handwerk sind.
+Durch die Zusatzinformation zum Eigenheimbesitz können ebenfalls Rückschlüsse auf Einkommen und die Bereitschaft mehr für ein Fahrrad auszugeben und potenziell mehr Platz für mehr Fahrräder mit verschiedenen Verwendungszwecken gezogen werden. Hier besteht für den Fahrradhandel die Möglichkeit Rabatte auf den Kauf weiterer Fahrräder für weitere Verwendungsbereiche anzubieten.
+
+Um diese Zusammenhänge aufzuzeigen kommt als Alternative nur bedingt die Darstellung über Parallele Koordinaten in Frage. Über die stärker hervortretenden polygonlinien der Röntgendarstellung ist erkennbar, dass jüngere Läute überwiegend kein Auto haben. Da hier allerdings keine Werte eindeutig getrennt voneinander betrachtet werden können. Darüber hinaus sind über die verschiedenen Farbakzente der Punkte und Zusatzinformationen beim Hovern Funktionsweisen mit dem Scatterplot verbunden, die über keine Darstellungsalternative zu ähnlich qualitativen Ergebnissen kommen würden.  
 
 \subsection{Anwendung Visualisierung Zwei}
-Die zweite Anwendung stellt die in Abbildung 5 gezeigte umstellung der Achsen dar. Diese ist besonders für Fahrradhersteller geeignet. Im Elm programmcode wurden Daten herausgefiltert, die "nein" zum Fahrradkauf und als region nicht Europe angeben haben. Durch die erste Filterung lässt sich für die Fahrradhersteller besser erkennen, was gemacht werden muss. Die zweite Vorfilterung wurde vorgenaommen, damit der Datensatz auf Grund zu vieler Daten nicht zu unübersichtlich wird. Die meisten Datenwerte sind für die Region North America verfügbar. Danach folgen in Abstufender Reihenfolge "Europe" und "Pacific". Europa wurde auf Grubd des regionalen bezugs und der damit einhergehenden Assoziation für Regionale Bauunternehmen gewählt.
+Die zweite Anwendung stellt die in Abbildung 6 gezeigte Achsenumstellung dar. Diese ist besonders für Fahrradhersteller geeignet, weist aber auch Eigenschaften auf, die für den Fahrradhandel interessant sind. Im dazugehörigen Elm-Programmcode wurden Daten herausgefiltert, die "nein" zum Fahrradkauf und als Region nicht Europa angeben haben. Durch die erste Filterung lässt sich für die Fahrradhersteller besser erkennen, was nachgefragt wird. Die zweite Vorfilterung wurde vorgenommen, damit der Datensatz auf Grund zu vieler Daten nicht zu unübersichtlich wird. Die meisten Datenwerte sind für die Region North America verfügbar. Danach folgen in Abstufender Reihenfolge "Europe" und "Pacific". Europa wurde auf Grund des Regionalbezugs und der damit einhergehenden Assoziation für Regionale Bauunternehmen gewählt.
 \begin{figure}[h]
 \begin{center}
 \includegraphics[width=16cm]{Bilder/ParallelCoordsA2.png}
 \caption{Anwendung Parallele Koordinaten, Quelle: Eigene Darstellung}
 \end{center}
 \end{figure}
-\newline In dieser Abbildung lässt sich erkennen, dass die höchsten EInkommen in den Altersgruppen zwischen 35 und 55 Jahren generiert werden. In Hinblick auf den Karrieweg vom Berufbeginn und Renteneintritt ist dieser Effekt logisch u erklären. In Hinblick auf das gestell des Fahrrads müssen somit keine Merkmale auf Aufstiegsfreundlichkeit gelegt werden. 
+\newline In dieser Abbildung lässt sich erkennen, dass die Mehrheit, der vorgefilterten Fahrraddaten ein im Vergleich mit der Skala von 10.0000 bis 170.000 geringes Einkommen aufweisen und das dieses mit zunehmendem Alter steigt. Überwiegend jüngere Personen zwischen 30-40 haben keine Kinder. Ältere Personen haben tendenziell mehr als ein Kind und würden dementsprechend auch Kinderfahrräder kaufen, was für Fahrradhändler eine Information mit Mehrwert bedeutet. Hochwertigere Fahrräder mit neuen Technologien, wie E-Bikes werden eher von älteren, einkommensstarken Berufstätigen gekauft. Daraus lässt sich schießen, dass das Einkommen mit der Kaufbereitschaft für ein Fahrrad zusammenhängt. Im Umkehrschluss bedeutet dies, dass Hersteller für eine jüngere Zielgruppe preiswertere Fahrräder herstellen sollten, da diese, wie in Abbildung 6 ersichtlich mehr jüngere Fahrradkaufende als ältere beinhaltet.  
+
+Durch die Parallelen Koordinaten können übersichtlich Trends und Verallgemeinerungen abgeleitet werden, bieten aber gleichzeitig die Möglichkeit "unwichtige" Bereiche anzuschauen, weshalb diese Darstellung für die multidimensionalen Zahlenwerte der Fahrraddaten am besten funktioniert. Diese intuitive Beobachtung ist am ausdrucksstärksten in Kombination mit dem Scatterplot. Durch den Direktvergleich der beiden Visualisierungen fusionieren die Stärken beider Anwendungen. Beispielsweise lassen sich Muster erkennen, wie dass Personen mit 4 bis 5 Kindern ein höheres Einkommen haben.
+
+ 
 \newpage
 \subsection{Anwendung Visualisierung Drei}
 \begin{figure}[h]
