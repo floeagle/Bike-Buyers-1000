@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  7 SEP 2021 19:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  7 SEP 2021 20:12
 entering extended mode
 **./IRV_Bericht.tex
 (IRV_Bericht.tex
@@ -659,13 +659,17 @@ Package pdftex.def Info: Bilder/ParallelCoordsA2.png  used on input line 216.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[17] [18 <./Bilder/ParallelCoordsA2.png>]
-<Bilder/BaumhierarchieA3.png, id=203, 1149.69525pt x 308.95425pt>
+[17]
+<Bilder/BaumhierarchieA3.png, id=197, 1100.31075pt x 453.49425pt>
 File: Bilder/BaumhierarchieA3.png Graphic file (type png)
 <use Bilder/BaumhierarchieA3.png>
-Package pdftex.def Info: Bilder/BaumhierarchieA3.png  used on input line 229.
-(pdftex.def)             Requested size: 455.24408pt x 122.33495pt.
- [19 <./Bilder/BaumhierarchieA3.png>]
+Package pdftex.def Info: Bilder/BaumhierarchieA3.png  used on input line 227.
+(pdftex.def)             Requested size: 455.24408pt x 187.62918pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[18 <./Bilder/ParallelCoordsA2.png>] [19 <./Bilder/BaumhierarchieA3.png>]
 [20] [21] (IRV_Bericht.bbl
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
 5.
@@ -796,7 +800,7 @@ ers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Use
 rs/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Use
 rs/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/U
 sers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
-Output written on IRV_Bericht.pdf (24 pages, 1048594 bytes).
+Output written on IRV_Bericht.pdf (24 pages, 1115887 bytes).
 PDF statistics:
  407 PDF objects out of 1000 (max. 8388607)
  88 named destinations out of 1000 (max. 500000)
