@@ -20,7 +20,34 @@ import Csv.Decode as Decode exposing (Decoder)
 import Browser
 import List.Extra exposing (initialize)
 
+padding : Float
+padding =
+    60
 
+defaultExtent : ( number, number1 )
+defaultExtent =
+    ( 0, 100 )
+
+
+tickCount_ : Int
+tickCount_ =
+    10
+
+
+wideExtent : List Float -> ( Float, Float )
+wideExtent values =
+    let
+        closeExtent =
+            Statistics.extent values
+                |> Maybe.withDefault defaultExtent
+
+        extension =
+            (Tuple.second closeExtent - Tuple.first closeExtent) / toFloat (2 * tickCount_)
+    in
+    ( Tuple.first closeExtent - extension
+      --|> max 0
+    , Tuple.second closeExtent + extension
+    )
 
 type alias Model =
     { start1 : Int
@@ -51,34 +78,7 @@ type alias MultiDimData =
     , data : List (List MultiDimPoint)
     }
 
-padding : Float
-padding =
-    60
 
-defaultExtent : ( number, number1 )
-defaultExtent =
-    ( 0, 100 )
-
-
-tickCount_ : Int
-tickCount_ =
-    10
-
-
-wideExtent : List Float -> ( Float, Float )
-wideExtent values =
-    let
-        closeExtent =
-            Statistics.extent values
-                |> Maybe.withDefault defaultExtent
-
-        extension =
-            (Tuple.second closeExtent - Tuple.first closeExtent) / toFloat (2 * tickCount_)
-    in
-    ( Tuple.first closeExtent - extension
-      --|> max 0
-    , Tuple.second closeExtent + extension
-    )
 
 
 -- erweiterung mit Buttons für Interaktion
@@ -108,7 +108,33 @@ init =
     , value4 = "Age"
     } 
 
+indexSwap : Model -> List ( String, FilteredBikeBuyers -> Float )
+indexSwap model =
+            List.Extra.swapAt model.start1 model.start2 model.display
 
+
+update : Msg -> Model -> Model
+update msg model =
+    case msg of
+        StartUp ->
+            { model | start1 = model.start1 + 1 }
+        Switch1 ->
+            { model | display = List.Extra.swapAt 0 1 model.display, value1 = model.value2, value2 = model.value1 }
+        Switch2 ->
+            { model | display = List.Extra.swapAt 1 2 model.display, value2 = model.value3, value3 = model.value2  }
+        Switch3 ->
+            { model | display = List.Extra.swapAt 2 3 model.display, value3 = model.value4, value4 = model.value3 }
+
+        StartDown ->
+            { model | start1 = model.start1 - 1 }
+        IncomeVal ->
+            { model | start2 = 0 }
+        ChildrenVal ->
+            { model | start2 = 1 }
+        CarsVal ->
+            { model | start2 = 2 }
+        AgeVal ->
+            { model | start2 = 3 } 
 
 view : Model -> Html Msg
 view model=
@@ -151,33 +177,7 @@ view model=
             Html.text ("There was a problem loading your data")
 
 
-indexSwap : Model -> List ( String, FilteredBikeBuyers -> Float )
-indexSwap model =
-            List.Extra.swapAt model.start1 model.start2 model.display
-
-
-update : Msg -> Model -> Model
-update msg model =
-    case msg of
-        StartUp ->
-            { model | start1 = model.start1 + 1 }
-        Switch1 ->
-            { model | display = List.Extra.swapAt 0 1 model.display, value1 = model.value2, value2 = model.value1 }
-        Switch2 ->
-            { model | display = List.Extra.swapAt 1 2 model.display, value2 = model.value3, value3 = model.value2  }
-        Switch3 ->
-            { model | display = List.Extra.swapAt 2 3 model.display, value3 = model.value4, value4 = model.value3 }
-
-        StartDown ->
-            { model | start1 = model.start1 - 1 }
-        IncomeVal ->
-            { model | start2 = 0 }
-        ChildrenVal ->
-            { model | start2 = 1 }
-        CarsVal ->
-            { model | start2 = 2 }
-        AgeVal ->
-            { model | start2 = 3 }         
+        
 
 
 parallelCoordinatesPlot : Float -> Float -> MultiDimData -> Svg msg
