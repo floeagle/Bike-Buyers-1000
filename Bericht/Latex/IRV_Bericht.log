@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  8 SEP 2021 20:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  8 SEP 2021 23:10
 entering extended mode
 **./IRV_Bericht.tex
 (IRV_Bericht.tex
@@ -627,31 +627,35 @@ Package pdftex.def Info: Bilder/Excelbefehl.png  used on input line 107.
 <Bilder/V1Scatterplot.png, id=153, 738.3585pt x 398.6895pt>
 File: Bilder/V1Scatterplot.png Graphic file (type png)
 <use Bilder/V1Scatterplot.png>
-Package pdftex.def Info: Bilder/V1Scatterplot.png  used on input line 133.
+Package pdftex.def Info: Bilder/V1Scatterplot.png  used on input line 135.
 (pdftex.def)             Requested size: 455.24408pt x 245.81615pt.
  [9] [10 <./Bilder/V1Scatterplot.png>]
 <Bilder/V2ParalleleKoordinaten.png, id=164, 634.16925pt x 392.667pt>
 File: Bilder/V2ParalleleKoordinaten.png Graphic file (type png)
 <use Bilder/V2ParalleleKoordinaten.png>
 Package pdftex.def Info: Bilder/V2ParalleleKoordinaten.png  used on input line 
-145.
+147.
 (pdftex.def)             Requested size: 455.24408pt x 281.8812pt.
 
-[11 <./Bilder/V2ParalleleKoordinaten.png>]
-<Bilder/V3Baumhierarchie.png, id=171, 1132.23pt x 516.12825pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[11]
+<Bilder/V3Baumhierarchie.png, id=169, 1132.23pt x 516.12825pt>
 File: Bilder/V3Baumhierarchie.png Graphic file (type png)
 <use Bilder/V3Baumhierarchie.png>
-Package pdftex.def Info: Bilder/V3Baumhierarchie.png  used on input line 156.
+Package pdftex.def Info: Bilder/V3Baumhierarchie.png  used on input line 158.
 (pdftex.def)             Requested size: 341.43306pt x 155.64296pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[12] [13 <./Bilder/V3Baumhierarchie.png>] [14] [15]
+[12 <./Bilder/V2ParalleleKoordinaten.png>] [13 <./Bilder/V3Baumhierarchie.png>]
+[14] [15]
 <Bilder/ScatterplotA1.png, id=191, 716.6775pt x 343.88475pt>
 File: Bilder/ScatterplotA1.png Graphic file (type png)
 <use Bilder/ScatterplotA1.png>
-Package pdftex.def Info: Bilder/ScatterplotA1.png  used on input line 207.
+Package pdftex.def Info: Bilder/ScatterplotA1.png  used on input line 209.
 (pdftex.def)             Requested size: 455.24408pt x 218.4431pt.
 
 
@@ -661,17 +665,17 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <Bilder/ParallelCoordsA2.png, id=196, 638.385pt x 316.7835pt>
 File: Bilder/ParallelCoordsA2.png Graphic file (type png)
 <use Bilder/ParallelCoordsA2.png>
-Package pdftex.def Info: Bilder/ParallelCoordsA2.png  used on input line 222.
+Package pdftex.def Info: Bilder/ParallelCoordsA2.png  used on input line 224.
 (pdftex.def)             Requested size: 455.24408pt x 225.90393pt.
  [17 <./Bilder/ScatterplotA1.png>] [18 <./Bilder/ParallelCoordsA2.png>]
 <Bilder/BaumhierarchieA3.png, id=209, 1100.31075pt x 453.49425pt>
 File: Bilder/BaumhierarchieA3.png Graphic file (type png)
 <use Bilder/BaumhierarchieA3.png>
-Package pdftex.def Info: Bilder/BaumhierarchieA3.png  used on input line 233.
+Package pdftex.def Info: Bilder/BaumhierarchieA3.png  used on input line 235.
 (pdftex.def)             Requested size: 455.24408pt x 187.62918pt.
 
 [19 <./Bilder/BaumhierarchieA3.png>] [20]
-Overfull \hbox (0.18315pt too wide) in paragraph at lines 257--259
+Overfull \hbox (0.18315pt too wide) in paragraph at lines 259--261
 []\T1/lmr/m/n/10.95 Somit löst die-ses Pro-jekt die Her-aus-for-de-rung den An-
 for-de-run-gen meh-re-rer Ziel-grup-pen gleich-
  []
@@ -812,7 +816,7 @@ ers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Use
 rs/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Use
 rs/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/U
 sers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
-Output written on IRV_Bericht.pdf (26 pages, 1135140 bytes).
+Output written on IRV_Bericht.pdf (26 pages, 1135307 bytes).
 PDF statistics:
  444 PDF objects out of 1000 (max. 8388607)
  97 named destinations out of 1000 (max. 500000)
