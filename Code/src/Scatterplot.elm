@@ -212,8 +212,8 @@ points scaleX scaleY buttons xyPoint =
             []
         , text_ [ transform [ Translate (Scale.convert scaleX xyPoint.age) (Scale.convert scaleY y - (2 * radius)) ]
                 , textAnchor AnchorMiddle] 
-                [Html.text ("OwnBike? " ++ xyPoint.purchasedBike ++ ", " ++ "Einkommen: " ++  String.fromFloat xyPoint.income ++", " ++ " Alter: " ++ 
-                String.fromFloat xyPoint.age ++ ", " ++ "Beruf: " ++  xyPoint.occupation ++ "," ++ " HomeOwner: " ++ xyPoint.homeOwner )]
+                [Html.text ("Fahrrad: " ++ xyPoint.purchasedBike  ++ ", Einkommen: " ++  String.fromFloat xyPoint.income ++ ", Alter: " ++ 
+                String.fromFloat xyPoint.age ++ ", Geschlecht: " ++xyPoint.gender ++ ", Beruf: " ++  xyPoint.occupation ++  ", Immobilienbesitz " ++ xyPoint.homeOwner )]
         ]
 farbe2Buyers : FilteredBikeBuyers -> List String
 farbe2Buyers buyers =
@@ -267,9 +267,9 @@ scatterplot model dat =
         [ style [] [ TypedSvg.Core.text """
             .point circle { stroke: rgba(0, 0, 0,0.4); fill: rgba(245,230,27,0.8); }
             .point text { display: none; }
-            .point.buyed circle {stroke: rgba(0, 0, 0,0.4); fill: rgba(83, 51, 237,0.8);}
-            .point:hover circle { stroke: rgba(0, 0, 0,1.0); fill: rgb(127,255,0,1); }
-            .point:hover text { display: inline; }
+            .point.buyed circle {stroke: rgba(0, 0, 0,0.4); fill: rgba(50, 150, 200,0.8);}
+            .point:hover circle { stroke: rgba(0, 0, 0,1.0); fill: rgb(250, 50, 50); }
+            .point:hover text { display: inline; stroke: rgb(250,50,50) }
           """ ]
           , g [ transform [ Translate padding padding ] ]
             (List.map (points xScaleLocal yScaleLocal dat) model)
@@ -303,7 +303,7 @@ scatterplot model dat =
 
 
 type alias FilteredBikeBuyers =
-    { purchasedBike : String, region : String, occupation: String, homeOwner: String, income : Float, children : Float, cars : Float, age : Float }
+    { purchasedBike : String, region : String, gender:String, occupation: String, homeOwner: String, income : Float, children : Float, cars : Float, age : Float }
 
 
 filterMissingValues : List BikeBuyers -> List FilteredBikeBuyers
@@ -311,7 +311,7 @@ filterMissingValues mybikes =
     let
         car2filteredCar : BikeBuyers -> Maybe FilteredBikeBuyers
         car2filteredCar bbuyers =
-            Maybe.map4 (FilteredBikeBuyers bbuyers.purchasedBike bbuyers.region bbuyers.occupation bbuyers.homeOwner)
+            Maybe.map4 (FilteredBikeBuyers bbuyers.purchasedBike bbuyers.region bbuyers.gender bbuyers.occupation bbuyers.homeOwner)
                 bbuyers.income
                 bbuyers.children
                 bbuyers.cars
