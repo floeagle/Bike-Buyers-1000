@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  8 SEP 2021 15:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  8 SEP 2021 20:05
 entering extended mode
 **./IRV_Bericht.tex
 (IRV_Bericht.tex
@@ -624,11 +624,11 @@ File: Bilder/Excelbefehl.png Graphic file (type png)
 Package pdftex.def Info: Bilder/Excelbefehl.png  used on input line 107.
 (pdftex.def)             Requested size: 227.62204pt x 15.04964pt.
  [8 <./Bilder/Excelbefehl.png>]
-<Bilder/V1Scatterplot.png, id=153, 738.3585pt x 398.08725pt>
+<Bilder/V1Scatterplot.png, id=153, 738.3585pt x 398.6895pt>
 File: Bilder/V1Scatterplot.png Graphic file (type png)
 <use Bilder/V1Scatterplot.png>
 Package pdftex.def Info: Bilder/V1Scatterplot.png  used on input line 133.
-(pdftex.def)             Requested size: 455.24408pt x 245.44482pt.
+(pdftex.def)             Requested size: 455.24408pt x 245.81615pt.
  [9] [10 <./Bilder/V1Scatterplot.png>]
 <Bilder/V2ParalleleKoordinaten.png, id=164, 634.16925pt x 392.667pt>
 File: Bilder/V2ParalleleKoordinaten.png Graphic file (type png)
@@ -648,11 +648,11 @@ Package pdftex.def Info: Bilder/V3Baumhierarchie.png  used on input line 156.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [12] [13 <./Bilder/V3Baumhierarchie.png>] [14] [15]
-<Bilder/ScatterplotA1.png, id=191, 739.563pt x 342.68025pt>
+<Bilder/ScatterplotA1.png, id=191, 716.6775pt x 343.88475pt>
 File: Bilder/ScatterplotA1.png Graphic file (type png)
 <use Bilder/ScatterplotA1.png>
 Package pdftex.def Info: Bilder/ScatterplotA1.png  used on input line 207.
-(pdftex.def)             Requested size: 455.24408pt x 210.94318pt.
+(pdftex.def)             Requested size: 455.24408pt x 218.4431pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -785,18 +785,24 @@ Underfull \hbox (badness 1715) in paragraph at lines 201--205
 1/lmtt/m/n/10.95 https : / / www . kaggle . com /
  []
 
-) [25] (IRV_Bericht.aux)
+
+Underfull \hbox (badness 3029) in paragraph at lines 257--262
+[]\T1/lmr/m/n/10.95 IAA.de.  Rad-fah-ren als ele-men-ta-rer be-stand-teil des m
+o-bi-li-täts-kon-zepts der iaa,
+ []
+
+[25]) [26] (IRV_Bericht.aux)
 Package rerunfilecheck Info: File `IRV_Bericht.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 13797 strings out of 478864
- 234597 string characters out of 2848660
- 688034 words of memory out of 3000000
- 31410 multiletter control sequences out of 15000+600000
+ 13814 strings out of 478864
+ 234948 string characters out of 2848660
+ 689034 words of memory out of 3000000
+ 31422 multiletter control sequences out of 15000+600000
  459575 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,8n,108p,10635b,510s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 108i,8n,108p,10635b,532s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/Floyd/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C
 :/Users/Floyd/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}<C:/U
 sers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/U
@@ -806,9 +812,9 @@ ers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Use
 rs/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Use
 rs/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/U
 sers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
-Output written on IRV_Bericht.pdf (25 pages, 1119593 bytes).
+Output written on IRV_Bericht.pdf (26 pages, 1135140 bytes).
 PDF statistics:
- 424 PDF objects out of 1000 (max. 8388607)
- 92 named destinations out of 1000 (max. 500000)
+ 444 PDF objects out of 1000 (max. 8388607)
+ 97 named destinations out of 1000 (max. 500000)
  212 words of extra memory for PDF output out of 10000 (max. 10000000)
 
