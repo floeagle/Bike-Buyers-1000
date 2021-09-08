@@ -1,4 +1,4 @@
-\begin{thebibliography}{31}
+\begin{thebibliography}{34}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -82,6 +82,23 @@ N-tv Nachrichten.
 \newblock \emph{n-tv NACHRICHTEN}, 31.08.2021.
 \newblock URL
   \url{https://www.n-tv.de/auto/Cyklaer-Porsche-baut-jetzt-Pedelecs-article22769128.html}.
+
+\bibitem[Forschungsinformationssystem(2017)]{.07.09.2021}
+Forschungsinformationssystem.
+\newblock K{\"a}uferprofil von elektrofahrradnutzern, 2017.
+\newblock URL
+  \url{https://www.forschungsinformationssystem.de/servlet/is/355199/}.
+
+\bibitem[{Fahrrad XXL Blog}(2020)]{FahrradXXLBlog.14.12.2020}
+{Fahrrad XXL Blog}.
+\newblock Fahrrad xxl e-bike-studie 2020 - fahrrad xxl blog, 2020.
+\newblock URL \url{https://www.fahrrad-xxl.de/blog/e-bike-studie/#5}.
+
+\bibitem[Radfahren.de(2018)]{Radfahren.08.02.2018}
+Radfahren.de.
+\newblock Damenfahrrad: Welche vorteile bietet ein spezielles fahrrad f{\"u}r
+  frauen?, 2018.
+\newblock URL \url{https://www.radfahren.de/service/damenfahrrad-vorteile/}.
 
 \bibitem[Tretwerk(2018)]{.04.09.2021}
 Tretwerk.

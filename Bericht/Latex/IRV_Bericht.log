@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  8 SEP 2021 12:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  8 SEP 2021 15:45
 entering extended mode
 **./IRV_Bericht.tex
 (IRV_Bericht.tex
@@ -612,65 +612,71 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 4
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [3]
 [4] [5]
-Overfull \hbox (15.02238pt too wide) in paragraph at lines 81--82
+Overfull \hbox (15.02238pt too wide) in paragraph at lines 82--83
 \T1/lmr/m/n/10.95 Die die-sem Pro-jekt-be-richt zu-grun-de-lie-gen-den Roh-da-t
 en ent-stam-men ei-nem Da-ten-satz des Kaggle-
  []
 
 [6] [7]
-<Bilder/Excelbefehl.png, id=139, 218.61674pt x 14.454pt>
+<Bilder/Excelbefehl.png, id=145, 218.61674pt x 14.454pt>
 File: Bilder/Excelbefehl.png Graphic file (type png)
 <use Bilder/Excelbefehl.png>
-Package pdftex.def Info: Bilder/Excelbefehl.png  used on input line 106.
+Package pdftex.def Info: Bilder/Excelbefehl.png  used on input line 107.
 (pdftex.def)             Requested size: 227.62204pt x 15.04964pt.
  [8 <./Bilder/Excelbefehl.png>]
-<Bilder/V1Scatterplot.png, id=147, 738.3585pt x 398.08725pt>
+<Bilder/V1Scatterplot.png, id=153, 738.3585pt x 398.08725pt>
 File: Bilder/V1Scatterplot.png Graphic file (type png)
 <use Bilder/V1Scatterplot.png>
-Package pdftex.def Info: Bilder/V1Scatterplot.png  used on input line 132.
+Package pdftex.def Info: Bilder/V1Scatterplot.png  used on input line 133.
 (pdftex.def)             Requested size: 455.24408pt x 245.44482pt.
- [9]
-<Bilder/V2ParalleleKoordinaten.png, id=152, 634.16925pt x 392.667pt>
+ [9] [10 <./Bilder/V1Scatterplot.png>]
+<Bilder/V2ParalleleKoordinaten.png, id=164, 634.16925pt x 392.667pt>
 File: Bilder/V2ParalleleKoordinaten.png Graphic file (type png)
 <use Bilder/V2ParalleleKoordinaten.png>
 Package pdftex.def Info: Bilder/V2ParalleleKoordinaten.png  used on input line 
-144.
+145.
 (pdftex.def)             Requested size: 455.24408pt x 281.8812pt.
- [10 <./Bilder/V1Scatterplot.png>]
+
 [11 <./Bilder/V2ParalleleKoordinaten.png>]
-<Bilder/V3Baumhierarchie.png, id=165, 1132.23pt x 516.12825pt>
+<Bilder/V3Baumhierarchie.png, id=171, 1132.23pt x 516.12825pt>
 File: Bilder/V3Baumhierarchie.png Graphic file (type png)
 <use Bilder/V3Baumhierarchie.png>
-Package pdftex.def Info: Bilder/V3Baumhierarchie.png  used on input line 155.
+Package pdftex.def Info: Bilder/V3Baumhierarchie.png  used on input line 156.
 (pdftex.def)             Requested size: 341.43306pt x 155.64296pt.
- [12 <./Bilder/V3Baumhierarchie.png>] [13] [14] [15]
-<Bilder/ScatterplotA1.png, id=185, 739.563pt x 342.68025pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[12] [13 <./Bilder/V3Baumhierarchie.png>] [14] [15]
+<Bilder/ScatterplotA1.png, id=191, 739.563pt x 342.68025pt>
 File: Bilder/ScatterplotA1.png Graphic file (type png)
 <use Bilder/ScatterplotA1.png>
-Package pdftex.def Info: Bilder/ScatterplotA1.png  used on input line 206.
+Package pdftex.def Info: Bilder/ScatterplotA1.png  used on input line 207.
 (pdftex.def)             Requested size: 455.24408pt x 210.94318pt.
- [16 <./Bilder/ScatterplotA1.png>]
-<Bilder/ParallelCoordsA2.png, id=192, 638.385pt x 316.7835pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[16]
+<Bilder/ParallelCoordsA2.png, id=196, 638.385pt x 316.7835pt>
 File: Bilder/ParallelCoordsA2.png Graphic file (type png)
 <use Bilder/ParallelCoordsA2.png>
-Package pdftex.def Info: Bilder/ParallelCoordsA2.png  used on input line 221.
+Package pdftex.def Info: Bilder/ParallelCoordsA2.png  used on input line 222.
 (pdftex.def)             Requested size: 455.24408pt x 225.90393pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[17]
-<Bilder/BaumhierarchieA3.png, id=197, 1100.31075pt x 453.49425pt>
+ [17 <./Bilder/ScatterplotA1.png>] [18 <./Bilder/ParallelCoordsA2.png>]
+<Bilder/BaumhierarchieA3.png, id=209, 1100.31075pt x 453.49425pt>
 File: Bilder/BaumhierarchieA3.png Graphic file (type png)
 <use Bilder/BaumhierarchieA3.png>
-Package pdftex.def Info: Bilder/BaumhierarchieA3.png  used on input line 232.
+Package pdftex.def Info: Bilder/BaumhierarchieA3.png  used on input line 233.
 (pdftex.def)             Requested size: 455.24408pt x 187.62918pt.
 
+[19 <./Bilder/BaumhierarchieA3.png>] [20]
+Overfull \hbox (0.18315pt too wide) in paragraph at lines 257--259
+[]\T1/lmr/m/n/10.95 Somit löst die-ses Pro-jekt die Her-aus-for-de-rung den An-
+for-de-run-gen meh-re-rer Ziel-grup-pen gleich-
+ []
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[18 <./Bilder/ParallelCoordsA2.png>] [19 <./Bilder/BaumhierarchieA3.png>]
-[20] [21] (IRV_Bericht.bbl
+[21] [22] (IRV_Bericht.bbl
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
 5.
 
@@ -737,60 +743,60 @@ Underfull \hbox (badness 2012) in paragraph at lines 79--85
  auto /
  []
 
-[22]
-Underfull \hbox (badness 1231) in paragraph at lines 122--128
+[23]
+Underfull \hbox (badness 1231) in paragraph at lines 139--145
 []\T1/lmr/m/n/10.95 Rida Mou-stafa and Ed Weg-man.  Mul-ti-va-ria-te con-ti-nuo
 us da-ta --- par-al-lel coor-
  []
 
-
-Underfull \hbox (badness 3158) in paragraph at lines 165--170
+[24]
+Underfull \hbox (badness 3158) in paragraph at lines 182--187
 []\T1/lmr/m/n/10.95 VeloTOTAL - Das gröÿ-te Netz-werk rund um das The-ma Fahr-r
 ad.  Click &
  []
 
 
-Underfull \hbox (badness 3323) in paragraph at lines 165--170
+Underfull \hbox (badness 3323) in paragraph at lines 182--187
 \T1/lmr/m/n/10.95 den ins di-gi-ta-le zeit-al-ter, 2021.  URL []$\T1/lmtt/m/n/1
 0.95 https : / / www . velototal . de / 2021 / 03 / 09 /
  []
 
 
-Overfull \hbox (38.4115pt too wide) in paragraph at lines 165--170
+Overfull \hbox (38.4115pt too wide) in paragraph at lines 182--187
 \T1/lmtt/m/n/10.95 click-[]meet-[]click-[]collect-[]click-[]ride-[]safe-[]so-[]
 katapultieren-[]sich-[]berliner-[]fahrradl %
  []
 
-[23]
-Underfull \hbox (badness 2990) in paragraph at lines 178--182
+
+Underfull \hbox (badness 2990) in paragraph at lines 195--199
 \T1/lmr/m/n/10.95 bau-boom, 2021.  URL []$\T1/lmtt/m/n/10.95 https : / / www . 
 handelsblatt . com / unternehmen / industrie /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 178--182
+Underfull \hbox (badness 10000) in paragraph at lines 195--199
 \T1/lmtt/m/n/10.95 holz-[]stahl-[]kupfer-[]der-[]rohstoffmangel-[]bedroht-[]den
 -[]bau-[]boom / 27284062 . html ?
  []
 
 
-Underfull \hbox (badness 1715) in paragraph at lines 184--188
+Underfull \hbox (badness 1715) in paragraph at lines 201--205
 []\T1/lmr/m/n/10.95 Heeral Ded-hia.  Bi-ke buy-ers 1000, 22.09.2020.  URL []$\T
 1/lmtt/m/n/10.95 https : / / www . kaggle . com /
  []
 
-) [24] (IRV_Bericht.aux)
+) [25] (IRV_Bericht.aux)
 Package rerunfilecheck Info: File `IRV_Bericht.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 13784 strings out of 478864
- 234279 string characters out of 2848660
+ 13797 strings out of 478864
+ 234597 string characters out of 2848660
  688034 words of memory out of 3000000
- 31401 multiletter control sequences out of 15000+600000
+ 31410 multiletter control sequences out of 15000+600000
  459575 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,8n,108p,10635b,508s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 108i,8n,108p,10635b,510s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/Floyd/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C
 :/Users/Floyd/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}<C:/U
 sers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/U
@@ -800,9 +806,9 @@ ers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Use
 rs/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Use
 rs/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/U
 sers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
-Output written on IRV_Bericht.pdf (24 pages, 1115587 bytes).
+Output written on IRV_Bericht.pdf (25 pages, 1119593 bytes).
 PDF statistics:
- 407 PDF objects out of 1000 (max. 8388607)
- 88 named destinations out of 1000 (max. 500000)
+ 424 PDF objects out of 1000 (max. 8388607)
+ 92 named destinations out of 1000 (max. 500000)
  212 words of extra memory for PDF output out of 10000 (max. 10000000)
 
