@@ -126,6 +126,12 @@ Kevin Knitterscheidt and Silke Kersting.
 \newblock URL
   \url{https://www.handelsblatt.com/unternehmen/industrie/holz-stahl-kupfer-der-rohstoffmangel-bedroht-den-bau-boom/27284062.html?ticket=ST-22359-oS7wwMQLMxJJ3LFaIOY0-ap2}.
 
+\bibitem[Dedhia(22.09.2020)]{Dedhia.22.09.2020}
+Heeral Dedhia.
+\newblock Bike buyers 1000, 22.09.2020.
+\newblock URL
+  \url{https://www.kaggle.com/heeraldedhia/bike-buyers?select=bike_buyers.csv}.
+
 \bibitem[Yi(2019)]{Yi.16.10.2019}
 Mike Yi.
 \newblock A complete guide to scatter plots, 2019.
@@ -196,12 +202,6 @@ Heinz-Peter Gumm and Manfred Sommer.
 \newblock ISBN 978-3-11-044227-4.
 \newblock URL
   \url{http://www.degruyter.com/search?f_0=isbnissn&q_0=9783110442274&searchTitles=true}.
-
-\bibitem[Dedhia(22.09.2020)]{Dedhia.22.09.2020}
-Heeral Dedhia.
-\newblock Bike buyers 1000, 22.09.2020.
-\newblock URL
-  \url{https://www.kaggle.com/heeraldedhia/bike-buyers?select=bike_buyers.csv}.
 
 \bibitem[Rios et~al.(06212016)Rios, Golab, and Keshav]{Rios.06212016}
 Ivan Rios, Lukasz Golab, and S.~Keshav.
