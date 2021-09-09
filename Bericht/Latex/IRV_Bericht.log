@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  9 SEP 2021 17:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  9 SEP 2021 17:46
 entering extended mode
 **./IRV_Bericht.tex
 (IRV_Bericht.tex
@@ -638,11 +638,11 @@ Package pdftex.def Info: Bilder/V2ParalleleKoordinaten.png  used on input line
 File: Bilder/V3Baumhierarchie.png Graphic file (type png)
 <use Bilder/V3Baumhierarchie.png>
 Package pdftex.def Info: Bilder/V3Baumhierarchie.png  used on input line 159.
-(pdftex.def)             Requested size: 341.43306pt x 155.64296pt.
+(pdftex.def)             Requested size: 455.24408pt x 207.5187pt.
 
 Overfull \hbox (4.71611pt too wide) in paragraph at lines 156--165
 \T1/lmr/m/n/10.95 sua-li-se-run-gen wur-de auf ei-ne In-ter-ak-ti-ons-mög-lich-
-keit ver-zich-tet. Die an-ge-lei-te-ten Baumhierarchie-
+keit ver-zich-tet. Die ab-ge-lei-te-ten Baumhierarchie-
  []
 
 
@@ -670,11 +670,7 @@ File: Bilder/BaumhierarchieA3.png Graphic file (type png)
 <use Bilder/BaumhierarchieA3.png>
 Package pdftex.def Info: Bilder/BaumhierarchieA3.png  used on input line 236.
 (pdftex.def)             Requested size: 455.24408pt x 187.62918pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[16 <./Bilder/ParallelCoordsA2.png>] [17 <./Bilder/BaumhierarchieA3.png>]
+ [16 <./Bilder/ParallelCoordsA2.png>] [17 <./Bilder/BaumhierarchieA3.png>]
 [18]
 Overfull \hbox (0.18315pt too wide) in paragraph at lines 260--262
 []\T1/lmr/m/n/10.95 Somit löst die-ses Pro-jekt die Her-aus-for-de-rung den An-
@@ -850,7 +846,7 @@ Package rerunfilecheck Info: File `IRV_Bericht.out' has not changed.
 Here is how much of TeX's memory you used:
  13810 strings out of 478864
  234790 string characters out of 2848660
- 690132 words of memory out of 3000000
+ 691132 words of memory out of 3000000
  31416 multiletter control sequences out of 15000+600000
  459575 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -864,7 +860,7 @@ ers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Use
 rs/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Use
 rs/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/U
 sers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
-Output written on IRV_Bericht.pdf (32 pages, 1146905 bytes).
+Output written on IRV_Bericht.pdf (32 pages, 1146958 bytes).
 PDF statistics:
  466 PDF objects out of 1000 (max. 8388607)
  100 named destinations out of 1000 (max. 500000)
