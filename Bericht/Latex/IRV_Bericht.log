@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  9 SEP 2021 18:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  9 SEP 2021 18:46
 entering extended mode
 **./IRV_Bericht.tex
 (IRV_Bericht.tex
@@ -658,7 +658,7 @@ Package pdftex.def Info: Bilder/ScatterplotA1.png  used on input line 210.
 <Bilder/ParallelCoordsA2.png, id=195, 638.385pt x 316.7835pt>
 File: Bilder/ParallelCoordsA2.png Graphic file (type png)
 <use Bilder/ParallelCoordsA2.png>
-Package pdftex.def Info: Bilder/ParallelCoordsA2.png  used on input line 225.
+Package pdftex.def Info: Bilder/ParallelCoordsA2.png  used on input line 226.
 (pdftex.def)             Requested size: 455.24408pt x 225.90393pt.
 
 
@@ -668,64 +668,64 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <Bilder/BaumhierarchieA3.png, id=200, 1100.31075pt x 453.49425pt>
 File: Bilder/BaumhierarchieA3.png Graphic file (type png)
 <use Bilder/BaumhierarchieA3.png>
-Package pdftex.def Info: Bilder/BaumhierarchieA3.png  used on input line 236.
+Package pdftex.def Info: Bilder/BaumhierarchieA3.png  used on input line 237.
 (pdftex.def)             Requested size: 455.24408pt x 187.62918pt.
  [16 <./Bilder/ParallelCoordsA2.png>] [17 <./Bilder/BaumhierarchieA3.png>]
 [18]
-Overfull \hbox (0.18315pt too wide) in paragraph at lines 260--262
+Overfull \hbox (0.18315pt too wide) in paragraph at lines 261--263
 []\T1/lmr/m/n/10.95 Somit löst die-ses Pro-jekt die Her-aus-for-de-rung den An-
 for-de-run-gen meh-re-rer Ziel-grup-pen gleich-
  []
 
 [19] [20]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
-72.
+73.
  (C:\Users\Floyd\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Overfull \hbox (136.87537pt too wide) in paragraph at lines 491--491
+Overfull \hbox (136.87537pt too wide) in paragraph at lines 492--492
 []\T1/lmtt/m/n/10.95 *   5ad824b (Merge branch 'main' of https://github.com/flo
 eagle/Bike-Buyers-1000 into main, 2021-09-07)[] 
  []
 
 
-Overfull \hbox (27.64943pt too wide) in paragraph at lines 491--491
+Overfull \hbox (27.64943pt too wide) in paragraph at lines 492--492
 []\T1/lmtt/m/n/10.95 * c8ae15f (Verbesserung Visualisierungskapitel der Paralle
 n Koordinaten, 2021-09-06)[] 
  []
 
 [21] [22]
-Overfull \hbox (33.39816pt too wide) in paragraph at lines 491--491
+Overfull \hbox (33.39816pt too wide) in paragraph at lines 492--492
 []\T1/lmtt/m/n/10.95 * 5d66aa7 (Korrektur verlinkung parallele Koordinaten auf 
 Baumhierarchie, 2021-08-30)[] 
  []
 
 
-Overfull \hbox (4.6545pt too wide) in paragraph at lines 491--491
+Overfull \hbox (4.6545pt too wide) in paragraph at lines 492--492
 []\T1/lmtt/m/n/10.95 * 829df1d (Umänderung Parallele Koordinaten Vorfilterung a
 uf Europe, 2021-08-30)[] 
  []
 
 [23] [24]
-Overfull \hbox (119.62917pt too wide) in paragraph at lines 491--491
+Overfull \hbox (119.62917pt too wide) in paragraph at lines 492--492
 []\T1/lmtt/m/n/10.95 * 0b72ce8 (Daten können als parallele Koordinaten mit Rönt
 gendarstellung geladen werden, 2021-08-24)[] 
  []
 
 
-Overfull \hbox (73.6393pt too wide) in paragraph at lines 491--491
+Overfull \hbox (73.6393pt too wide) in paragraph at lines 492--492
 []\T1/lmtt/m/n/10.95 * 044a2b1 (filterMissingValues für Datendarstellung (Überp
 rüfung auf vorhanden), 2021-08-24)[] 
  []
 
 
-Overfull \hbox (79.38803pt too wide) in paragraph at lines 491--491
+Overfull \hbox (79.38803pt too wide) in paragraph at lines 492--492
 []\T1/lmtt/m/n/10.95 * 72fc59e (-- Bike Buyers werden mit maybe map für Punktda
 rstellung konfiguriert, 2021-08-23)[] 
  []
 
 [25]
-Overfull \hbox (73.6393pt too wide) in paragraph at lines 491--491
+Overfull \hbox (73.6393pt too wide) in paragraph at lines 492--492
 []\T1/lmtt/m/n/10.95 * a833503 (EInrichtung der Latex Datei für den Bericht inc
 lusive erster Notizen, 2021-08-17)[] 
  []
@@ -860,7 +860,7 @@ ers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Use
 rs/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Use
 rs/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/U
 sers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
-Output written on IRV_Bericht.pdf (32 pages, 1147175 bytes).
+Output written on IRV_Bericht.pdf (32 pages, 1147139 bytes).
 PDF statistics:
  467 PDF objects out of 1000 (max. 8388607)
  100 named destinations out of 1000 (max. 500000)
