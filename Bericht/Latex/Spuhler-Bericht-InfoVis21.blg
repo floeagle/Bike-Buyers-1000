@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Spuhler-Bericht-InfoVis21.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: unsrtnat.bst
+Reallocating 'name_of_file' (item size: 1) to 10 items.
+Database file #1: literatur.bib
+Warning--there's a number but no volume in Few.2008
+You've used 36 entries,
+            2481 wiz_defined-function locations,
+            797 strings with 12239 characters,
+and the built_in function-call counts, 12075 in all, are:
+= -- 1051
+> -- 516
+< -- 36
++ -- 223
+- -- 151
+* -- 773
+:= -- 1908
+add.period$ -- 134
+call.type$ -- 36
+change.case$ -- 69
+chr.to.int$ -- 36
+cite$ -- 37
+duplicate$ -- 612
+empty$ -- 1189
+format.name$ -- 205
+if$ -- 2618
+int.to.chr$ -- 1
+int.to.str$ -- 37
+missing$ -- 18
+newline$ -- 211
+num.names$ -- 110
+pop$ -- 359
+preamble$ -- 1
+purify$ -- 36
+quote$ -- 0
+skip$ -- 447
+stack$ -- 0
+substring$ -- 314
+swap$ -- 98
+text.length$ -- 4
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 243
+warning$ -- 1
+while$ -- 96
+width$ -- 0
+write$ -- 505
+(There was 1 warning)
