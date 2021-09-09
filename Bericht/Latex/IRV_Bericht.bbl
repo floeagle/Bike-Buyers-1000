@@ -1,4 +1,4 @@
-\begin{thebibliography}{38}
+\begin{thebibliography}{36}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -225,25 +225,6 @@ Haoran Dai, Yubo Tao, and Hai Lin.
   1053--1070, 2020.
 \newblock ISSN 1343-8875.
 \newblock \doi{10.1007/s12650-020-00673-8}.
-
-\bibitem[Du and Yuan(2021)]{Du.2021}
-Meng Du and Xiaoru Yuan.
-\newblock A survey of competitive sports data visualization and visual
-  analysis.
-\newblock \emph{Journal of Visualization}, 24\penalty0 (1):\penalty0 47--67,
-  2021.
-\newblock ISSN 1343-8875.
-\newblock \doi{10.1007/s12650-020-00687-2}.
-
-\bibitem[Chung et~al.(2016)Chung, Parry, Griffiths, Laramee, Bown, Legg, and
-  Chen]{Chung.2016}
-David H.~S. Chung, Matthew~L. Parry, Iwan~W. Griffiths, Robert~S. Laramee,
-  Rhodri Bown, Philip~A. Legg, and Min Chen.
-\newblock Knowledge-assisted ranking: A visual analytic application for sports
-  event data.
-\newblock \emph{IEEE computer graphics and applications}, 36\penalty0
-  (3):\penalty0 72--82, 2016.
-\newblock \doi{10.1109/MCG.2015.25}.
 
 \bibitem[Shi et~al.(2018)Shi, Yu, Chen, Xu, and Lin]{Shi.2018}
 Xiaoying Shi, Zhenhai Yu, Jing Chen, Haitao Xu, and Fei Lin.
