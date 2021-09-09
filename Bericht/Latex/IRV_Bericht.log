@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  9 SEP 2021 19:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  9 SEP 2021 20:06
 entering extended mode
 **./IRV_Bericht.tex
 (IRV_Bericht.tex
@@ -679,53 +679,53 @@ for-de-run-gen meh-re-rer Ziel-grup-pen gleich-
 
 [19] [20]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
-75.
+76.
  (C:\Users\Floyd\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Overfull \hbox (136.87537pt too wide) in paragraph at lines 494--494
+Overfull \hbox (136.87537pt too wide) in paragraph at lines 495--495
 []\T1/lmtt/m/n/10.95 *   5ad824b (Merge branch 'main' of https://github.com/flo
 eagle/Bike-Buyers-1000 into main, 2021-09-07)[] 
  []
 
 
-Overfull \hbox (27.64943pt too wide) in paragraph at lines 494--494
+Overfull \hbox (27.64943pt too wide) in paragraph at lines 495--495
 []\T1/lmtt/m/n/10.95 * c8ae15f (Verbesserung Visualisierungskapitel der Paralle
 n Koordinaten, 2021-09-06)[] 
  []
 
 [21] [22]
-Overfull \hbox (33.39816pt too wide) in paragraph at lines 494--494
+Overfull \hbox (33.39816pt too wide) in paragraph at lines 495--495
 []\T1/lmtt/m/n/10.95 * 5d66aa7 (Korrektur verlinkung parallele Koordinaten auf 
 Baumhierarchie, 2021-08-30)[] 
  []
 
 
-Overfull \hbox (4.6545pt too wide) in paragraph at lines 494--494
+Overfull \hbox (4.6545pt too wide) in paragraph at lines 495--495
 []\T1/lmtt/m/n/10.95 * 829df1d (Umänderung Parallele Koordinaten Vorfilterung a
 uf Europe, 2021-08-30)[] 
  []
 
 [23] [24]
-Overfull \hbox (119.62917pt too wide) in paragraph at lines 494--494
+Overfull \hbox (119.62917pt too wide) in paragraph at lines 495--495
 []\T1/lmtt/m/n/10.95 * 0b72ce8 (Daten können als parallele Koordinaten mit Rönt
 gendarstellung geladen werden, 2021-08-24)[] 
  []
 
 
-Overfull \hbox (73.6393pt too wide) in paragraph at lines 494--494
+Overfull \hbox (73.6393pt too wide) in paragraph at lines 495--495
 []\T1/lmtt/m/n/10.95 * 044a2b1 (filterMissingValues für Datendarstellung (Überp
 rüfung auf vorhanden), 2021-08-24)[] 
  []
 
 
-Overfull \hbox (79.38803pt too wide) in paragraph at lines 494--494
+Overfull \hbox (79.38803pt too wide) in paragraph at lines 495--495
 []\T1/lmtt/m/n/10.95 * 72fc59e (-- Bike Buyers werden mit maybe map für Punktda
 rstellung konfiguriert, 2021-08-23)[] 
  []
 
 [25]
-Overfull \hbox (73.6393pt too wide) in paragraph at lines 494--494
+Overfull \hbox (73.6393pt too wide) in paragraph at lines 495--495
 []\T1/lmtt/m/n/10.95 * a833503 (EInrichtung der Latex Datei für den Bericht inc
 lusive erster Notizen, 2021-08-17)[] 
  []
@@ -846,7 +846,7 @@ Package rerunfilecheck Info: File `IRV_Bericht.out' has not changed.
 Here is how much of TeX's memory you used:
  13792 strings out of 478864
  234514 string characters out of 2848660
- 691015 words of memory out of 3000000
+ 690015 words of memory out of 3000000
  31400 multiletter control sequences out of 15000+600000
  459575 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -860,7 +860,7 @@ ers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Use
 rs/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Use
 rs/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/U
 sers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
-Output written on IRV_Bericht.pdf (32 pages, 1146545 bytes).
+Output written on IRV_Bericht.pdf (32 pages, 1146624 bytes).
 PDF statistics:
  463 PDF objects out of 1000 (max. 8388607)
  98 named destinations out of 1000 (max. 500000)
