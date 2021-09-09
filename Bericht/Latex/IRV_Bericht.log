@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  9 SEP 2021 22:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  9 SEP 2021 23:10
 entering extended mode
 **./IRV_Bericht.tex
 (IRV_Bericht.tex
@@ -621,20 +621,20 @@ l.58
                    \relax 
 l.66 
       [2] [3] [4] [5] [6]
-<Bilder/V1Scatterplot.png, id=154, 738.3585pt x 398.6895pt>
+<Bilder/V1Scatterplot.png, id=155, 738.3585pt x 398.6895pt>
 File: Bilder/V1Scatterplot.png Graphic file (type png)
 <use Bilder/V1Scatterplot.png>
 Package pdftex.def Info: Bilder/V1Scatterplot.png  used on input line 138.
 (pdftex.def)             Requested size: 455.24408pt x 245.81615pt.
  [7] [8 <./Bilder/V1Scatterplot.png>]
-<Bilder/V2ParalleleKoordinaten.png, id=166, 634.16925pt x 392.667pt>
+<Bilder/V2ParalleleKoordinaten.png, id=167, 634.16925pt x 392.667pt>
 File: Bilder/V2ParalleleKoordinaten.png Graphic file (type png)
 <use Bilder/V2ParalleleKoordinaten.png>
 Package pdftex.def Info: Bilder/V2ParalleleKoordinaten.png  used on input line 
 151.
 (pdftex.def)             Requested size: 455.24408pt x 281.8812pt.
  [9 <./Bilder/V2ParalleleKoordinaten.png>]
-<Bilder/V3Baumhierarchie.png, id=173, 1132.23pt x 516.12825pt>
+<Bilder/V3Baumhierarchie.png, id=174, 1132.23pt x 516.12825pt>
 File: Bilder/V3Baumhierarchie.png Graphic file (type png)
 <use Bilder/V3Baumhierarchie.png>
 Package pdftex.def Info: Bilder/V3Baumhierarchie.png  used on input line 161.
@@ -644,13 +644,13 @@ Package pdftex.def Info: Bilder/V3Baumhierarchie.png  used on input line 161.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [10] [11 <./Bilder/V3Baumhierarchie.png>] [12] [13]
-<Bilder/ScatterplotA1.png, id=194, 716.6775pt x 343.88475pt>
+<Bilder/ScatterplotA1.png, id=195, 716.6775pt x 343.88475pt>
 File: Bilder/ScatterplotA1.png Graphic file (type png)
 <use Bilder/ScatterplotA1.png>
 Package pdftex.def Info: Bilder/ScatterplotA1.png  used on input line 212.
 (pdftex.def)             Requested size: 455.24408pt x 218.4431pt.
  [14 <./Bilder/ScatterplotA1.png>]
-<Bilder/ParallelCoordsA2.png, id=201, 638.385pt x 316.7835pt>
+<Bilder/ParallelCoordsA2.png, id=202, 638.385pt x 316.7835pt>
 File: Bilder/ParallelCoordsA2.png Graphic file (type png)
 <use Bilder/ParallelCoordsA2.png>
 Package pdftex.def Info: Bilder/ParallelCoordsA2.png  used on input line 228.
@@ -660,7 +660,7 @@ Package pdftex.def Info: Bilder/ParallelCoordsA2.png  used on input line 228.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [15]
-<Bilder/BaumhierarchieA3.png, id=206, 1100.31075pt x 453.49425pt>
+<Bilder/BaumhierarchieA3.png, id=207, 1100.31075pt x 453.49425pt>
 File: Bilder/BaumhierarchieA3.png Graphic file (type png)
 <use Bilder/BaumhierarchieA3.png>
 Package pdftex.def Info: Bilder/BaumhierarchieA3.png  used on input line 241.
@@ -841,7 +841,7 @@ Package rerunfilecheck Info: File `IRV_Bericht.out' has not changed.
 Here is how much of TeX's memory you used:
  13788 strings out of 478864
  234457 string characters out of 2848660
- 690075 words of memory out of 3000000
+ 691144 words of memory out of 3000000
  31396 multiletter control sequences out of 15000+600000
  459575 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -855,9 +855,9 @@ ers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Use
 rs/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Use
 rs/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/U
 sers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
-Output written on IRV_Bericht.pdf (32 pages, 1151820 bytes).
+Output written on IRV_Bericht.pdf (32 pages, 1153098 bytes).
 PDF statistics:
- 469 PDF objects out of 1000 (max. 8388607)
+ 470 PDF objects out of 1000 (max. 8388607)
  98 named destinations out of 1000 (max. 500000)
  207 words of extra memory for PDF output out of 10000 (max. 10000000)
 
