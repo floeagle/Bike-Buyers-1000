@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  9 SEP 2021 17:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  9 SEP 2021 17:19
 entering extended mode
 **./IRV_Bericht.tex
 (IRV_Bericht.tex
@@ -850,7 +850,7 @@ Package rerunfilecheck Info: File `IRV_Bericht.out' has not changed.
 Here is how much of TeX's memory you used:
  13810 strings out of 478864
  234790 string characters out of 2848660
- 691132 words of memory out of 3000000
+ 690132 words of memory out of 3000000
  31416 multiletter control sequences out of 15000+600000
  459575 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -864,7 +864,7 @@ ers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Use
 rs/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Use
 rs/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/U
 sers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
-Output written on IRV_Bericht.pdf (32 pages, 1146954 bytes).
+Output written on IRV_Bericht.pdf (32 pages, 1146905 bytes).
 PDF statistics:
  466 PDF objects out of 1000 (max. 8388607)
  100 named destinations out of 1000 (max. 500000)
