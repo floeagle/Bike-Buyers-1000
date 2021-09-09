@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  9 SEP 2021 17:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  9 SEP 2021 17:53
 entering extended mode
 **./IRV_Bericht.tex
 (IRV_Bericht.tex
@@ -649,13 +649,13 @@ keit ver-zich-tet. Die ab-ge-lei-te-ten Baumhierarchie-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [10] [11 <./Bilder/V3Baumhierarchie.png>] [12] [13]
-<Bilder/ScatterplotA1.png, id=187, 716.6775pt x 343.88475pt>
+<Bilder/ScatterplotA1.png, id=188, 716.6775pt x 343.88475pt>
 File: Bilder/ScatterplotA1.png Graphic file (type png)
 <use Bilder/ScatterplotA1.png>
 Package pdftex.def Info: Bilder/ScatterplotA1.png  used on input line 210.
 (pdftex.def)             Requested size: 455.24408pt x 218.4431pt.
  [14 <./Bilder/ScatterplotA1.png>]
-<Bilder/ParallelCoordsA2.png, id=194, 638.385pt x 316.7835pt>
+<Bilder/ParallelCoordsA2.png, id=195, 638.385pt x 316.7835pt>
 File: Bilder/ParallelCoordsA2.png Graphic file (type png)
 <use Bilder/ParallelCoordsA2.png>
 Package pdftex.def Info: Bilder/ParallelCoordsA2.png  used on input line 225.
@@ -665,7 +665,7 @@ Package pdftex.def Info: Bilder/ParallelCoordsA2.png  used on input line 225.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [15]
-<Bilder/BaumhierarchieA3.png, id=199, 1100.31075pt x 453.49425pt>
+<Bilder/BaumhierarchieA3.png, id=200, 1100.31075pt x 453.49425pt>
 File: Bilder/BaumhierarchieA3.png Graphic file (type png)
 <use Bilder/BaumhierarchieA3.png>
 Package pdftex.def Info: Bilder/BaumhierarchieA3.png  used on input line 236.
@@ -860,9 +860,9 @@ ers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Use
 rs/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Use
 rs/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/U
 sers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
-Output written on IRV_Bericht.pdf (32 pages, 1146958 bytes).
+Output written on IRV_Bericht.pdf (32 pages, 1147424 bytes).
 PDF statistics:
- 466 PDF objects out of 1000 (max. 8388607)
+ 467 PDF objects out of 1000 (max. 8388607)
  100 named destinations out of 1000 (max. 500000)
  207 words of extra memory for PDF output out of 10000 (max. 10000000)
 
