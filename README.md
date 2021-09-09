@@ -2,9 +2,9 @@
 
 ## Starten des Projektes: 
 Nach dem Initalisieren läuft das Projekt über den `localhost:8000`. Bei Ladeproblemem kann über den Terminalbefehl `elm reactor --port=...` ein beliebiger anderer Port verwendet werden. 
-Das Projekt ist [hier](https://floeagle.github.io/Bike-Buyers-1000/index.html) abrufbar.
+Das Projekt ist über die Seite [Visualisierung von Fahrradkaufdaten](https://floeagle.github.io/Bike-Buyers-1000/index.html) abrufbar.
 ## Zugrundeliegender Datensatz:
-Die drei Visualisierungen entstammen der Website [Kaggle](https://www.kaggle.com/heeraldedhia/bike-buyers?select=bike_buyers_clean.csv)
+[Kaggle - Bike Buyers 1000](https://www.kaggle.com/heeraldedhia/bike-buyers?select=bike_buyers_clean.csv)
 ## Verwendete ELM-Packages:
 - [BrianHicks/elm-csv](https://package.elm-lang.org/packages/BrianHicks/elm-csv/3.0.2/)
 - [alex-tan/elm-tree-diagram](https://package.elm-lang.org/packages/alex-tan/elm-tree-diagram/1.0.0)
