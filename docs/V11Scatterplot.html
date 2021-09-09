@@ -7,15 +7,12 @@
 </head>
 
 <body>
-	
 	<a href="index.html">
 		<button>Zurück zur Startseite</button></a>
 	<a href="V2ParalleleKoordinaten.html">
         <button>Parallele Koordinaten</button></a>
     <a href="V3Baumhierarchie.html">
         <button>Baumhierarchie</button></a>
-	<h2>Visualisierung 1: Scatterplot</h2>
-	<h3>Über die Buttons können Sie die Y-Achsenwerte verändern</h3>
 <pre id="elm"></pre>
 
 <script>
@@ -6477,9 +6474,9 @@ var $author$project$Scatterplot$decoder = A2(
 													A2($BrianHicks$elm_csv$Csv$Decode$field, 'ID', $BrianHicks$elm_csv$Csv$Decode$int),
 													$BrianHicks$elm_csv$Csv$Decode$into($author$project$Scatterplot$BikeBuyers))))))))))))));
 var $elm$html$Html$div = _VirtualDom_node('div');
-var $author$project$Scatterplot$FilteredBikeBuyers = F9(
-	function (purchasedBike, region, gender, occupation, homeOwner, income, children, cars, age) {
-		return {age: age, cars: cars, children: children, gender: gender, homeOwner: homeOwner, income: income, occupation: occupation, purchasedBike: purchasedBike, region: region};
+var $author$project$Scatterplot$FilteredBikeBuyers = F8(
+	function (purchasedBike, region, occupation, homeOwner, income, children, cars, age) {
+		return {age: age, cars: cars, children: children, homeOwner: homeOwner, income: income, occupation: occupation, purchasedBike: purchasedBike, region: region};
 	});
 var $elm$core$List$maybeCons = F3(
 	function (f, mx, xs) {
@@ -6528,7 +6525,7 @@ var $author$project$Scatterplot$filterMissingValues = function (mybikes) {
 	var car2filteredCar = function (bbuyers) {
 		return A5(
 			$elm$core$Maybe$map4,
-			A5($author$project$Scatterplot$FilteredBikeBuyers, bbuyers.purchasedBike, bbuyers.region, bbuyers.gender, bbuyers.occupation, bbuyers.homeOwner),
+			A4($author$project$Scatterplot$FilteredBikeBuyers, bbuyers.purchasedBike, bbuyers.region, bbuyers.occupation, bbuyers.homeOwner),
 			bbuyers.income,
 			bbuyers.children,
 			bbuyers.cars,
@@ -6948,7 +6945,7 @@ var $author$project$Scatterplot$points = F4(
 					_List_fromArray(
 						[
 							$elm$html$Html$text(
-							'Fahrrad: ' + (xyPoint.purchasedBike + (', Einkommen: ' + ($elm$core$String$fromFloat(xyPoint.income) + (', Alter: ' + ($elm$core$String$fromFloat(xyPoint.age) + (', Geschlecht: ' + (xyPoint.gender + (', Beruf: ' + (xyPoint.occupation + (', Immobilienbesitz ' + xyPoint.homeOwner)))))))))))
+							'OwnBike? ' + (xyPoint.purchasedBike + (', ' + ('Einkommen: ' + ($elm$core$String$fromFloat(xyPoint.income) + (', ' + (' Alter: ' + ($elm$core$String$fromFloat(xyPoint.age) + (', ' + ('Beruf: ' + (xyPoint.occupation + (',' + (' HomeOwner: ' + xyPoint.homeOwner)))))))))))))
 						]))
 				]));
 	});
@@ -7717,7 +7714,7 @@ var $author$project$Scatterplot$scatterplot = F2(
 					_List_Nil,
 					_List_fromArray(
 						[
-							$elm_community$typed_svg$TypedSvg$Core$text('\r\n            .point circle { stroke: rgba(0, 0, 0,0.4); fill: rgba(245,230,27,0.8); }\r\n            .point text { display: none; }\r\n            .point.buyed circle {stroke: rgba(0, 0, 0,0.4); fill: rgba(50, 150, 200,0.8);}\r\n            .point:hover circle { stroke: rgba(0, 0, 0,1.0); fill: rgb(250, 50, 50); }\r\n            .point:hover text { display: inline; stroke: rgb(250,50,50) }\r\n          ')
+							$elm_community$typed_svg$TypedSvg$Core$text('\r\n            .point circle { stroke: rgba(0, 0, 0,0.4); fill: rgba(245,230,27,0.8); }\r\n            .point text { display: none; }\r\n            .point.buyed circle {stroke: rgba(0, 0, 0,0.4); fill: rgba(83, 51, 237,0.8);}\r\n            .point:hover circle { stroke: rgba(0, 0, 0,1.0); fill: rgb(127,255,0,1); }\r\n            .point:hover text { display: inline; }\r\n          ')
 						])),
 					A2(
 					$elm_community$typed_svg$TypedSvg$g,
