@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  9 SEP 2021 16:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  9 SEP 2021 16:44
 entering extended mode
 **./IRV_Bericht.tex
 (IRV_Bericht.tex
@@ -654,12 +654,8 @@ File: Bilder/ScatterplotA1.png Graphic file (type png)
 <use Bilder/ScatterplotA1.png>
 Package pdftex.def Info: Bilder/ScatterplotA1.png  used on input line 210.
 (pdftex.def)             Requested size: 455.24408pt x 218.4431pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[14]
-<Bilder/ParallelCoordsA2.png, id=192, 638.385pt x 316.7835pt>
+ [14 <./Bilder/ScatterplotA1.png>]
+<Bilder/ParallelCoordsA2.png, id=194, 638.385pt x 316.7835pt>
 File: Bilder/ParallelCoordsA2.png Graphic file (type png)
 <use Bilder/ParallelCoordsA2.png>
 Package pdftex.def Info: Bilder/ParallelCoordsA2.png  used on input line 225.
@@ -668,13 +664,14 @@ Package pdftex.def Info: Bilder/ParallelCoordsA2.png  used on input line 225.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[15 <./Bilder/ScatterplotA1.png>] [16 <./Bilder/ParallelCoordsA2.png>]
+[15] [16 <./Bilder/ParallelCoordsA2.png>]
 <Bilder/BaumhierarchieA3.png, id=205, 1100.31075pt x 453.49425pt>
 File: Bilder/BaumhierarchieA3.png Graphic file (type png)
 <use Bilder/BaumhierarchieA3.png>
 Package pdftex.def Info: Bilder/BaumhierarchieA3.png  used on input line 236.
 (pdftex.def)             Requested size: 455.24408pt x 187.62918pt.
- [17 <./Bilder/BaumhierarchieA3.png>] [18]
+ [17 <./Bilder/BaumhierarchieA3.png>]
+[18]
 Overfull \hbox (0.18315pt too wide) in paragraph at lines 260--262
 []\T1/lmr/m/n/10.95 Somit löst die-ses Pro-jekt die Her-aus-for-de-rung den An-
 for-de-run-gen meh-re-rer Ziel-grup-pen gleich-
@@ -853,7 +850,7 @@ Here is how much of TeX's memory you used:
  31416 multiletter control sequences out of 15000+600000
  459575 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,7n,108p,10635b,532s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 108i,8n,108p,10635b,532s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/Floyd/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C
 :/Users/Floyd/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}<C:/U
 sers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/U
@@ -863,7 +860,7 @@ ers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Use
 rs/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Use
 rs/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/U
 sers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
-Output written on IRV_Bericht.pdf (32 pages, 1147621 bytes).
+Output written on IRV_Bericht.pdf (32 pages, 1147490 bytes).
 PDF statistics:
  466 PDF objects out of 1000 (max. 8388607)
  100 named destinations out of 1000 (max. 500000)
