@@ -35,7 +35,7 @@ main =
 init : () -> ( Model, Cmd Msg )
 init () =
     ( { tree = TreeDiagram.node "" [], errorMsg = "Loading" }
-    , Http.get { url = "https://raw.githubusercontent.com/floeagle/Bike-Buyers-1000/main/Daten%20zum%20Laden/JSON/DatenvorverarbeitungohneCarWorldwide.json"
+    , Http.get { url = "https://raw.githubusercontent.com/floeagle/Bike-Buyers-1000/main/Daten-zum-Laden/Datenvorverarbeitung/JSON/DatenvorverarbeitungohneCarWorldwide.json"
     , expect = Http.expectJson GotTree treeDecoder }
     )
 
