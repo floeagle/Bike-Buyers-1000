@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  9 SEP 2021 23:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.18)  10 SEP 2021 00:23
 entering extended mode
 **./Spuhler-Bericht-InfoVis21.tex
 (Spuhler-Bericht-InfoVis21.tex
@@ -667,65 +667,83 @@ Package pdftex.def Info: Bilder/BaumhierarchieA3.png  used on input line 241.
 (pdftex.def)             Requested size: 455.24408pt x 187.62918pt.
  [16 <./Bilder/ParallelCoordsA2.png>] [17 <./Bilder/BaumhierarchieA3.png>]
 [18]
-Overfull \hbox (0.18315pt too wide) in paragraph at lines 266--268
+Overfull \hbox (0.18315pt too wide) in paragraph at lines 266--269
 []\T1/lmr/m/n/10.95 Somit löst die-ses Pro-jekt die Her-aus-for-de-rung den An-
 for-de-run-gen meh-re-rer Ziel-grup-pen gleich-
  []
 
 [19] [20]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
-78.
+77.
  (C:\Users\Floyd\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Overfull \hbox (136.87537pt too wide) in paragraph at lines 497--497
+Overfull \hbox (10.40323pt too wide) in paragraph at lines 544--544
+[]\T1/lmtt/m/n/10.95 * 1487db0 (HEAD -> main, origin/main, origin/HEAD) (Ordner
+management, 2021-09-09)[] 
+ []
+
+[21]
+Overfull \hbox (44.89563pt too wide) in paragraph at lines 544--544
+[]\T1/lmtt/m/n/10.95 * 1f8dae5 (Formatierungen Seitenzahl und Bearbeitung Anhan
+g "Git-Historie", 2021-09-09)[] 
+ []
+
+
+Overfull \hbox (10.40323pt too wide) in paragraph at lines 544--544
+[]\T1/lmtt/m/n/10.95 * 3847151 (Verbesserung der Beschreibungen in verschiedene
+n Kapiteln, 2021-09-08)[] 
+ []
+
+
+Overfull \hbox (136.87537pt too wide) in paragraph at lines 544--544
 []\T1/lmtt/m/n/10.95 *   5ad824b (Merge branch 'main' of https://github.com/flo
 eagle/Bike-Buyers-1000 into main, 2021-09-07)[] 
  []
 
 
-Overfull \hbox (27.64943pt too wide) in paragraph at lines 497--497
+Overfull \hbox (27.64943pt too wide) in paragraph at lines 544--544
 []\T1/lmtt/m/n/10.95 * c8ae15f (Verbesserung Visualisierungskapitel der Paralle
 n Koordinaten, 2021-09-06)[] 
  []
 
-[21] [22]
-Overfull \hbox (33.39816pt too wide) in paragraph at lines 497--497
+[22] [23]
+Overfull \hbox (33.39816pt too wide) in paragraph at lines 544--544
 []\T1/lmtt/m/n/10.95 * 5d66aa7 (Korrektur verlinkung parallele Koordinaten auf 
 Baumhierarchie, 2021-08-30)[] 
  []
 
 
-Overfull \hbox (4.6545pt too wide) in paragraph at lines 497--497
+Overfull \hbox (4.6545pt too wide) in paragraph at lines 544--544
 []\T1/lmtt/m/n/10.95 * 829df1d (Umänderung Parallele Koordinaten Vorfilterung a
 uf Europe, 2021-08-30)[] 
  []
 
-[23] [24]
-Overfull \hbox (119.62917pt too wide) in paragraph at lines 497--497
+[24] [25]
+Overfull \hbox (119.62917pt too wide) in paragraph at lines 544--544
 []\T1/lmtt/m/n/10.95 * 0b72ce8 (Daten können als parallele Koordinaten mit Rönt
 gendarstellung geladen werden, 2021-08-24)[] 
  []
 
 
-Overfull \hbox (73.6393pt too wide) in paragraph at lines 497--497
+Overfull \hbox (73.6393pt too wide) in paragraph at lines 544--544
 []\T1/lmtt/m/n/10.95 * 044a2b1 (filterMissingValues für Datendarstellung (Überp
 rüfung auf vorhanden), 2021-08-24)[] 
  []
 
 
-Overfull \hbox (79.38803pt too wide) in paragraph at lines 497--497
+Overfull \hbox (79.38803pt too wide) in paragraph at lines 544--544
 []\T1/lmtt/m/n/10.95 * 72fc59e (-- Bike Buyers werden mit maybe map für Punktda
 rstellung konfiguriert, 2021-08-23)[] 
  []
 
-[25]
-Overfull \hbox (73.6393pt too wide) in paragraph at lines 497--497
+[26]
+Overfull \hbox (73.6393pt too wide) in paragraph at lines 544--544
 []\T1/lmtt/m/n/10.95 * a833503 (EInrichtung der Latex Datei für den Bericht inc
 lusive erster Notizen, 2021-08-17)[] 
  []
 
-[26] (Spuhler-Bericht-InfoVis21.bbl
+[27] (Spuhler-Bericht-InfoVis21.bbl
 Underfull \hbox (badness 7540) in paragraph at lines 39--43
 []\T1/lmr/m/n/10.95 Christiane Köll-ner.  In-di-vi-dual-ver-kehr ge-winnt, öp-n
 v ver-liert, 2020.  URL
@@ -786,7 +804,7 @@ Underfull \hbox (badness 2012) in paragraph at lines 79--85
  auto /
  []
 
-[27]
+[28]
 Underfull \hbox (badness 3158) in paragraph at lines 111--116
 []\T1/lmr/m/n/10.95 VeloTOTAL - Das gröÿ-te Netz-werk rund um das The-ma Fahr-r
 ad.  Click &
@@ -828,21 +846,21 @@ Underfull \hbox (badness 1231) in paragraph at lines 165--171
 us da-ta --- par-al-lel coor-
  []
 
-[28]
+[29]
 Underfull \hbox (badness 3029) in paragraph at lines 238--243
 []\T1/lmr/m/n/10.95 IAA.de.  Rad-fah-ren als ele-men-ta-rer be-stand-teil des m
 o-bi-li-täts-kon-zepts der iaa,
  []
 
-[29]) [30] (Spuhler-Bericht-InfoVis21.aux)
+[30]) [31] (Spuhler-Bericht-InfoVis21.aux)
 Package rerunfilecheck Info: File `Spuhler-Bericht-InfoVis21.out' has not chang
 ed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 13788 strings out of 478864
- 234821 string characters out of 2848660
- 691172 words of memory out of 3000000
+ 13789 strings out of 478864
+ 234828 string characters out of 2848660
+ 692632 words of memory out of 3000000
  31396 multiletter control sequences out of 15000+600000
  459575 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -856,9 +874,9 @@ ers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Use
 rs/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Use
 rs/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/U
 sers/Floyd/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
-Output written on Spuhler-Bericht-InfoVis21.pdf (32 pages, 1153098 bytes).
+Output written on Spuhler-Bericht-InfoVis21.pdf (33 pages, 1154705 bytes).
 PDF statistics:
- 470 PDF objects out of 1000 (max. 8388607)
- 98 named destinations out of 1000 (max. 500000)
+ 474 PDF objects out of 1000 (max. 8388607)
+ 99 named destinations out of 1000 (max. 500000)
  207 words of extra memory for PDF output out of 10000 (max. 10000000)
 

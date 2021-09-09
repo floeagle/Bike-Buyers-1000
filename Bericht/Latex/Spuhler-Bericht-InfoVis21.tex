@@ -53,7 +53,7 @@ Das Ziel dieser Arbeit ist es, diese Fragestellungen  aufzugreifen und mit Hilfe
 
 
 Diese Forschungsarbeit bereitet Informationen auf, die interessante Einblicke in das Kaufverhalten von Fahrradkaufenden geben. So lassen sich anhand von Einkommensdaten, dem Alter und dem Bildungshintergrund Kundengruppen ableiten, auf welche in allen Wertschöpfungsebenen eingegangen werden kann. Hersteller müssen beispielsweise die Rahmengröße auf das Alter abstimmen. Einkommensstarke Kunden setzten den Fokus auf hochwertige Materialien, wie Carbon und erwarten dabei technische Innovation, was die aktuelle Kooperation eines Fahrradunternehmens mit dem Premium-Autohersteller Porsche für ein E-Bike zeigt \cite{Nachrichten.31.08.2021}. Diese werden häufig von einkommensstarken, älteren und männlichen Kunden gekauft \cite{.07.09.2021,FahrradXXLBlog.14.12.2020}. Damenfahrräder weisen schmalere Lenker- und nähere Bremsgriffe zur handlicheren Bedienung auf. Speziell Damenstadtfahrräder eignen sich auf Grund der besseren Abstiegsmöglichkeit auch für ältere oder versehrte Menschen im Stadtverkehr \cite{Radfahren.08.02.2018}.
-Personen die das Fahrrad zum Pendeln nutzen sind eher auf ein Stadt- als ein Mountainbike angewiesen.  Darüber hinaus gibt es eine Vielzahl weiterer  Verwendungsbereiche für Fahrräder, wie das Trekkingbike, Rennrad oder das Crossbike. Abgestimmt auf den vorliegenden Datensatz wird im Folgenden auf die Vorteile des CityBikes, insbesondere in urbanen Regionen mit Kurzstrecken eingegangen. Die übrigen Fahrradarten heben sich durch ihre Funktion für Sport, längere Touren oder unebenes Terrain hervor \cite{.04.09.2021}. 
+Personen die das Fahrrad zum Pendeln nutzen sind eher auf ein Stadt- als ein Mountainbike angewiesen.  Darüber hinaus gibt es eine Vielzahl weiterer  Verwendungsbereiche für Fahrräder, wie das Trekkingbike, Rennrad oder das Crossbike. Abgestimmt auf den vorliegenden Datensatz wird im Folgenden auf die Vorteile des Citybikes, insbesondere in urbanen Regionen mit Kurzstrecken eingegangen. Die übrigen Fahrradarten heben sich durch ihre Funktion für Sport, längere Touren oder unebenes Terrain hervor \cite{.04.09.2021}. 
 Durch die Datenaufbereitung der Arbeitswegdistanzen können Bauunternehmen in Innenstädten gezielter Fahrradwege bauen. Diese Anwendungsfelder werden über die drei verschiedenen Visualisierungsanwendungen Scatterplot, Parallele Koordinaten und das Baumdiagramm aufgegriffen. 
  
 \subsection{Zielgruppen}
@@ -81,7 +81,7 @@ Bei der Anwendung kann über Buttons selbst ausgewählt werden, welche beiden Ei
 
 Mit der zweiten Visualisierung, Parallelen Koordinaten, können Zusammenhänge multidimensionaler Daten besser als über Punkte dargestellt werden. Punkte werden dabei über Linien und Achsen abgebildet \cite{Inselberg.1990}. Jede ausgewählte Variable wird durch eine eigene vertikale Achse symbolisiert und parallel zu den anderen Variablen nebeneinander angeordnet. Alle dazugehörigen Datenwerte werden über eine Linie miteinander verbunden \cite{Moustafa.2006}. Eine Linie, welche über alle Achsen abgebildet wird, heißt Polygonlinie \cite{Heinrich.2015}. Durch die Achsenverbindung entstehen bei den Linien Auf- und Ab-Bewegungen, welche Werteveränderungen aufzeigen \cite{Few.2008}. Parallele Koordinaten bieten einen guten Datenüberblick. Eine Gefahr stellt allerdings die Überlappung von Linien dar, wenn zu viele Daten verwendet werden \cite{Heinrich.2009}.
 
-Mit den parallelen Koordinaten haben Interessenten die Möglichkeit über vertikale Achsen alle darstellbaren Zahlenwerte der Fahrraddaten miteinander zu vergleichen und zu vertauschen. Buttons ermöglichen hierbei die dynamische Achsenverschiebung und Lininenüberlappungen weisen auf Muster hin, welche interpretiert werden. 
+Mit den Parallelen Koordinaten haben Interessenten die Möglichkeit über vertikale Achsen alle darstellbaren Zahlenwerte der Fahrraddaten miteinander zu vergleichen und zu vertauschen. Buttons ermöglichen hierbei die dynamische Achsenverschiebung und Lininenüberlappungen weisen auf Muster hin, welche interpretiert werden. 
 
 
 Über ein explizites Baumdiagramm lassen sich Daten und deren Beziehungen untereinander anordnen, wodurch eine übersichtliche Datenstruktur entsteht und sich Daten schnell wiederfinden lassen. Die Baumstruktur besteht aus Knoten und Kanten. Zwei Knoten sind jeweils über eine Kante miteinander verbunden. In der Baumstruktur muss ein Knoten vorhanden sein, der keinen Vorgänger hat. Dieser Knoten wird Wurzel und dessen Folgeknoten werden Nachfolger genannt. Über die Wurzel führen azyklische Pfade, wobei zu jedem Knoten nur ein Pfad führt. Durch die verschiedenen Pfade und Verzweigungen der unterschiedlichen Daten entsteht die Baumstruktur \cite{Gumm.2016}. Diese Visualisierungstechnik eignet sich für die übersichtliche und hierarchische Darstellung für infrage kommende Daten zu Fahrradkaufenden. Im Datensatz zeigen erhobene Abfragen auf, ob sich eine Person ein Fahrrad gekauft hat oder nicht, wodurch sich der Datensatz als Erstes aufteilen lässt. Des Weiteren sollen globale Unterschiede dargestellt werden, um nach Regionen zu unterscheiden. Ein weiter Faktor ist die Pendeldistanz vom Wohnsitz der Befragten zur Arbeit, welche verschiedene Antwortmöglichkeiten zulässt. All diese Faktoren können kombiniert über die Baumhierarchie in verschiedene Verzweigungsebenen übertragen werden. 
@@ -198,7 +198,7 @@ Ein Vorbild stellten hierzu die IRV-Car-Übungen mit den darin gespeicherten Dat
 Die Herausforderung in dieser Phase war die Decoder-Implementierung, sodass das Elm-Programm die Fahrraddaten richtig laden und darstellen kann. Nach erfolgreichen Tests dieser Anforderung wurde mit der zweiten Phase begonnen.
 
 Diese Phase umfasst die Verbindung der decodierten Fahrraddaten mit den Codegerüsten aus der Übung zum Scatterplot und zu den Parallelen Koordinaten. Die nötige Konfiguration von Datentypen, das Einbinden des Decoders in die main-Funktion, sowie die Anpassung des Scatterplots und der Punkte (richtige Farbe, Anzeige, Hover-Interaktion mit den Punkten) stellten eine Herausforderung dar, die durch "`Try and Error"' bewältigt werden konnte. Die gemachten Erfahrungen mit der Verknüpfung zwischen Decoder und Codegrundgerüst konnten gut auf die Programmierung der Parallelen Koordinaten übertragen werden, sodass die Grundfunktionsweise (keine Interaktionsmöglichkeit mit der Anwendung) erfolgreich angewendet werden konnte. Nach Tests zu der Röntgendarstellung der Linien im Vergleich zu "`normaler"' Darstellung wurde die Röntgendarstellung für die zweite Visualisierung gewählt.
-Für die Baumhierarchie stellte die erste Phase die Datenvorverarbeitungsschritte für die JSON-Datei dar. In der Übung 10 wurde ebenfalls ein JSON-Decoder verwendet, sodass keine nennenswerten Komplikationen mit dem Lesen der JSON-Datei auftraten. In der zweiten Phase wurde das default-Layout durch eine eigene Layout-Funktion ersetzt, wozu zunächst der Elm-Paketimport erweitert wurde.
+Für die Baumhierarchie stellte die erste Phase die Datenvorverarbeitungsschritte für die JSON-Datei dar. In der Übung zehn wurde ebenfalls ein JSON-Decoder verwendet, sodass keine nennenswerten Komplikationen mit dem Lesen der JSON-Datei auftraten. In der zweiten Phase wurde das default-Layout durch eine eigene Layout-Funktion ersetzt, wozu zunächst der Elm-Paketimport erweitert wurde.
 %DRITTE pHASE
 Die dritte Phase umfasste das Programmieren von Interaktionsmöglichkeiten mit der Anwendung, wie die Buttons zum Wechseln der Y-Achsen beim Scatterplot und den Achsentausch der Parallelen Koordinaten. Eine Herausforderung stellte die dafür notwendige Anpassung der Programmgliederung dar, was nicht nur durch die oben genannten Übungen als Anhaltspunkt, sondern ebenfalls durch Ausprobieren und Recherche in den Elm-Dokumentationen funktionierte. 
 Um die drei Visualisierungsdateien miteinander zu verbinden, wurde der "`elm-make"'-Befehl verwendet und die Dateien untereinander und mit einer "`index.html"' Seite verknüpft, die als Startseite der Anwendung dient. Hierbei war eine regelmäßige Iteration notwendig, um in den jeweiligen Programmen vorgenommene Änderungen zu aktualisieren. 
@@ -264,8 +264,7 @@ Die dritte Visualisierung ermöglicht es einen komplexen Sachverhalt übersichtl
 Besonders in Großstädten ist diese Thematik brisant, da hier im Verkehr häufig Fahrradunfälle passieren \cite{Reek.17.03.2021,Nogly.2014,tagesschau.20.08.2021}. Deshalb eignet sich diese Visualisierung für Bauunternehmen im Bereich der Fahrradwege-Infrastruktur und alle an der Planung und dem Bau beteiligten Gruppen.
 
 Somit löst dieses Projekt die Herausforderung den Anforderungen mehrerer Zielgruppen gleichzeitig gerecht zu werden.   
-Im Bezug auf Interaktionen stellen folgende Inhalte eine Weiterentwicklung dar. Die Hauptwebsite index.html könnte noch ansprechender visualisiert werden, wie beispielsweise durch ein Austauschforum für Anwendende. Einen weiteren Punkt stellen die Interaktionsmöglichkeiten für Anwendende dar, welche so erweitert werden könnten, dass Nutzende selbst die Möglichkeit haben die Daten nach Region, bestimmten Werten oder Wertschwellen, sowie individuellen Parametern über Buttons zu filtern. Dies würde die Zielgruppe nochmals erweitern, sodass nicht nur europäische sondern auch amerikanische oder pazifische Branchenunternehmen angesprochen werden. Die Interaktion im Bereich der Parallelen Koordinaten könnte ebenfalls Hoverfunktionen beinhalten, wozu die parallelCoordinatesPlot-Funktion im in-Bereich angepasst werden müsste. Im Rahmen dieses Projekts wurde auf diese Anpassung verzichtet, da Zusatzinformationen über das Hovern im Scatterplot verfügbar sind und den Fokus zu sehr auf das Hovern lenken.
-
+Im Bezug auf Interaktionen stellen folgende Inhalte eine Weiterentwicklung dar. Die Hauptwebsite index.html könnte noch ansprechender visualisiert werden, wie beispielsweise durch ein Austauschforum für Anwendende. Einen weiteren Punkt stellen die Interaktionsmöglichkeiten für Anwendende dar, welche so erweitert werden könnten, dass Nutzende selbst die Möglichkeit haben die Daten nach Region, bestimmten Werten oder Wertschwellen, sowie individuellen Parametern über Buttons zu filtern. Dies würde die Zielgruppe nochmals erweitern, sodass nicht nur europäische sondern auch amerikanische oder pazifische Branchenunternehmen angesprochen werden. Die Interaktion im Bereich der Parallelen Koordinaten könnte ebenfalls Hoverfunktionen beinhalten, wozu die parallelCoordinatesPlot-Funktion im in-Bereich angepasst werden müsste. Im Rahmen dieses Projekts wurde auf diese Anpassung verzichtet, da Zusatzinformationen über das Hovern im Scatterplot verfügbar sind und den Fokus sonst zu stark von den durch die Linienkonzentration hervorgerufenen Zusammenhängen nehmen würden.
 Aus Visualisierungssicht könnten mehr Visualisierungstechniken, wie die Sternenkoordinaten oder bei der Erhebung zeitlich abhängiger Fahrraddaten (gefahrene Kilometer pro Woche, etc.) Zeitdiagramme, verwendet werden, welche als zusätzliche Interaktionsmöglichkeit verknüpft sein sollten. Auch eine Option zum Ein- und Ausschalten der Röntgenansicht könnte für die Parallelen Koordinaten sinnvoll sein. 
 
 Auf Datenebene könnten Erhebungen zur Häufigkeit des Fahrradfahrens, verwendetem Equipment wie Helme oder zusätzliche Beleuchtung, Verkehrssicherheit und Fahrstil interessant sein, um zusätzliche Gadgets zu verkaufen oder auch die Zielgruppe der Versicherungsbrache anzusprechen. Diese Daten könnten durch Umfragen erhoben und die Visualisierungen im Rahmen zukünftiger Forschungsprojekte erweitert werden.  
@@ -278,7 +277,55 @@ Das mit dem Bericht verbundene \href{https://github.com/floeagle/Bike-Buyers-100
 \begin{verbatim}
 
 
-* 2b6e0c5 (HEAD -> main, origin/main, origin/HEAD) (Update d.dat, 2021-09-07)
+* 1487db0 (HEAD -> main, origin/main, origin/HEAD) (Ordnermanagement, 2021-09-09)
+* 99bdc9f (Umbenennung Latex-Dateien für Abgabe, 2021-09-09)
+* c3e77f1 (Ordnermanagement, 2021-09-09)
+* bdd55af (Ordnermanagement, 2021-09-09)
+* 2e12d04 (Überarbeitung vollständiger Bericht, 2021-09-09)
+* a4617cd (Kapitelübergeifende Fehlerkorrekur, 2021-09-09)
+* 06a672f (Update README.md, 2021-09-09)
+* 05b26aa (Ordnermanagement, 2021-09-09)
+* bb231c0 (Aktualisierung Baumhierachie JSON-Link, 2021-09-09)
+* 2f8fcb2 (Anpassungen der HTML-Seite, 2021-09-09)
+* 5df1f83 (Ordnermanagement, 2021-09-09)
+* c860b6d (Ordnermanagement, 2021-09-09)
+* 90e4a10 (Ordnermanagement, 2021-09-09)
+* 26c159c (Ordnermanagement, 2021-09-09)
+* 9c12587 (Korrektur Kapitel 7, 2021-09-09)
+* 180190a (Ordnermanagement, 2021-09-09)
+* 4dd7a52 (Korrekturlesen Kapitel 7, 2021-09-09)
+* 3fa8eda (Korrekturlesen Kapitel 6, 2021-09-09)
+* e896afb (Korrekturlesen Kapitel 5.3, 2021-09-09)
+* cf255f4 (Korrektur Kapitel 5.2, 2021-09-09)
+* a1dad08 (Korrekturlesen Kapitel 5.1, 2021-09-09)
+* 424a448 (Korrekturlesen Kapitel 4, 2021-09-09)
+* 2c417b3 (Korrekturlesen Kapitel 3.4, 2021-09-09)
+* 6e76751 (Überarbeitung Kapitel 2, 3.3.2 und 3.3.3, 2021-09-09)
+* 9413863 (Korrekturlesen Kapitel 3.3.2, 2021-09-09)
+* 53e5d2a (Korrekturlesen Kapitel 3.3.1, 2021-09-09)
+* 95f100b (Korrekturlesen 3.2, 2021-09-09)
+* a2de663 (Korrekturlesen Kapitel 3.1, 2021-09-09)
+* f87ce88 (Korrekturlesen Kapitel 2.2, 2021-09-09)
+* 8e8dcac (Korrekturlesen Kapitel 2.1, 2021-09-09)
+* 29520ba (Ordnermanagement zur besseren Übersicht, 2021-09-09)
+* 82b3bea (Korrekturlesen Kapitel 1.3, 2021-09-09)
+* e502a68 (Korrekturlesen Kapitel 1.2, 2021-09-09)
+* 2011c8f (Korrekturlesen Kapitel 1.1, 2021-09-09)
+* 90b89eb (Verbesserung Kapitel 1.1 und 1.3, Formatierung, 2021-09-09)
+* 1f8dae5 (Formatierungen Seitenzahl und Bearbeitung Anhang "Git-Historie", 2021-09-09)
+* fefcf05 (Ordnermanagement Latex-Dateien, 2021-09-09)
+* d1c1dc4 (Ordnermanagement Excel /JSOn-Dateien, 2021-09-09)
+* ddd6fc3 (Ordnermanagement, 2021-09-08)
+* 6081859 (Anpassung Kapitel 3 / 5, 2021-09-08)
+* 3847151 (Verbesserung der Beschreibungen in verschiedenen Kapiteln, 2021-09-08)
+* 229294c (Update .gitignore, 2021-09-08)
+* 24f5a10 (Abstimmung der Kapitel auf den Schluss, 2021-09-08)
+* bfb080b (Anpassung Scatterplot insb. Hovertext, 2021-09-08)
+* 079012a (Verbesserung Kapitel 1.1 und Beginn 7, 2021-09-08)
+* 1dd3939 (Überarbeitung Kapitel 6, 2021-09-08)
+* 1f288e0 (Überarbeitung Kapitel 4, 2021-09-08)
+* 1873dde (Verbesserung 5.3 Anwendung Visualisierung Drei, 2021-09-07)
+* 2b6e0c5 (Update d.dat, 2021-09-07)
 *   5ad824b (Merge branch 'main' of https://github.com/floeagle/Bike-Buyers-1000 into main, 2021-09-07)
 |\
 | * 1f42099 (Delete Alte HTML Versionen directory, 2021-09-07)
